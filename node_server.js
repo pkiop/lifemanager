@@ -39,7 +39,27 @@ var app = http.createServer(function(request, response) {
         topic.selectSleepTime(request, response, queryData);
     } else if (pathname === '/maketable_process') {
         topic.maketable_process(request, response);
-    } else {
+    } else if (pathname === '/showcategory') {
+        topic.showcategory(request, response); 
+    } else if (pathname === '/develop_process') {
+        topic.develop_process(request, response); 
+    } else if (pathname === '/study_process') {
+        topic.study_process(request, response); 
+    } else if (pathname === '/book_reading_process') {
+        topic.book_reading_process(request, response); 
+    } else if (pathname === '/exercise_process') {
+        topic.exercise_process(request, response); 
+    } else if (pathname === '/work_process') {
+        topic.work_process(request, response); 
+    } else if (pathname === '/english_process') {
+        topic.english_process(request, response); 
+    } else if (pathname === '/chinese_process') {
+        topic.chinese_process(request, response); 
+    } else if (pathname === '/etc_process') {
+        topic.etc_process(request, response); 
+    } 
+    
+    else {
         response.writeHead(404);
         response.end('Not found');
     }
