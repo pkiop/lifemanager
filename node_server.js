@@ -1,6 +1,9 @@
 var http = require('http');
 var url = require('url');
 var topic = require('./lib/topic');
+var settings = require('./settings');
+var portnum = settings.port_num;
+
 
 var app = http.createServer(function(request, response) {
     var _url = request.url;
@@ -40,28 +43,19 @@ var app = http.createServer(function(request, response) {
         topic.maketable_process(request, response);
     } else if (pathname === '/showcategory') {
         topic.showcategory(request, response); 
-    } else if (pathname === '/develop_process') {
-        topic.develop_process(request, response); 
-    } else if (pathname === '/study_process') {
-        topic.study_process(request, response); 
-    } else if (pathname === '/book_reading_process') {
-        topic.book_reading_process(request, response); 
-    } else if (pathname === '/exercise_process') {
-        topic.exercise_process(request, response); 
-    } else if (pathname === '/work_process') {
-        topic.work_process(request, response); 
-    } else if (pathname === '/english_process') {
-        topic.english_process(request, response); 
-    } else if (pathname === '/chinese_process') {
-        topic.chinese_process(request, response); 
-    } else if (pathname === '/etc_process') {
-        topic.etc_process(request, response); 
-    } 
-    
+    } else if (pathname === '/category_process') {
+        if(queryData.categoryValue === undefined) {
+            response.writeHead(404);
+            response.end('Not found');
+        }
+        else {
+            topic.category_process(request, response, queryData.categoryValue); 
+        }
+    }
     else {
         response.writeHead(404);
         response.end('Not found');
     }
 
 });
-app.listen(3000);
+app.listen(portnum);
