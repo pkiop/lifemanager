@@ -3,6 +3,7 @@ var url = require('url');
 var topic = require('./lib/topic');
 var settings = require('./settings');
 var portnum = settings.port_num;
+var fs = require('fs');
 
 
 var app = http.createServer(function(request, response) {
@@ -51,6 +52,13 @@ var app = http.createServer(function(request, response) {
         else {
             topic.category_process(request, response, queryData.categoryValue); 
         }
+    } else if (pathname === '/getlogo') {
+        fs.readFile("./pic/logo.png", (err, data) => {
+            if(err) {
+                throw err;
+            }
+            response.end(data);
+        })
     }
     else {
         response.writeHead(404);
@@ -59,3 +67,10 @@ var app = http.createServer(function(request, response) {
 
 });
 app.listen(portnum);
+
+// app2.get('/logo', function(request, response) {
+//     fs.readFile('/pic/logo.png', function(error, data) {
+//         response.writeHead(200, {'Content-Type': 'text/html'});
+//         response.end(data);
+//     });
+// });
