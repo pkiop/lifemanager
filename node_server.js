@@ -28,6 +28,8 @@ var app = http.createServer(function(request, response) {
         topic.showNupdatetable(request, response,queryData);  
     } else if (pathname === '/showtable_process') {
         topic.showtable_process(request, response);
+    } else if (pathname === '/intervalrecodes') {
+        topic.select_interval(request, response); 
     } else if (pathname === '/showtotalrecodes') {
         topic.showtotalrecodes(request, response);
     } else if (pathname === '/todaytable_process') {
@@ -42,6 +44,8 @@ var app = http.createServer(function(request, response) {
         topic.selectSleepTime(request, response, queryData);
     } else if (pathname === '/maketable_process') {
         topic.maketable_process(request, response);
+    } else if (pathname === '/interval_process') {
+        topic.interval_process(request, response); 
     } else if (pathname === '/showcategory') {
         topic.showcategory(request, response); 
     } else if (pathname === '/category_process') {
