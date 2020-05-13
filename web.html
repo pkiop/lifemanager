@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/low.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script>
+    <script>
+        var adapter = new LocalStorage('db') // db라는 key 에 저장할 것이기 때문에
+        var db = low(adapter) //db라는 변수로 
+
+
+        // Set some defaults (required if your JSON file is empty)
+        console.log("???");
+        db.defaults({ topic: [], author: [] }).write() // write -> 없으면 만들어준다. [] -> 배열형태라는 것 
+        // db.get('author').push({
+        //     id:1,
+        //     name:'egoing',
+        //     profile:'developer'
+        // }).write();
+
+        // db.get('topic').push({
+        //     id:1,
+        //     title:'lowdb',
+        //     description:'low db is ...',
+        //     author:1
+        // }).write();
+
+        // db.get('topic').push({
+        //     id: 2,
+        //     title: 'mysql',
+        //     description: 'mysql is ...',
+        //     author: 1
+        // }).write();
+        db.get('topic')
+            .find({title: 'mysql'})
+            .assign({title: 'mysql & mariaDB'})
+            .write();
+        console.log(
+        db.get('topic')
+            .find({title:'lowdb', author:1})
+            .value()
+            );
+
+        db.get('topic')
+            .remove({id:2})
+            .write();
+    </script>
+</head>
+
+</html>
