@@ -7,7 +7,7 @@ router.get('/', function (req, res) {
     topic.home(req, res);
 });
 
-router.get('/puttime_process', function (req, res) {
+router.post('/puttime_process', function (req, res) {
     topic.puttime_process(req, res);
 });
 router.get('/selecttable', function (req, res) {
@@ -34,13 +34,13 @@ router.get('/showtotalrecodes', function (req, res) {
 router.get('/todaytable_process', function (req, res) {
     topic.todaytable_process(req, res);
 }); 
-router.get('/update_process', function(req, res){
+router.post('/update_process', function(req, res){
     topic.update_process(req, res);
 }); 
-router.get('/delete_process', function(req, res){
+router.post('/delete_process', function(req, res){
     topic.delete_process(req, res);
 });
-router.get('/confirm_process', function(req, res){
+router.post('/confirm_process', function(req, res){
     topic.confirm_process(req, res);
 }) 
 router.get('/selectSleepTime',function(req,res){
@@ -49,10 +49,10 @@ router.get('/selectSleepTime',function(req,res){
 
     topic.selectSleepTime(req, res, queryData);
 });
-router.get('/maketable_process', function(req, res) {
+router.post('/maketable_process', function(req, res) {
     topic.maketable_process(req, res);
 }); 
-router.get('/interval_process', function(req, res){
+router.post('/interval_process', function(req, res){
     topic.interval_process(req, res);
 }) 
 router.get('/showcategory', function(req, res) {
