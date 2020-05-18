@@ -1,3 +1,4 @@
 /node_modules
 /setting.js
 /lib/db.js
+/config/google.json
