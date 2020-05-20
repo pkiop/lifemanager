@@ -1,0 +1,1164 @@
+-- MySQL dump 10.13  Distrib 8.0.19, for osx10.14 (x86_64)
+--
+-- Host: localhost    Database: lifemanager
+-- ------------------------------------------------------
+-- Server version	8.0.19
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `book_reading`
+--
+
+DROP TABLE IF EXISTS `book_reading`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `book_reading` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `book_reading`
+--
+
+LOCK TABLES `book_reading` WRITE;
+/*!40000 ALTER TABLE `book_reading` DISABLE KEYS */;
+INSERT INTO `book_reading` VALUES (200423,0),(200424,0),(200425,0),(200426,0),(200427,0),(200428,0),(200429,0),(200430,25),(200501,0),(200502,0),(200503,0),(200504,0),(200505,0),(200506,38),(200507,17),(200508,0),(200509,24),(200510,56),(200511,0),(200512,0),(200513,0),(200514,26),(200515,0),(200516,0),(200517,0),(200518,0);
+/*!40000 ALTER TABLE `book_reading` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `Chinese`
+--
+
+DROP TABLE IF EXISTS `Chinese`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Chinese` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Chinese`
+--
+
+LOCK TABLES `Chinese` WRITE;
+/*!40000 ALTER TABLE `Chinese` DISABLE KEYS */;
+INSERT INTO `Chinese` VALUES (200423,0),(200424,0),(200425,0),(200426,0),(200427,0),(200428,0),(200429,0),(200430,0),(200501,0),(200502,0),(200503,0),(200504,0),(200505,0),(200506,0),(200507,0),(200508,0),(200509,0),(200510,0),(200511,0),(200512,0),(200513,0),(200514,0),(200515,0),(200516,0),(200517,0),(200518,0);
+/*!40000 ALTER TABLE `Chinese` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200423`
+--
+
+DROP TABLE IF EXISTS `day200423`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200423` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200423`
+--
+
+LOCK TABLES `day200423` WRITE;
+/*!40000 ALTER TABLE `day200423` DISABLE KEYS */;
+INSERT INTO `day200423` VALUES (1,'sleep','수면',23,5,5,57,412,'except'),(2,'exercise','도수체조',6,0,6,5,5,'except_no'),(3,'etc','1층부터 자리앉기까지',7,58,8,5,7,'except'),(4,'exercise','운동(스쿼트+사레레)',19,1,19,13,12,'except_no'),(5,'develop','라매개발',20,30,21,50,80,'except_no'),(6,'develop','라매개발',22,0,23,20,80,'except_no');
+/*!40000 ALTER TABLE `day200423` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200424`
+--
+
+DROP TABLE IF EXISTS `day200424`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200424` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200424`
+--
+
+LOCK TABLES `day200424` WRITE;
+/*!40000 ALTER TABLE `day200424` DISABLE KEYS */;
+INSERT INTO `day200424` VALUES (1,'sleep','수면',0,30,5,57,327,'except'),(2,'exercise','도수체조',6,17,6,22,5,'except_no'),(3,'develop','개발',6,24,7,23,59,'except_no'),(4,'etc','준비(빨래포함)',7,27,7,56,29,'except');
+/*!40000 ALTER TABLE `day200424` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200425`
+--
+
+DROP TABLE IF EXISTS `day200425`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200425` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200425`
+--
+
+LOCK TABLES `day200425` WRITE;
+/*!40000 ALTER TABLE `day200425` DISABLE KEYS */;
+INSERT INTO `day200425` VALUES (1,'sleep','수면',23,10,7,17,487,'except'),(2,'develop','라매개발',10,0,10,21,21,'except_no'),(3,'develop','라매개발',11,22,11,47,25,'except_no'),(4,'develop','라매개발',13,34,16,29,175,'except_no'),(5,'develop','라매개발',20,57,21,30,33,'except_no'),(6,'develop','라매개발',21,44,23,4,80,'except_no');
+/*!40000 ALTER TABLE `day200425` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200426`
+--
+
+DROP TABLE IF EXISTS `day200426`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200426` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200426`
+--
+
+LOCK TABLES `day200426` WRITE;
+/*!40000 ALTER TABLE `day200426` DISABLE KEYS */;
+INSERT INTO `day200426` VALUES (1,'sleep','수면',1,30,8,33,423,'except'),(2,'etc','라매개발',9,23,10,11,48,'except_no'),(3,'develop','라매개발',10,15,10,28,13,'except_no'),(4,'develop','라매개발',10,28,10,45,17,'except_no'),(5,'exercise','운동(푸쉬업숄프)',11,19,11,33,14,'except_no'),(6,'etc','보수적 미래 돈계산',11,40,12,5,25,'except_no');
+/*!40000 ALTER TABLE `day200426` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200427`
+--
+
+DROP TABLE IF EXISTS `day200427`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200427` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200427`
+--
+
+LOCK TABLES `day200427` WRITE;
+/*!40000 ALTER TABLE `day200427` DISABLE KEYS */;
+INSERT INTO `day200427` VALUES (1,'sleep','수면',23,50,7,27,457,'except'),(2,'exercise','풀업데드',19,48,20,0,12,'except_no'),(3,'develop','라매개발',21,25,21,53,28,'except_no'),(4,'develop','라매개발',22,5,22,33,28,'except_no');
+/*!40000 ALTER TABLE `day200427` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200428`
+--
+
+DROP TABLE IF EXISTS `day200428`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200428` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200428`
+--
+
+LOCK TABLES `day200428` WRITE;
+/*!40000 ALTER TABLE `day200428` DISABLE KEYS */;
+INSERT INTO `day200428` VALUES (1,'sleep','수면',23,0,5,21,381,'except'),(2,'exercise','도체',5,27,5,33,6,'except_no'),(3,'develop','피시고치는중',5,40,6,10,30,'except_no'),(4,'etc','라매개발',6,20,7,18,58,'except_no'),(5,'work','Nvop~',9,44,11,5,81,'except'),(6,'work','회',11,14,12,15,61,'except'),(7,'work','낮잠해도회사되는버그',12,52,13,13,21,'except'),(9,'exercise','운동',18,55,19,1,6,'except_no'),(10,'develop','라매개발',19,59,21,18,79,'except_no'),(11,'develop','라매개발',21,55,22,31,36,'except_no');
+/*!40000 ALTER TABLE `day200428` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200429`
+--
+
+DROP TABLE IF EXISTS `day200429`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200429` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200429`
+--
+
+LOCK TABLES `day200429` WRITE;
+/*!40000 ALTER TABLE `day200429` DISABLE KEYS */;
+INSERT INTO `day200429` VALUES (1,'sleep','수면',22,5,5,22,437,'except'),(2,'exercise','도수체조',5,27,5,33,6,'except_no'),(3,'develop','Services and Controller app 수정',5,39,6,10,31,'except_no'),(4,'develop','부의추월차선',6,20,6,43,23,'except_no'),(5,'etc','인생계획',6,56,7,5,9,'except_no'),(6,'nap','',7,7,7,27,20,'except');
+/*!40000 ALTER TABLE `day200429` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200430`
+--
+
+DROP TABLE IF EXISTS `day200430`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200430` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200430`
+--
+
+LOCK TABLES `day200430` WRITE;
+/*!40000 ALTER TABLE `day200430` DISABLE KEYS */;
+INSERT INTO `day200430` VALUES (1,'sleep','수면',20,0,7,0,660,'except'),(2,'exercise','도체 복근',7,55,8,10,15,'except_no'),(3,'etc','멘토링',9,15,12,10,175,'except'),(4,'nap','낮잠',14,8,16,0,112,'except'),(5,'develop','라매개발',17,40,18,45,65,'except_no'),(6,'etc','화성창녕이동',19,0,22,30,210,'except'),(7,'book_reading','책읽기 미라클모닝',20,32,20,57,25,'except_no');
+/*!40000 ALTER TABLE `day200430` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200501`
+--
+
+DROP TABLE IF EXISTS `day200501`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200501` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200501`
+--
+
+LOCK TABLES `day200501` WRITE;
+/*!40000 ALTER TABLE `day200501` DISABLE KEYS */;
+INSERT INTO `day200501` VALUES (1,'sleep','수면',0,0,7,40,460,'except'),(2,'nap','낮잠',12,23,15,22,179,'except'),(3,'etc','선배와손잡기',19,9,20,7,58,'except_no'),(4,'etc','손잡기',0,7,0,27,20,'except_no');
+/*!40000 ALTER TABLE `day200501` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200502`
+--
+
+DROP TABLE IF EXISTS `day200502`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200502` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200502`
+--
+
+LOCK TABLES `day200502` WRITE;
+/*!40000 ALTER TABLE `day200502` DISABLE KEYS */;
+INSERT INTO `day200502` VALUES (1,'sleep','수면',1,40,8,30,410,'except');
+/*!40000 ALTER TABLE `day200502` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200503`
+--
+
+DROP TABLE IF EXISTS `day200503`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200503` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200503`
+--
+
+LOCK TABLES `day200503` WRITE;
+/*!40000 ALTER TABLE `day200503` DISABLE KEYS */;
+INSERT INTO `day200503` VALUES (1,'sleep','수면',1,40,9,27,467,'except'),(2,'etc','돈계산',13,57,15,11,74,'except_no'),(3,'etc','돈계산',17,34,18,0,26,'except_no');
+/*!40000 ALTER TABLE `day200503` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200504`
+--
+
+DROP TABLE IF EXISTS `day200504`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200504` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200504`
+--
+
+LOCK TABLES `day200504` WRITE;
+/*!40000 ALTER TABLE `day200504` DISABLE KEYS */;
+INSERT INTO `day200504` VALUES (1,'etc','수면',22,20,6,12,472,'except'),(2,'etc','돈에대한생각',6,40,7,10,30,'except_no'),(3,'exercise','운동 푸쉬업숄프',7,31,7,42,11,'except_no'),(4,'develop','라매개발',21,38,22,12,34,'except_no');
+/*!40000 ALTER TABLE `day200504` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200505`
+--
+
+DROP TABLE IF EXISTS `day200505`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200505` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200505`
+--
+
+LOCK TABLES `day200505` WRITE;
+/*!40000 ALTER TABLE `day200505` DISABLE KEYS */;
+INSERT INTO `day200505` VALUES (1,'etc','수면',23,18,6,56,458,'except'),(2,'exercise','풀업데드',7,34,7,50,16,'except_no'),(3,'etc','돈공부',8,22,9,1,39,'except_no'),(4,'develop','라매도메인등록',12,45,13,24,39,'except_no'),(5,'develop','크몽판매자등록',14,5,14,51,46,'except_no'),(6,'develop','라매개발',18,10,18,23,13,'except_no'),(7,'develop','라매개발',19,44,20,22,38,'except_no'),(8,'develop','라매개발',20,29,22,16,107,'except_no');
+/*!40000 ALTER TABLE `day200505` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200506`
+--
+
+DROP TABLE IF EXISTS `day200506`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200506` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200506`
+--
+
+LOCK TABLES `day200506` WRITE;
+/*!40000 ALTER TABLE `day200506` DISABLE KEYS */;
+INSERT INTO `day200506` VALUES (1,'sleep','수면',0,12,6,45,393,'except'),(2,'exercise','스쿼트/사레레',7,9,7,21,12,'except_no'),(3,'develop','라매개발',7,52,8,44,52,'except_no'),(4,'develop','라매개발',21,42,23,0,78,'except_no'),(5,'book_reading','코스모스',23,4,23,42,38,'except_no');
+/*!40000 ALTER TABLE `day200506` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200507`
+--
+
+DROP TABLE IF EXISTS `day200507`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200507` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200507`
+--
+
+LOCK TABLES `day200507` WRITE;
+/*!40000 ALTER TABLE `day200507` DISABLE KEYS */;
+INSERT INTO `day200507` VALUES (1,'sleep','수면',23,50,7,7,437,'except'),(2,'exercise','데스런 복근',7,23,7,32,9,'except_no'),(3,'develop','라매개발',8,2,8,50,48,'except_no'),(4,'english','영어회화핵심패턴233',22,34,23,10,36,'except_no'),(5,'book_reading','영어책',23,10,23,27,17,'except_no');
+/*!40000 ALTER TABLE `day200507` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200508`
+--
+
+DROP TABLE IF EXISTS `day200508`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200508` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200508`
+--
+
+LOCK TABLES `day200508` WRITE;
+/*!40000 ALTER TABLE `day200508` DISABLE KEYS */;
+INSERT INTO `day200508` VALUES (1,'sleep','수면',23,50,7,19,449,'except'),(2,'exercise','푸쉬업숄프',7,38,7,50,12,'except_no'),(3,'develop','라매개발위한생코',8,14,8,52,38,'except_no'),(4,'etc','손잡기',8,53,9,5,12,'except_no'),(5,'etc','손잡기멘토링',20,0,21,50,110,'except_no'),(6,'money_study','돈관리',22,41,23,49,68,'except_no');
+/*!40000 ALTER TABLE `day200508` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200509`
+--
+
+DROP TABLE IF EXISTS `day200509`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200509` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200509`
+--
+
+LOCK TABLES `day200509` WRITE;
+/*!40000 ALTER TABLE `day200509` DISABLE KEYS */;
+INSERT INTO `day200509` VALUES (1,'sleep','수면',0,45,8,0,435,'except'),(2,'exercise','풀업스윙',8,21,8,28,7,'except_no'),(3,'develop','라매개발위한공부',18,35,19,23,48,'except_no'),(4,'develop','라매개발위한공부',19,36,19,54,18,'except_no'),(5,'develop','라매개발위한공부',21,23,22,3,40,'except_no'),(6,'develop','라매개발위한공부',22,15,23,8,53,'except_no'),(7,'book_reading','thinking fast and slow',23,57,0,21,24,'except_no');
+/*!40000 ALTER TABLE `day200509` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200510`
+--
+
+DROP TABLE IF EXISTS `day200510`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200510` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200510`
+--
+
+LOCK TABLES `day200510` WRITE;
+/*!40000 ALTER TABLE `day200510` DISABLE KEYS */;
+INSERT INTO `day200510` VALUES (1,'sleep','수면',1,50,7,57,367,'except'),(2,'book_reading','멀티팩터',9,7,9,18,11,'except_no'),(3,'develop','라매개발위한공부',9,30,10,5,35,'except_no'),(4,'develop','라매개발위한공부 Oauth',10,14,10,46,32,'except_no'),(6,'book_reading','최고의 인재는 무엇이 다른가',19,47,19,57,10,'except_no'),(7,'book_reading','최고의 인재는 무엇이 다른가',20,15,20,22,7,'except_no'),(8,'book_reading','최고의 인재는 무엇이 다른가',20,28,20,40,12,'except_no'),(9,'book_reading','최고의 인재는 무엇이 다른가',22,39,22,55,16,'except_no');
+/*!40000 ALTER TABLE `day200510` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200511`
+--
+
+DROP TABLE IF EXISTS `day200511`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200511` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200511`
+--
+
+LOCK TABLES `day200511` WRITE;
+/*!40000 ALTER TABLE `day200511` DISABLE KEYS */;
+INSERT INTO `day200511` VALUES (1,'sleep','수면',0,0,7,58,478,'except'),(2,'exercise','한발스쿼트,사레레',8,42,8,48,6,'except_no'),(3,'develop','맥북사용법 공부',20,10,20,30,20,'except_no'),(4,'develop','맥북사용법 공부',21,2,21,56,54,'except_no'),(5,'develop','라매개발위한 공부',22,20,23,14,54,'except_no'),(6,'etc','인생계획',23,17,23,27,10,'except_no');
+/*!40000 ALTER TABLE `day200511` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200512`
+--
+
+DROP TABLE IF EXISTS `day200512`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200512` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200512`
+--
+
+LOCK TABLES `day200512` WRITE;
+/*!40000 ALTER TABLE `day200512` DISABLE KEYS */;
+INSERT INTO `day200512` VALUES (1,'sleep','수면',23,35,7,5,450,'except'),(2,'exercise','복근',7,15,7,29,14,'except_no'),(3,'develop','라매개발위한공부',8,0,9,4,64,'except_no'),(4,'etc','인생계획',21,10,21,48,38,'except_no'),(5,'develop','라매개발위한 공부',22,1,23,24,83,'except_no');
+/*!40000 ALTER TABLE `day200512` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200513`
+--
+
+DROP TABLE IF EXISTS `day200513`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200513` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200513`
+--
+
+LOCK TABLES `day200513` WRITE;
+/*!40000 ALTER TABLE `day200513` DISABLE KEYS */;
+INSERT INTO `day200513` VALUES (1,'sleep','수면',23,40,6,41,421,'except'),(2,'exercise','버피로 푸쉬업숄프',6,48,7,1,13,'except_no'),(3,'develop','라매개발을 위한 공부',7,33,9,25,112,'except_no'),(4,'develop','라매개발을 위한 공부',21,35,23,26,111,'except_no'),(5,'english',' 영어회화공부계획->영어회화핵심패턴',23,27,23,31,4,'except_no');
+/*!40000 ALTER TABLE `day200513` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200514`
+--
+
+DROP TABLE IF EXISTS `day200514`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200514` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200514`
+--
+
+LOCK TABLES `day200514` WRITE;
+/*!40000 ALTER TABLE `day200514` DISABLE KEYS */;
+INSERT INTO `day200514` VALUES (1,'sleep','수면',23,40,6,35,415,'except'),(2,'exercise','풀업스윙',7,0,7,13,13,'except_no'),(3,'develop','라매위한 개발',7,33,8,52,79,'except_no'),(4,'develop','니꼴라스유튜브',9,1,9,16,15,'except_no'),(5,'english','영어듣기',13,52,13,59,7,'except_no'),(6,'develop','라매개발위한 공부',21,32,22,3,31,'except_no'),(7,'book_reading','최고의 인재는 무엇이 다른가',22,8,22,34,26,'except_no'),(8,'english','영어유튜브',22,40,22,43,3,'except_no'),(9,'english','영어공부법',22,44,22,56,12,'except_no'),(10,'money_study','사색',22,57,23,14,17,'except_no');
+/*!40000 ALTER TABLE `day200514` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200515`
+--
+
+DROP TABLE IF EXISTS `day200515`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200515` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200515`
+--
+
+LOCK TABLES `day200515` WRITE;
+/*!40000 ALTER TABLE `day200515` DISABLE KEYS */;
+INSERT INTO `day200515` VALUES (1,'sleep','수면',23,20,6,5,405,'except'),(2,'exercise','운동',6,36,6,47,11,'except_no'),(3,'english','영어듣기',7,4,7,28,24,'except_no'),(4,'etc','사색',7,29,7,38,9,'except_no'),(5,'develop','라매개발위한공부',7,41,8,45,64,'except_no'),(6,'english','트럼프동기',8,50,8,59,9,'except_no');
+/*!40000 ALTER TABLE `day200515` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200516`
+--
+
+DROP TABLE IF EXISTS `day200516`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200516` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200516`
+--
+
+LOCK TABLES `day200516` WRITE;
+/*!40000 ALTER TABLE `day200516` DISABLE KEYS */;
+INSERT INTO `day200516` VALUES (1,'sleep','수면',1,20,7,40,380,'except'),(2,'develop','라매개발을 위한 공부',20,51,21,37,46,'except_no');
+/*!40000 ALTER TABLE `day200516` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200517`
+--
+
+DROP TABLE IF EXISTS `day200517`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200517` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200517`
+--
+
+LOCK TABLES `day200517` WRITE;
+/*!40000 ALTER TABLE `day200517` DISABLE KEYS */;
+INSERT INTO `day200517` VALUES (1,'sleep','수면',1,0,8,0,420,'except'),(2,'develop',' 라매 express',8,51,10,17,86,'except_no'),(3,'money_study','돈관리',17,27,18,8,41,'except_no'),(4,'money_study','',18,40,18,49,9,'except_no'),(5,'etc','행복과 마음공부',18,50,19,35,45,'except_no'),(6,'etc','인생계획',20,50,22,7,77,'except_no');
+/*!40000 ALTER TABLE `day200517` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200518`
+--
+
+DROP TABLE IF EXISTS `day200518`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200518` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200518`
+--
+
+LOCK TABLES `day200518` WRITE;
+/*!40000 ALTER TABLE `day200518` DISABLE KEYS */;
+INSERT INTO `day200518` VALUES (1,'sleep','수면',23,20,7,19,479,'except'),(2,'exercise','복근',7,45,7,57,12,'except_no'),(4,'english','영어듣기',7,59,8,8,9,'except_no'),(5,'develop','라매개발',8,22,8,58,36,'except_no'),(6,'english','영어듣기',9,2,9,25,23,'except_no'),(7,'english','영어듣기',13,52,13,59,7,'except_no'),(8,'develop','라매 express versionup',22,26,23,20,54,'except_no');
+/*!40000 ALTER TABLE `day200518` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200519`
+--
+
+DROP TABLE IF EXISTS `day200519`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200519` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200519`
+--
+
+LOCK TABLES `day200519` WRITE;
+/*!40000 ALTER TABLE `day200519` DISABLE KEYS */;
+INSERT INTO `day200519` VALUES (1,'sleep','수면',23,40,7,0,440,'except'),(2,'exercise','푸쉬업,숄프',7,36,7,47,11,'except_no'),(3,'english','영어듣기',7,49,8,4,15,'except_no'),(4,'develop','라매개발',8,5,9,33,88,'except_no'),(5,'english','영어듣기',9,40,-1,-1,0,'except_no');
+/*!40000 ALTER TABLE `day200519` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `day200520`
+--
+
+DROP TABLE IF EXISTS `day200520`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `day200520` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `category` varchar(32) NOT NULL,
+  `doing` text NOT NULL,
+  `starth` int NOT NULL,
+  `startm` int NOT NULL,
+  `endh` int DEFAULT NULL,
+  `endm` int DEFAULT NULL,
+  `consume` int NOT NULL,
+  `except_check` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `day200520`
+--
+
+LOCK TABLES `day200520` WRITE;
+/*!40000 ALTER TABLE `day200520` DISABLE KEYS */;
+INSERT INTO `day200520` VALUES (1,'sleep','수면',0,0,6,3,363,'except'),(2,'exercise','풀업스윙',6,10,6,23,13,'except_no'),(3,'english','영어듣기',6,30,6,45,15,'except_no'),(4,'develop','라매개발',7,12,7,44,32,'except_no'),(5,'etc','6시간 잤다가 fail',7,55,8,50,55,'except'),(6,'develop','라매개발',9,6,9,18,12,'except_no'),(7,'develop','라매개발',9,24,9,48,24,'except_no'),(8,'english','영어듣기',9,49,9,53,4,'except_no'),(9,'english','영어듣기',13,53,13,59,6,'except_no'),(10,'develop','라매개발',21,45,-1,-1,0,'except_no');
+/*!40000 ALTER TABLE `day200520` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `develop`
+--
+
+DROP TABLE IF EXISTS `develop`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `develop` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `develop`
+--
+
+LOCK TABLES `develop` WRITE;
+/*!40000 ALTER TABLE `develop` DISABLE KEYS */;
+INSERT INTO `develop` VALUES (200423,160),(200424,59),(200425,334),(200426,30),(200427,56),(200428,145),(200429,54),(200430,65),(200501,0),(200502,0),(200503,0),(200504,34),(200505,243),(200506,130),(200507,48),(200508,38),(200509,159),(200510,67),(200511,128),(200512,147),(200513,223),(200514,125),(200515,64),(200516,46),(200517,86),(200518,90);
+/*!40000 ALTER TABLE `develop` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `english`
+--
+
+DROP TABLE IF EXISTS `english`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `english` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `english`
+--
+
+LOCK TABLES `english` WRITE;
+/*!40000 ALTER TABLE `english` DISABLE KEYS */;
+INSERT INTO `english` VALUES (200423,0),(200424,0),(200425,0),(200426,0),(200427,0),(200428,0),(200429,0),(200430,0),(200501,0),(200502,0),(200503,0),(200504,0),(200505,0),(200506,0),(200507,36),(200508,0),(200509,0),(200510,0),(200511,0),(200512,0),(200513,4),(200514,22),(200515,33),(200516,0),(200517,0),(200518,39);
+/*!40000 ALTER TABLE `english` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `etc`
+--
+
+DROP TABLE IF EXISTS `etc`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `etc` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `etc`
+--
+
+LOCK TABLES `etc` WRITE;
+/*!40000 ALTER TABLE `etc` DISABLE KEYS */;
+INSERT INTO `etc` VALUES (200423,7),(200424,29),(200425,0),(200426,73),(200427,0),(200428,58),(200429,9),(200430,385),(200501,78),(200502,0),(200503,100),(200504,502),(200505,497),(200506,0),(200507,0),(200508,122),(200509,0),(200510,0),(200511,10),(200512,38),(200513,0),(200514,0),(200515,9),(200516,0),(200517,122),(200518,0);
+/*!40000 ALTER TABLE `etc` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `exercise`
+--
+
+DROP TABLE IF EXISTS `exercise`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `exercise` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `exercise`
+--
+
+LOCK TABLES `exercise` WRITE;
+/*!40000 ALTER TABLE `exercise` DISABLE KEYS */;
+INSERT INTO `exercise` VALUES (200423,17),(200424,5),(200425,0),(200426,14),(200427,12),(200428,12),(200429,6),(200430,15),(200501,0),(200502,0),(200503,0),(200504,11),(200505,16),(200506,12),(200507,9),(200508,12),(200509,7),(200510,0),(200511,6),(200512,14),(200513,13),(200514,13),(200515,11),(200516,0),(200517,0),(200518,12);
+/*!40000 ALTER TABLE `exercise` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `money_study`
+--
+
+DROP TABLE IF EXISTS `money_study`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `money_study` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `money_study`
+--
+
+LOCK TABLES `money_study` WRITE;
+/*!40000 ALTER TABLE `money_study` DISABLE KEYS */;
+INSERT INTO `money_study` VALUES (200505,0),(200506,0),(200507,0),(200508,68),(200509,0),(200510,0),(200511,0),(200512,0),(200513,0),(200514,17),(200515,0),(200516,0),(200517,50),(200518,0);
+/*!40000 ALTER TABLE `money_study` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `nap`
+--
+
+DROP TABLE IF EXISTS `nap`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `nap` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `nap`
+--
+
+LOCK TABLES `nap` WRITE;
+/*!40000 ALTER TABLE `nap` DISABLE KEYS */;
+/*!40000 ALTER TABLE `nap` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `study`
+--
+
+DROP TABLE IF EXISTS `study`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `study` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `study`
+--
+
+LOCK TABLES `study` WRITE;
+/*!40000 ALTER TABLE `study` DISABLE KEYS */;
+INSERT INTO `study` VALUES (200423,0),(200424,0),(200425,0),(200426,0),(200427,0),(200428,0),(200429,0),(200430,0),(200501,0),(200502,0),(200503,0),(200504,0),(200505,0),(200506,0),(200507,0),(200508,0),(200509,0),(200510,0),(200511,0),(200512,0),(200513,0),(200514,0),(200515,0),(200516,0),(200517,0),(200518,0);
+/*!40000 ALTER TABLE `study` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `totalrecodes`
+--
+
+DROP TABLE IF EXISTS `totalrecodes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `totalrecodes` (
+  `daykey` int NOT NULL,
+  `year` int NOT NULL,
+  `month` int NOT NULL,
+  `day` int NOT NULL,
+  `sleepstart` varchar(10) DEFAULT NULL,
+  `sleepend` varchar(10) DEFAULT NULL,
+  `sleep` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `totalrecodes`
+--
+
+LOCK TABLES `totalrecodes` WRITE;
+/*!40000 ALTER TABLE `totalrecodes` DISABLE KEYS */;
+INSERT INTO `totalrecodes` VALUES (200423,20,4,23,'23:5','5:57',412,177),(200424,20,4,24,'00:30','5:57',327,64),(200425,20,4,25,'23:10','7:17',487,334),(200426,20,4,26,'01:30','8:33',423,117),(200427,20,4,27,'23:50','07:27',457,68),(200428,20,4,28,'23:000','05:21',381,215),(200429,20,4,29,'22:005','05:22',437,69),(200430,20,4,30,'20:000','07:000',660,105),(200501,20,5,1,'00:00','07:40',460,78),(200502,20,5,2,'01:40','08:30',410,0),(200503,20,5,3,'01:40','09:27',467,100),(200504,20,5,4,'22:20','06:12',472,75),(200505,20,5,5,'23:18','06:56',458,298),(200506,20,5,6,'00:12','06:45',393,180),(200507,20,5,7,'23:50','07:07',437,110),(200508,20,5,8,'23:50','07:19',449,240),(200509,20,5,9,'00:45','08:00',435,190),(200510,20,5,10,'01:50','07:57',367,123),(200511,20,5,11,'00:00','07:58',478,144),(200512,20,5,12,'23:35','07:05',450,199),(200513,20,5,13,'23:40','06:41',421,240),(200514,20,5,14,'23:40','06:35',415,203),(200515,20,5,15,'23:20','06:05',405,117),(200516,20,5,16,'01:20','07:40',380,46),(200517,20,5,17,'01:00','08:00',420,258),(200518,20,5,18,'23:20','07:19',479,141),(200519,20,5,19,'23:40','07:00',440,NULL),(200520,20,5,20,'00:00','06:03',363,NULL);
+/*!40000 ALTER TABLE `totalrecodes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `work`
+--
+
+DROP TABLE IF EXISTS `work`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `work` (
+  `daykey` int NOT NULL,
+  `nicetime` int DEFAULT NULL,
+  PRIMARY KEY (`daykey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `work`
+--
+
+LOCK TABLES `work` WRITE;
+/*!40000 ALTER TABLE `work` DISABLE KEYS */;
+INSERT INTO `work` VALUES (200423,0),(200424,0),(200425,0),(200426,0),(200427,0),(200428,163),(200429,0),(200430,0),(200501,0),(200502,0),(200503,0),(200504,0),(200505,0),(200506,0),(200507,0),(200508,0),(200509,0),(200510,0),(200511,0),(200512,0),(200513,0),(200514,0),(200515,0),(200516,0),(200517,0),(200518,0);
+/*!40000 ALTER TABLE `work` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-05-21  0:45:08
