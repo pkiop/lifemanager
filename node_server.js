@@ -2,7 +2,6 @@ var http = require('http');
 var url = require('url');
 var topic = require('./lib/topic');
 var settings = require('./settings');
-var portnum = settings.port_num;
 var fs = require('fs');
 var session = require('express-session');
 var FileStore = require('session-file-store')(session);

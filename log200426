@@ -1,0 +1,217 @@
+[TAILING] Tailing last 15 lines for [all] processes (change the value with --lines option)
+/Users/parksangshin/.pm2/pm2.log last 15 lines:
+PM2        | 2020-04-26T10:45:07: PM2 log: Node.js version      : 13.13.0
+PM2        | 2020-04-26T10:45:07: PM2 log: Current arch         : x64
+PM2        | 2020-04-26T10:45:07: PM2 log: PM2 home             : /Users/parksangshin/.pm2
+PM2        | 2020-04-26T10:45:07: PM2 log: PM2 PID file         : /Users/parksangshin/.pm2/pm2.pid
+PM2        | 2020-04-26T10:45:07: PM2 log: RPC socket file      : /Users/parksangshin/.pm2/rpc.sock
+PM2        | 2020-04-26T10:45:07: PM2 log: BUS socket file      : /Users/parksangshin/.pm2/pub.sock
+PM2        | 2020-04-26T10:45:07: PM2 log: Application log path : /Users/parksangshin/.pm2/logs
+PM2        | 2020-04-26T10:45:07: PM2 log: Worker Interval      : 30000
+PM2        | 2020-04-26T10:45:07: PM2 log: Process dump file    : /Users/parksangshin/.pm2/dump.pm2
+PM2        | 2020-04-26T10:45:07: PM2 log: Concurrent actions   : 2
+PM2        | 2020-04-26T10:45:07: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2020-04-26T10:45:07: PM2 log: ===============================================================================
+PM2        | 2020-04-26T10:45:07: PM2 log: [Watch] Start watching node_server
+PM2        | 2020-04-26T10:45:07: PM2 log: App [node_server:0] starting in -fork mode-
+PM2        | 2020-04-26T10:45:07: PM2 log: App [node_server:0] online
+
+/Users/parksangshin/.pm2/logs/node-server-error.log last 15 lines:
+0|node_ser | Error: Connection lost: The server closed the connection.
+0|node_ser |     at Protocol.end (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+0|node_ser |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:94:28)
+0|node_ser |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_ser |     at Socket.emit (events.js:327:22)
+0|node_ser |     at endReadableNT (_stream_readable.js:1201:12)
+0|node_ser |     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+0|node_ser |   fatal: true,
+0|node_ser |   code: 'PROTOCOL_CONNECTION_LOST'
+0|node_ser | }
+
+/Users/parksangshin/.pm2/logs/node-server-out.log last 15 lines:
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+
+PM2      | Change detected on path log200426 for app node_server - restarting
+PM2      | Stopping app:node_server id:0
+PM2      | App [node_server:0] exited with code [0] via signal [SIGINT]
+PM2      | pid=13280 msg=process killed
+PM2      | App [node_server:0] starting in -fork mode-
+PM2      | App [node_server:0] online
+PM2      | Change detected on path logstart200425.txt for app node_server - restarting
+PM2      | Stopping app:node_server id:0
+PM2      | App [node_server:0] exited with code [0] via signal [SIGINT]
+PM2      | pid=13301 msg=process killed
+PM2      | App [node_server:0] starting in -fork mode-
+PM2      | App [node_server:0] online
+PM2      | Change detected on path logstart200425.txt for app node_server - restarting
+PM2      | Stopping app:node_server id:0
+PM2      | App [node_server:0] exited with code [0] via signal [SIGINT]
+PM2      | pid=13322 msg=process killed
+PM2      | App [node_server:0] starting in -fork mode-
+PM2      | App [node_server:0] online
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  null
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  null
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  null
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  null
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  null
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | Error: Connection lost: The server closed the connection.
+0|node_server  |     at Protocol.end (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:94:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:327:22)
+0|node_server  |     at endReadableNT (_stream_readable.js:1201:12)
+0|node_server  |     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+0|node_server  |   fatal: true,
+0|node_server  |   code: 'PROTOCOL_CONNECTION_LOST'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: Connection lost: The server closed the connection.
+0|node_server  |     at Protocol.end (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:94:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:327:22)
+0|node_server  |     at endReadableNT (_stream_readable.js:1201:12)
+0|node_server  |     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+0|node_server  |   fatal: true,
+0|node_server  |   code: 'PROTOCOL_CONNECTION_LOST'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | time :  23
+0|node_server  | time :  50
+0|node_server  | time :  7
+0|node_server  | time :  27
+0|node_server  | Error: Connection lost: The server closed the connection.
+0|node_server  |     at Protocol.end (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:94:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:327:22)
+0|node_server  |     at endReadableNT (_stream_readable.js:1201:12)
+0|node_server  |     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+0|node_server  |   fatal: true,
+0|node_server  |   code: 'PROTOCOL_CONNECTION_LOST'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  null
+0|node_server  | 4  : nicetime is  null
+PM2            | Change detected on path myfile for app node_server - restarting
+PM2            | Stopping app:node_server id:0
+PM2            | App [node_server:0] exited with code [0] via signal [SIGINT]
+PM2            | pid=17529 msg=process killed
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+PM2            | Change detected on path myfile for app node_server - restarting
+PM2            | Stopping app:node_server id:0
+PM2            | App [node_server:0] exited with code [0] via signal [SIGINT]
+PM2            | pid=18550 msg=process killed
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+PM2            | Change detected on path lib/template.js for app node_server - restarting
+PM2            | Stopping app:node_server id:0
+PM2            | App [node_server:0] exited with code [0] via signal [SIGINT]
+PM2            | pid=18926 msg=process killed
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  null
+0|node_server  | 4  : nicetime is  68
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  117
+0|node_server  | 4  : nicetime is  68
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | time :  23
+0|node_server  | time :  00
+0|node_server  | time :  5
+0|node_server  | time :  21
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  3001
+0|node_server  | title is  <p><p>라매
+0|node_server  | 0  : nicetime is  177
+0|node_server  | 1  : nicetime is  64
+0|node_server  | 2  : nicetime is  334
+0|node_server  | 3  : nicetime is  117
+0|node_server  | 4  : nicetime is  68
+0|node_server  | 5  : nicetime is  null

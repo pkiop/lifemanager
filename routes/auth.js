@@ -5,7 +5,7 @@ var fs = require('fs');
 var sanitizeHtml = require('sanitize-html');
 var template = require('../lib/template.js');
 var shortid = require('shortid');
-var db = require('../lib/db');
+var lowdb = require('../lib/lowdb');
 var bcrypt = require('bcrypt');
 
 module.exports = function (passport) {
@@ -61,6 +61,7 @@ module.exports = function (passport) {
   });
 
   router.post('/register_process', function (request, response) {
+    console.log('\n\n\n\nsdfgregister process in^^&&');
     var post = request.body;
     var email = post.email;
     var pwd = post.pwd;
@@ -71,13 +72,13 @@ module.exports = function (passport) {
       response.redirect('/auth/register');
     } else {
       bcrypt.hash(pwd, 10, function (err, hash) {
-        var user = db.get('users').find({
+        var user = lowdb.get('users').find({
           email: email
         }).value();
         if (user) {
           user.password = hash;
           user.displayName = displayName;
-          db.get('users').find({id:user.id}).assign(user).write();
+          lowdb.get('users').find({id:user.id}).assign(user).write();
         } else {
           var user = {
             id: shortid.generate(),
@@ -85,10 +86,11 @@ module.exports = function (passport) {
             password: hash,
             displayName: displayName
           };
-          db.get('users').push(user).write();
+          lowdb.get('users').push(user).write();
         }
-
+        console.log("&&&&\n\n\n&&&&request login");
         request.login(user, function (err) {
+          console.log(err);
           console.log('redirect');
           return response.redirect('/');
         })

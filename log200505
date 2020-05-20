@@ -1,0 +1,2251 @@
+[TAILING] Tailing last 15 lines for [all] processes (change the value with --lines option)
+/Users/parksangshin/.pm2/pm2.log last 15 lines:
+PM2        | 2020-05-05T13:02:58: PM2 log: PM2 PID file         : /Users/parksangshin/.pm2/pm2.pid
+PM2        | 2020-05-05T13:02:58: PM2 log: RPC socket file      : /Users/parksangshin/.pm2/rpc.sock
+PM2        | 2020-05-05T13:02:58: PM2 log: BUS socket file      : /Users/parksangshin/.pm2/pub.sock
+PM2        | 2020-05-05T13:02:58: PM2 log: Application log path : /Users/parksangshin/.pm2/logs
+PM2        | 2020-05-05T13:02:58: PM2 log: Worker Interval      : 30000
+PM2        | 2020-05-05T13:02:58: PM2 log: Process dump file    : /Users/parksangshin/.pm2/dump.pm2
+PM2        | 2020-05-05T13:02:58: PM2 log: Concurrent actions   : 2
+PM2        | 2020-05-05T13:02:58: PM2 log: SIGTERM timeout      : 1600
+PM2        | 2020-05-05T13:02:58: PM2 log: ===============================================================================
+PM2        | 2020-05-05T13:02:58: PM2 log: [Watch] Start watching node_server
+PM2        | 2020-05-05T13:02:58: PM2 log: App [node_server:0] starting in -fork mode-
+PM2        | 2020-05-05T13:02:58: PM2 log: App [node_server:0] online
+PM2        | 2020-05-05T13:03:09: PM2 log: Change detected on path log200505 for app node_server - restarting
+PM2        | 2020-05-05T13:03:09: PM2 log: Stopping app:node_server id:0
+PM2        | 2020-05-05T13:03:09: PM2 log: App [node_server:0] exited with code [0] via signal [SIGINT]
+
+/Users/parksangshin/.pm2/logs/node-server-error.log last 15 lines:
+0|node_ser |     at endReadableNT (_stream_readable.js:1201:12)
+0|node_ser |     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+0|node_ser |   fatal: true,
+0|node_ser |   code: 'PROTOCOL_CONNECTION_LOST'
+0|node_ser | }
+0|node_ser | Error: Connection lost: The server closed the connection.
+0|node_ser |     at Protocol.end (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+0|node_ser |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:94:28)
+0|node_ser |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_ser |     at Socket.emit (events.js:327:22)
+0|node_ser |     at endReadableNT (_stream_readable.js:1201:12)
+0|node_ser |     at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+0|node_ser |   fatal: true,
+0|node_ser |   code: 'PROTOCOL_CONNECTION_LOST'
+0|node_ser | }
+
+/Users/parksangshin/.pm2/logs/node-server-out.log last 15 lines:
+0|node_ser | 23
+0|node_ser | 18
+0|node_ser | 18
+0|node_ser | 6
+0|node_ser | 6
+0|node_ser | 56
+0|node_ser | 56
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  3001
+0|node_ser | title is  <p><p>라매
+
+PM2      | App [node_server:0] online
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200423,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 23,
+0|node_server  |   sleepstart: '23:5',
+0|node_server  |   sleepend: '5:57',
+0|node_server  |   sleep: 412,
+0|node_server  |   nicetime: 177
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200424,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 24,
+0|node_server  |   sleepstart: '00:30',
+0|node_server  |   sleepend: '5:57',
+0|node_server  |   sleep: 327,
+0|node_server  |   nicetime: 64
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200425,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 25,
+0|node_server  |   sleepstart: '23:10',
+0|node_server  |   sleepend: '7:17',
+0|node_server  |   sleep: 487,
+0|node_server  |   nicetime: 334
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200426,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 26,
+0|node_server  |   sleepstart: '01:30',
+0|node_server  |   sleepend: '8:33',
+0|node_server  |   sleep: 423,
+0|node_server  |   nicetime: 117
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200427,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 27,
+0|node_server  |   sleepstart: '23:50',
+0|node_server  |   sleepend: '07:27',
+0|node_server  |   sleep: 457,
+0|node_server  |   nicetime: 68
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200428,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 28,
+0|node_server  |   sleepstart: '23:000',
+0|node_server  |   sleepend: '05:21',
+0|node_server  |   sleep: 381,
+0|node_server  |   nicetime: 215
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200429,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 29,
+0|node_server  |   sleepstart: '22:005',
+0|node_server  |   sleepend: '05:22',
+0|node_server  |   sleep: 437,
+0|node_server  |   nicetime: 69
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200430,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 30,
+0|node_server  |   sleepstart: '20:000',
+0|node_server  |   sleepend: '07:000',
+0|node_server  |   sleep: 660,
+0|node_server  |   nicetime: 105
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200501,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 1,
+0|node_server  |   sleepstart: '00:00',
+0|node_server  |   sleepend: '07:40',
+0|node_server  |   sleep: 460,
+0|node_server  |   nicetime: 78
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200502,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 2,
+0|node_server  |   sleepstart: '01:40',
+0|node_server  |   sleepend: '08:30',
+0|node_server  |   sleep: 410,
+0|node_server  |   nicetime: 0
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200503,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 3,
+0|node_server  |   sleepstart: '01:40',
+0|node_server  |   sleepend: '09:27',
+0|node_server  |   sleep: 467,
+0|node_server  |   nicetime: 100
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200504,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 4,
+0|node_server  |   sleepstart: '22:20',
+0|node_server  |   sleepend: '06:12',
+0|node_server  |   sleep: 472,
+0|node_server  |   nicetime: 75
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200505,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 5,
+0|node_server  |   sleepstart: '23:18',
+0|node_server  |   sleepend: '06:56',
+0|node_server  |   sleep: 458,
+0|node_server  |   nicetime: null
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200423,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 23,
+0|node_server  |   sleepstart: '23:5',
+0|node_server  |   sleepend: '5:57',
+0|node_server  |   sleep: 412,
+0|node_server  |   nicetime: 177
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200424,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 24,
+0|node_server  |   sleepstart: '00:30',
+0|node_server  |   sleepend: '5:57',
+0|node_server  |   sleep: 327,
+0|node_server  |   nicetime: 64
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200425,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 25,
+0|node_server  |   sleepstart: '23:10',
+0|node_server  |   sleepend: '7:17',
+0|node_server  |   sleep: 487,
+0|node_server  |   nicetime: 334
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200426,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 26,
+0|node_server  |   sleepstart: '01:30',
+0|node_server  |   sleepend: '8:33',
+0|node_server  |   sleep: 423,
+0|node_server  |   nicetime: 117
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200427,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 27,
+0|node_server  |   sleepstart: '23:50',
+0|node_server  |   sleepend: '07:27',
+0|node_server  |   sleep: 457,
+0|node_server  |   nicetime: 68
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200428,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 28,
+0|node_server  |   sleepstart: '23:000',
+0|node_server  |   sleepend: '05:21',
+0|node_server  |   sleep: 381,
+0|node_server  |   nicetime: 215
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200429,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 29,
+0|node_server  |   sleepstart: '22:005',
+0|node_server  |   sleepend: '05:22',
+0|node_server  |   sleep: 437,
+0|node_server  |   nicetime: 69
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200430,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 30,
+0|node_server  |   sleepstart: '20:000',
+0|node_server  |   sleepend: '07:000',
+0|node_server  |   sleep: 660,
+0|node_server  |   nicetime: 105
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200501,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 1,
+0|node_server  |   sleepstart: '00:00',
+0|node_server  |   sleepend: '07:40',
+0|node_server  |   sleep: 460,
+0|node_server  |   nicetime: 78
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200502,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 2,
+0|node_server  |   sleepstart: '01:40',
+0|node_server  |   sleepend: '08:30',
+0|node_server  |   sleep: 410,
+0|node_server  |   nicetime: 0
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200503,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 3,
+0|node_server  |   sleepstart: '01:40',
+0|node_server  |   sleepend: '09:27',
+0|node_server  |   sleep: 467,
+0|node_server  |   nicetime: 100
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200504,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 4,
+0|node_server  |   sleepstart: '22:20',
+0|node_server  |   sleepend: '06:12',
+0|node_server  |   sleep: 472,
+0|node_server  |   nicetime: 75
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200505,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 5,
+0|node_server  |   sleepstart: '23:18',
+0|node_server  |   sleepend: '06:56',
+0|node_server  |   sleep: 458,
+0|node_server  |   nicetime: null
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200423,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 23,
+0|node_server  |   sleepstart: '23:5',
+0|node_server  |   sleepend: '5:57',
+0|node_server  |   sleep: 412,
+0|node_server  |   nicetime: 177
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200424,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 24,
+0|node_server  |   sleepstart: '00:30',
+0|node_server  |   sleepend: '5:57',
+0|node_server  |   sleep: 327,
+0|node_server  |   nicetime: 64
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200425,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 25,
+0|node_server  |   sleepstart: '23:10',
+0|node_server  |   sleepend: '7:17',
+0|node_server  |   sleep: 487,
+0|node_server  |   nicetime: 334
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200426,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 26,
+0|node_server  |   sleepstart: '01:30',
+0|node_server  |   sleepend: '8:33',
+0|node_server  |   sleep: 423,
+0|node_server  |   nicetime: 117
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200427,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 27,
+0|node_server  |   sleepstart: '23:50',
+0|node_server  |   sleepend: '07:27',
+0|node_server  |   sleep: 457,
+0|node_server  |   nicetime: 68
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200428,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 28,
+0|node_server  |   sleepstart: '23:000',
+0|node_server  |   sleepend: '05:21',
+0|node_server  |   sleep: 381,
+0|node_server  |   nicetime: 215
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200429,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 29,
+0|node_server  |   sleepstart: '22:005',
+0|node_server  |   sleepend: '05:22',
+0|node_server  |   sleep: 437,
+0|node_server  |   nicetime: 69
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200430,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 30,
+0|node_server  |   sleepstart: '20:000',
+0|node_server  |   sleepend: '07:000',
+0|node_server  |   sleep: 660,
+0|node_server  |   nicetime: 105
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200501,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 1,
+0|node_server  |   sleepstart: '00:00',
+0|node_server  |   sleepend: '07:40',
+0|node_server  |   sleep: 460,
+0|node_server  |   nicetime: 78
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200502,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 2,
+0|node_server  |   sleepstart: '01:40',
+0|node_server  |   sleepend: '08:30',
+0|node_server  |   sleep: 410,
+0|node_server  |   nicetime: 0
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200503,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 3,
+0|node_server  |   sleepstart: '01:40',
+0|node_server  |   sleepend: '09:27',
+0|node_server  |   sleep: 467,
+0|node_server  |   nicetime: 100
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200504,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 4,
+0|node_server  |   sleepstart: '22:20',
+0|node_server  |   sleepend: '06:12',
+0|node_server  |   sleep: 472,
+0|node_server  |   nicetime: 75
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200505,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 5,
+0|node_server  |   sleepstart: '23:18',
+0|node_server  |   sleepend: '06:56',
+0|node_server  |   sleep: 458,
+0|node_server  |   nicetime: null
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200423,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 23,
+0|node_server  |   sleepstart: '23:5',
+0|node_server  |   sleepend: '5:57',
+0|node_server  |   sleep: 412,
+0|node_server  |   nicetime: 177
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200424,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 24,
+0|node_server  |   sleepstart: '00:30',
+0|node_server  |   sleepend: '5:57',
+0|node_server  |   sleep: 327,
+0|node_server  |   nicetime: 64
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200425,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 25,
+0|node_server  |   sleepstart: '23:10',
+0|node_server  |   sleepend: '7:17',
+0|node_server  |   sleep: 487,
+0|node_server  |   nicetime: 334
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200426,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 26,
+0|node_server  |   sleepstart: '01:30',
+0|node_server  |   sleepend: '8:33',
+0|node_server  |   sleep: 423,
+0|node_server  |   nicetime: 117
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200427,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 27,
+0|node_server  |   sleepstart: '23:50',
+0|node_server  |   sleepend: '07:27',
+0|node_server  |   sleep: 457,
+0|node_server  |   nicetime: 68
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200428,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 28,
+0|node_server  |   sleepstart: '23:000',
+0|node_server  |   sleepend: '05:21',
+0|node_server  |   sleep: 381,
+0|node_server  |   nicetime: 215
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200429,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 29,
+0|node_server  |   sleepstart: '22:005',
+0|node_server  |   sleepend: '05:22',
+0|node_server  |   sleep: 437,
+0|node_server  |   nicetime: 69
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200430,
+0|node_server  |   year: 20,
+0|node_server  |   month: 4,
+0|node_server  |   day: 30,
+0|node_server  |   sleepstart: '20:000',
+0|node_server  |   sleepend: '07:000',
+0|node_server  |   sleep: 660,
+0|node_server  |   nicetime: 105
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200501,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 1,
+0|node_server  |   sleepstart: '00:00',
+0|node_server  |   sleepend: '07:40',
+0|node_server  |   sleep: 460,
+0|node_server  |   nicetime: 78
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200502,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 2,
+0|node_server  |   sleepstart: '01:40',
+0|node_server  |   sleepend: '08:30',
+0|node_server  |   sleep: 410,
+0|node_server  |   nicetime: 0
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200503,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 3,
+0|node_server  |   sleepstart: '01:40',
+0|node_server  |   sleepend: '09:27',
+0|node_server  |   sleep: 467,
+0|node_server  |   nicetime: 100
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200504,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 4,
+0|node_server  |   sleepstart: '22:20',
+0|node_server  |   sleepend: '06:12',
+0|node_server  |   sleep: 472,
+0|node_server  |   nicetime: 75
+0|node_server  | }
+0|node_server  | RowDataPacket {
+0|node_server  |   daykey: 200505,
+0|node_server  |   year: 20,
+0|node_server  |   month: 5,
+0|node_server  |   day: 5,
+0|node_server  |   sleepstart: '23:18',
+0|node_server  |   sleepend: '06:56',
+0|node_server  |   sleep: 458,
+0|node_server  |   nicetime: null
+0|node_server  | }
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+0|node_server  | port num is  80
+0|node_server  | title is  <p><p>라매
+PM2            | Change detected on path lib/db.js for app node_server - restarting
+PM2            | Stopping app:node_server id:0
+PM2            | App [node_server:0] exited with code [0] via signal [SIGINT]
+PM2            | pid=47254 msg=process killed
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | Script /Users/parksangshin/gitcodes/lifemanager/node_server.js had too many unstable restarts (16). Stopped. "errored"
+PM2            | Change detected on path sample/chartfeature.html for app node_server - restarting
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | Script /Users/parksangshin/gitcodes/lifemanager/node_server.js had too many unstable restarts (16). Stopped. "errored"
+PM2            | Change detected on path settings.js for app node_server - restarting
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+PM2            | Change detected on path settings.js for app node_server - restarting
+PM2            | Stopping app:node_server id:0
+PM2            | App [node_server:0] exited with code [0] via signal [SIGINT]
+PM2            | pid=49309 msg=process killed
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: ER_BAD_DB_ERROR: Unknown database 'test_lifemanager'
+0|node_server  |     at Handshake.Sequence._packetToError (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+0|node_server  |     at Handshake.ErrorPacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10)
+0|node_server  |     at Socket.emit (events.js:315:20)
+0|node_server  |     at addChunk (_stream_readable.js:297:12)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   code: 'ER_BAD_DB_ERROR',
+0|node_server  |   errno: 1049,
+0|node_server  |   sqlMessage: "Unknown database 'test_lifemanager'",
+0|node_server  |   sqlState: '42000',
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | Script /Users/parksangshin/gitcodes/lifemanager/node_server.js had too many unstable restarts (16). Stopped. "errored"

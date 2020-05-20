@@ -1,0 +1,1047 @@
+[TAILING] Tailing last 15 lines for [all] processes (change the value with --lines option)
+/Users/parksangshin/.pm2/pm2.log last 15 lines:
+PM2        | 2020-05-07T21:24:24: PM2 log: App [node_server:0] online
+PM2        | 2020-05-07T21:24:24: PM2 log: App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2        | 2020-05-07T21:24:24: PM2 log: App [node_server:0] starting in -fork mode-
+PM2        | 2020-05-07T21:24:24: PM2 log: App [node_server:0] online
+PM2        | 2020-05-07T21:24:24: PM2 log: App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2        | 2020-05-07T21:24:24: PM2 log: App [node_server:0] starting in -fork mode-
+PM2        | 2020-05-07T21:24:24: PM2 log: App [node_server:0] online
+PM2        | 2020-05-07T21:24:25: PM2 log: App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2        | 2020-05-07T21:24:25: PM2 log: App [node_server:0] starting in -fork mode-
+PM2        | 2020-05-07T21:24:25: PM2 log: App [node_server:0] online
+PM2        | 2020-05-07T21:24:25: PM2 log: App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2        | 2020-05-07T21:24:25: PM2 log: Script /Users/parksangshin/gitcodes/lifemanager/node_server.js had too many unstable restarts (16). Stopped. "errored"
+PM2        | 2020-05-07T21:24:29: PM2 log: Change detected on path log200507 for app node_server - restarting
+PM2        | 2020-05-07T21:24:29: PM2 log: App [node_server:0] starting in -fork mode-
+PM2        | 2020-05-07T21:24:29: PM2 log: App [node_server:0] online
+
+/Users/parksangshin/.pm2/logs/node-server-out.log last 15 lines:
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  80
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  80
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  80
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  80
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  80
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  80
+0|node_ser | title is  <p><p>라매
+0|node_ser | port num is  80
+0|node_ser | title is  <p><p>라매
+
+/Users/parksangshin/.pm2/logs/node-server-error.log last 15 lines:
+0|node_ser |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_ser |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_ser |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_ser |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_ser |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_ser |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_ser |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_ser |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_ser |   errno: -61,
+0|node_ser |   code: 'ECONNREFUSED',
+0|node_ser |   syscall: 'connect',
+0|node_ser |   address: '127.0.0.1',
+0|node_ser |   port: 3306,
+0|node_ser |   fatal: true
+0|node_ser | }
+
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | Script /Users/parksangshin/gitcodes/lifemanager/node_server.js had too many unstable restarts (16). Stopped. "errored"
+PM2            | Change detected on path settings.js for app node_server - restarting
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | Error: connect ECONNREFUSED 127.0.0.1:3306
+0|node_server  |     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+0|node_server  |     --------------------
+0|node_server  |     at Protocol._enqueue (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+0|node_server  |     at Protocol.handshake (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+0|node_server  |     at Connection.connect (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:116:18)
+0|node_server  |     at Object.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/lib/db.js:10:6)
+0|node_server  |     at Module._compile (internal/modules/cjs/loader.js:1123:30)
+0|node_server  |     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1143:10)
+0|node_server  |     at Module.load (internal/modules/cjs/loader.js:972:32)
+0|node_server  |     at Function.Module._load (internal/modules/cjs/loader.js:872:14)
+0|node_server  |     at Module.require (internal/modules/cjs/loader.js:1012:19)
+0|node_server  |     at Module.Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:80:39) {
+0|node_server  |   errno: -61,
+0|node_server  |   code: 'ECONNREFUSED',
+0|node_server  |   syscall: 'connect',
+0|node_server  |   address: '127.0.0.1',
+0|node_server  |   port: 3306,
+0|node_server  |   fatal: true
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | Script /Users/parksangshin/gitcodes/lifemanager/node_server.js had too many unstable restarts (16). Stopped. "errored"
+PM2            | Change detected on path lib/db.js for app node_server - restarting
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | App [node_server:0] starting in -fork mode-
+PM2            | App [node_server:0] online
+0|node_server  | RangeError [ERR_OUT_OF_RANGE]: The value of "sourceStart" is out of range. It must be <= 9. Received 13
+0|node_server  |     at _copy (buffer.js:236:11)
+0|node_server  |     at Buffer.copy (buffer.js:764:12)
+0|node_server  |     at Parser.parseBuffer (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:272:16)
+0|node_server  |     at HandshakeInitializationPacket.parse (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js:34:37)
+0|node_server  |     at Protocol._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:272:12)
+0|node_server  |     at Parser._parsePacket (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:433:10)
+0|node_server  |     at Parser.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Parser.js:43:10)
+0|node_server  |     at Protocol.write (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:88:28)
+0|node_server  |     at Socket.<anonymous> (/Users/parksangshin/gitcodes/lifemanager/node_modules/mysql/lib/Connection.js:526:10) {
+0|node_server  |   code: 'ERR_OUT_OF_RANGE'
+0|node_server  | }
+PM2            | App [node_server:0] exited with code [1] via signal [SIGINT]
+PM2            | Script /Users/parksangshin/gitcodes/lifemanager/node_server.js had too many unstable restarts (16). Stopped. "errored"
