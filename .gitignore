@@ -1,6 +1,6 @@
-/node_modules
-/setting.js
-/lib/db.js
-/config/google.json
-/lowdb.json
-/sessions
+node_modules
+setting.js
+lib/db.js
+config/google.json
+lowdb.json
+sessions
