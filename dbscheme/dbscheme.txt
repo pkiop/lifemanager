@@ -1,0 +1,106 @@
+db 생성
+
+
+
+DB 이름 test_lifemanager
+day table 생성
+
+CREATE TABLE day000002 (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    category VARCHAR(32) NOT NULL,
+    doing text NOT NULL,
+    starth INT NOT NULL,
+    startm INT NOT NULL,
+    endh INT,
+    endm INT,
+    consume INT,
+    except_check VARCHAR(32) NOT NULL
+)
+
+
+INSERT INTO day
+
+dfasdfasdfasdfasdf
+
+https://medium.com/harrythegreat/node-js%EC%97%90%EC%84%9C-request-js-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-28744c52f68d
+
+
+CREATE TABLE work (
+  daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+CREATE TABLE etc (
+  daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+CREATE TABLE develop (
+  daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+CREATE TABLE study (
+  daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+CREATE TABLE book_reading (
+  daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+
+CREATE TABLE exercise (
+  daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+
+
+CREATE TABLE english (
+  daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+CREATE TABLE Chinese (
+  daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+CREATE TABLE nap (
+    daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+CREATE TABLE money_study (
+    daykey INT PRIMARY KEY NOT NULL,
+  nicetime INT
+);
+
+DROP TABLE develop;
+DROP TABLE work;
+DROP TABLE etc;
+DROP TABLE exercise;
+DROP TABLE nap;
+DROP TABLE book_reading;
+DROP TABLE Chinese;
+DROP TABLE English;
+DROP TABLE study;
+DROP TABLE money_study;
+
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 
+
+
+---------------------------------------------------------------------------
+
+modal 활용quick select DB
+
+CREATE TABLE quickSelect (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    doing text NOT NULL,
+    category VARCHAR(32) NOT NULL,
+    except_check VARCHAR(32) NOT NULL
+); 
+
+INSERT INTO quickSelect (doing, category, except_check) VALUES ("라매개발", "develop", "except_no");
+INSERT INTO quickSelect (doing, category, except_check) VALUES ("영어듣기", "english", "except_no");
+INSERT INTO quickSelect (doing, category, except_check) VALUES ("낮잠자기", "etc", "except");
+
+
+ INSERT INTO 테이블이름(필드이름1, 필드이름2, 필드이름3, ...)
+
+   VALUES (데이터값1, 데이터값2, 데이터값3, ...)

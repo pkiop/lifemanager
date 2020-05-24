@@ -4,5 +4,4 @@ module.exports = {
     watch: '.',
     ignore_watch: ['./lowdb.json']
   }, ],
-
 };
