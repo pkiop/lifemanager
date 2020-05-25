@@ -58,6 +58,10 @@ router.post('/interval_process', function(req, res){
 router.get('/showcategory', function(req, res) {
     topic.showcategory(req, res);
 });
+router.post('/QSadd_process', function(req, res) {
+    console.log("QSaddres : ", res.post);
+    topic.QSadd_process(req, res);
+});
 router.get('/category_process', function(req, res){
     var _url = req.url;
     var queryData = url.parse(_url, true).query;
