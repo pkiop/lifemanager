@@ -1,5 +1,5 @@
 # lifemanager
-.
+
 
 ##
 
