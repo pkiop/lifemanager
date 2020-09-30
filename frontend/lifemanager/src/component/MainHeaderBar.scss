@@ -1,0 +1,13 @@
+.MainHeaderBar {
+  $headerBarHeight: 60px;
+  background-color: #2E4B73;
+  height: $headerBarHeight;
+
+  .MainHeaderBar-logo {
+    $logoSize: $headerBarHeight * 3 / 4;
+    width: $logoSize;
+    height: $logoSize;
+    margin: $headerBarHeight / 8;
+    border-radius: $logoSize/2;
+  }
+}
