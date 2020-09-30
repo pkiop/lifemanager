@@ -1,0 +1,29 @@
+.MainHeaderBar {
+  $headerBarHeight: 60px;
+  background-color: #2E4B73;
+  height: $headerBarHeight;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .MainHeaderBar-logo {
+    $logoSize: $headerBarHeight * 3 / 4;
+    width: $logoSize;
+    height: $logoSize;
+    margin: $headerBarHeight / 8;
+    border-radius: $logoSize / 2;
+  }
+
+  .MainHeaderBar-MenuButton {
+    & > button {
+      border: 1px solid skyblue;
+      background-color: rgba(0,0,0,0); 
+      color: skyblue;
+      padding: 5px;
+    }
+  }
+
+  .MainHeaderBar-CentorClock {
+    color: white;
+  }
+}
