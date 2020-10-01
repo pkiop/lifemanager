@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../MainHeaderBar.scss';
 
 class CentorClock extends Component {
 
