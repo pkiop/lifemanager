@@ -14,6 +14,11 @@
     border-radius: $logoSize / 2;
   }
 
+  .MainHeaderBar-CentorClock {
+    color: white;
+    font-weight: 600;
+  }
+  
   .MainHeaderBar-MenuButton {
     & > button {
       border: 1px solid skyblue;
@@ -23,7 +28,5 @@
     }
   }
 
-  .MainHeaderBar-CentorClock {
-    color: white;
-  }
+  
 }
