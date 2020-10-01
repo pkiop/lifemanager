@@ -31,12 +31,15 @@ class Menu extends Component {
       return <MenuContent 
         MenuName = {el.MenuName}
         MenuLink = {el.MenuLink}
+        isClicked = {this.props.isClicked}
         key = {this.id++}
       />
     })
 
+    const containHiddenInfoClassName = (this.props.isClicked ? "" : "hidden ") + "MainHeaderMenu";
+
     return (
-      <div className="MainHeaderMenu">
+      <div className={containHiddenInfoClassName}>
         {list}
       </div>
     );

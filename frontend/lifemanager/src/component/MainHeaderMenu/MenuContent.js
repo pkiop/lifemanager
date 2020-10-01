@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 
 class MenuContent extends Component {
   render() {
+
+    const containHiddenInfoClassName = "MainHeaderMenu-MenuContent";
     return (
-      <div className="MainHeaderMenu-MenuContent">
+      <div className={containHiddenInfoClassName}>
         <a href={this.props.MenuLink}>{this.props.MenuName}</a>
       </div>
     );

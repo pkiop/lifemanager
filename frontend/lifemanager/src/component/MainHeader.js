@@ -24,9 +24,9 @@ class MainHeader extends Component {
         <div className="MainHeaderBar">
           <img className="MainHeaderBar-logo" src={LifemanagerMainLogo} alt="logo"></img>
           <CentorClock></CentorClock>
-          <MenuButton ={this.handleToggleMenuClicked}></MenuButton>
+          <MenuButton onClick={this.handleToggleMenuClicked}></MenuButton>
         </div>
-        {this.state.menuClicked ? <Menu></Menu> : ''}
+        <Menu isClicked={this.state.menuClicked}></Menu>
       </div>
     );
   }
