@@ -22,9 +22,16 @@
   .MainHeaderBar-MenuButton {
     & > button {
       border: 1px solid skyblue;
-      background-color: rgba(0,0,0,0); 
+      background-color: rgba(0,0,0,1); 
       color: skyblue;
       padding: 5px;
+    }
+
+    & > img {
+      padding: 2px 4px;
+      margin: $headerBarHeight / 8;
+      border: 1px solid rgba(255,255,255, 0.4);
+      border-radius: 4px;
     }
   }
 
