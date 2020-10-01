@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class MenuContent extends Component {
   render() {
     return (
-      <div className="MainHeaderBar-MenuContent">
+      <div className="MainHeaderMenu-MenuContent">
         <a href={this.props.MenuLink}>{this.props.MenuName}</a>
       </div>
     );

@@ -38,9 +38,21 @@
     }
   
   }
-  .MainHeaderBar-MenuContent {
+
+  .MainHeaderMenu {
     background-color:$headerMainColor;
-    // background-color: red;
+    padding: 10px 20px;
+    .MainHeaderMenu-MenuContent {
+      padding:10px 0px;
+      // background-color: red;
+      & a {
+        display:block;
+      }
+      & :hover {
+        font-weight: 600;
+      }
+      cursor:pointer;
+    }
   }
 }
 

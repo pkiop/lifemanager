@@ -6,34 +6,37 @@ class Menu extends Component {
   state = {
     MenuList: [
       {
-        MenuName: 'A',
+        MenuName: '1번메뉴',
         MenuLink: '#',
       },
       {
-        MenuName: 'B',
+        MenuName: '2번메뉴',
         MenuLink: '#',
       },
       {
-        MenuName: 'C',
+        MenuName: '3번메뉴',
         MenuLink: '#',
       },
       {
-        MenuName: 'D',
+        MenuName: '4번메뉴',
         MenuLink: '#',
       },
     ]
-  }
+  };
+
+  id = 0;
 
   render() {
     const list = this.state.MenuList.map(el => {
-      return <MenuContent className="MainHeaderBar-MenuContent"
+      return <MenuContent 
         MenuName = {el.MenuName}
         MenuLink = {el.MenuLink}
+        key = {this.id++}
       />
     })
 
     return (
-      <div>
+      <div className="MainHeaderMenu">
         {list}
       </div>
     );

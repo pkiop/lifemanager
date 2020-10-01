@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component  } from 'react';
 import './MainHeader.scss';
 import LifemanagerMainLogo from '../image/LifemanagerMainLogo.png';
 import CentorClock from './MainHeaderBar/CentorClock';
@@ -7,15 +7,26 @@ import Menu from './MainHeaderMenu/Menu';
 
 
 class MainHeader extends Component {
+
+  state = {
+    menuClicked: false
+  }
+
+  handleToggleMenuClicked = () => {
+    this.setState({
+      menuClicked: !this.state.menuClicked 
+    })
+  }
+  
   render() {
     return (
       <div className="MainHeader">
         <div className="MainHeaderBar">
           <img className="MainHeaderBar-logo" src={LifemanagerMainLogo} alt="logo"></img>
           <CentorClock></CentorClock>
-          <MenuButton></MenuButton>
+          <MenuButton ={this.handleToggleMenuClicked}></MenuButton>
         </div>
-        <Menu></Menu>
+        {this.state.menuClicked ? <Menu></Menu> : ''}
       </div>
     );
   }
