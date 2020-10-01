@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../MainHeaderBar.scss';
-import HeaderMenu from '../../image/headerMenu.svg';
+import HeaderMenuBtnImg from '../../image/headerMenuBtn.svg';
 class MenuButton extends Component {
   render() {
     return (
       <div className="MainHeaderBar-MenuButton">
-        <img src={HeaderMenu} alt="HeaderMenu"></img>
+        <img src={HeaderMenuBtnImg} alt="HeaderMenu"></img>
       </div>
     );
   }
