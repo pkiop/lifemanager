@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../MainHeaderBar.scss';
 
 class CentorClock extends Component {
 
@@ -57,7 +56,7 @@ class CentorClock extends Component {
     sec = this.addZeroForTime(sec);
     min = this.addZeroForTime(min);
     hour = this.addZeroForTime(hour);
-   
+    
     this.setState({
       hour: hour,
       min: min,
@@ -68,7 +67,9 @@ class CentorClock extends Component {
   render() {
     return (
       <div className="MainHeaderBar-CentorClock">
-        {this.state.hour}:{this.state.min}:{this.state.sec}
+        <div style={{textAlign:'center', width: "100px"}}>
+          {this.state.hour}:{this.state.min}:{this.state.sec}
+        </div>
       </div>
     );
   }
