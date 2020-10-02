@@ -45,6 +45,8 @@
     padding: 0px 20px;
     transition: padding 0.5s, height 0.5s;
     height: 150px;
+    // height: 110px;
+    
 
     .MainHeaderMenu-MenuContent {
       padding:10px 0px !important;
@@ -55,8 +57,8 @@
         font-weight: 600;
       }
       cursor:pointer;
-      
     }
+
   }
 }
 
@@ -64,5 +66,9 @@
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   height:0px !important;
+}
+
+.hidden2{
+  display: none;
 }
 

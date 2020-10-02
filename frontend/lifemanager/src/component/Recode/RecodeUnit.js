@@ -11,17 +11,17 @@ class RecodeUnit extends Component {
       <div className="RecodeUnit">
         <input className="RecodeUnit-description" name="description" value={description} placeholder="description" type="text" />
         <div className="RecodeUnit-time">
-          <input name="startTime" value={startTime} type="time" />
-          <input name="endTime" value={endTime} type="time" />
+          <input name="startTime" defaultValue={startTime} type="time" />
+          <input name="endTime" defaultValue={endTime} type="time" />
         </div>
         <div className="RecodeUnit-select">
-          <select name="category" value={category}>
+          <select name="category" defaultValue={category}>
             <option>deveplop</option>
             <option>reading</option>
             <option>nap</option>
             <option>exercise</option>
           </select>
-          <select name="isImproveTime" value={isImproveTime}>
+          <select name="isImproveTime" defaultValue={isImproveTime}>
             <option>true</option>
             <option>false</option>
           </select>

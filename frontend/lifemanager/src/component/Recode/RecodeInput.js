@@ -5,7 +5,7 @@ class RecodeInput extends Component {
     return (
       <div className="RecodeInput">
         <input className="RecodeInput-description" name="description" placeholder="description" type="text" />
-        <div className="time">
+        <div className="RecodeInput-time">
           <input name="startTime" type="time" />
           <input name="endTime" type="time" />
         </div>
