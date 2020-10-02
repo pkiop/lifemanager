@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.scss';
 import MainHeader from './component/MainHeader';
-import RecodeInput from './component/RecodeInput';
-import RecodeList from './component/RecodeList';
+import Recode from './component/Recode';
 
 function App() {
   return (
     <div>
       <MainHeader></MainHeader>
-      <RecodeInput></RecodeInput>
-      <RecodeList></RecodeList>
+      <Recode></Recode>
     </div>
   );
 }

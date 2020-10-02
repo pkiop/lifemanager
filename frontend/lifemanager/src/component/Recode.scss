@@ -1,0 +1,44 @@
+.Recode {
+  background-color: skyblue;
+  .RecodeInput {
+    padding:20px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    $RecodeChildWidth : 250px;
+    .RecodeInput-description {
+      width: $RecodeChildWidth;
+    }
+    .RecodeInput-time {
+      width: $RecodeChildWidth;
+    }
+    .RecodeInput-select {
+      width: $RecodeChildWidth;
+      display:flex;
+      justify-content: space-between;
+    }
+  }
+
+  .RecodeUnit {
+    padding: 20px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    $RecodeChildWidth : 230px;
+    .RecodeUnit-description {
+      width: $RecodeChildWidth;
+    }
+    .RecodeUnit-time {
+      width: $RecodeChildWidth;
+    }
+    .RecodeUnit-select {
+      width: $RecodeChildWidth;
+      display:flex;
+      justify-content: space-between;
+    }
+  }
+}
