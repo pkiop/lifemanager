@@ -32,8 +32,8 @@ DB : MySQL
 
 ### Output
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8bf10bd6-4873-463d-9f32-850f4d8ef322/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8bf10bd6-4873-463d-9f32-850f4d8ef322/Untitled.png)
+![image](https://user-images.githubusercontent.com/34783156/99185749-44064400-278f-11eb-93d8-96f13d142eda.png)
 
 ### 설명
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9ee7bcf4-b866-4bca-a314-e4fe6cdcd290/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9ee7bcf4-b866-4bca-a314-e4fe6cdcd290/Untitled.png)
+![image](https://user-images.githubusercontent.com/34783156/99185753-48caf800-278f-11eb-8da0-7365dc2544ce.png)
