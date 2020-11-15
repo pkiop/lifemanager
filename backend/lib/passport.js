@@ -1,5 +1,5 @@
-var db = require('../lib/db');
-var lowdb = require('../lib/lowdb');
+var db = require('./db');
+var lowdb = require('./lowdb');
 var shortid = require('shortid');
 
 var bcrypt = require('bcrypt');
