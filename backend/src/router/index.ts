@@ -1,9 +1,9 @@
 import Koa from 'koa';
 import Router from 'koa-router';
-import githubController from '../controller/github';
+import apiRouter from '@Router/api';
 
 const router = new Router();
 
-router.get('/github/callback', githubController.OAuth);
+router.use('/api', apiRouter.routes());
 
 export default router;

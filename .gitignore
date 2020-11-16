@@ -5,3 +5,5 @@ config/google.json
 lowdb.json
 sessions
 .env
+.DS_Store
+dist
