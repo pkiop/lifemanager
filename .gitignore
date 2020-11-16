@@ -4,3 +4,4 @@ lib/db.js
 config/google.json
 lowdb.json
 sessions
+.env
