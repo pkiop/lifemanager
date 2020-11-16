@@ -6,7 +6,9 @@ module.exports = {
     modules: ['node_modules'], 
     extensions: ['.ts', 'json', '.jsx', '.js'], 
     alias: { 
-      "@gdlComponents": path.resolve(__dirname, 'src/gdlComponents'), 
+      "@Controller": path.resolve(__dirname, 'src/controller'), 
+      "@Router": path.resolve(__dirname, 'src/router'), 
+      "@Api": path.resolve(__dirname, 'src/api'), 
     } ,
   }, 
   entry: { 
@@ -23,7 +25,7 @@ module.exports = {
     }, 
   optimization:{}, 
   output:{ 
-    path:path.join(__dirname,'./dist/src'), 
+    path:path.join(__dirname,'./dist'), 
     filename:'[name].js' 
   }, 
   target: 'node',
