@@ -1,10 +1,9 @@
 import Koa from 'koa';
 import Router from 'koa-router';
+import githubController from '../controller/github';
 
 const router = new Router();
 
-router.get('/', (ctx:Koa.Context, next:Function) => {
-  ctx.body = '안녕하세요';
-});
+router.get('/github/callback', githubController.OAuth);
 
 export default router;
