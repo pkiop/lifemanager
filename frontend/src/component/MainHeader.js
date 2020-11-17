@@ -1,23 +1,21 @@
-import React, { Component  } from 'react';
+import React, { Component } from 'react';
 import './MainHeader.scss';
 import LifemanagerMainLogo from '../image/LifemanagerMainLogo.png';
 import CentorClock from './MainHeaderBar/CentorClock';
 import MenuButton from './MainHeaderBar/MenuButton';
 import Menu from './MainHeaderMenu/Menu';
 
-
 class MainHeader extends Component {
-
   state = {
-    menuClicked: false
+    menuClicked: false,
   }
 
   handleToggleMenuClicked = () => {
     this.setState({
-      menuClicked: !this.state.menuClicked 
-    })
+      menuClicked: !this.state.menuClicked,
+    });
   }
-  
+
   render() {
     return (
       <div className="MainHeader">

@@ -18,7 +18,7 @@ module.exports = {
     },
   },
   entry: {
-    index: [path.resolve(__dirname, 'src','client.tsx')],
+    index: [path.resolve(__dirname, 'src', 'client.tsx')],
   },
   module: {
     rules: [
@@ -35,20 +35,20 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(
       {
-        template: path.resolve(__dirname, 'src','index.html'),
+        template: path.resolve(__dirname, 'src', 'index.html'),
       },
     ),
     new HotModuleReplacementPlugin(),
   ],
-  
+
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
+    port: 9000,
   },
 
-  output:{ 
-    path:path.join(__dirname,'./dist'), 
-    filename:'[name].js' 
-  }, 
+  output: {
+    path: path.join(__dirname, './dist'),
+    filename: '[name].js',
+  },
 };
