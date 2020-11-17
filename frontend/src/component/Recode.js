@@ -5,7 +5,7 @@ import './Recode.scss';
 
 class Recode extends Component {
   render() {
-    console.log("Recode data : ", this.props.info);
+    console.log('Recode data : ', this.props.info);
     return (
       <div className="Recode">
         <RecodeInput></RecodeInput>

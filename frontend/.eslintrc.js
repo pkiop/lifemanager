@@ -1,4 +1,3 @@
-
 const path = require('path');
 
 module.exports = {
@@ -20,7 +19,6 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'react-hooks'],
   extends: [
-    'eslint:recommended',
     'airbnb-base',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:import/recommended',
@@ -28,7 +26,6 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
-    // project: `${path.resolve(__dirname, 'tsconfig.json')}`,
   },
   rules: {
     indent: [
