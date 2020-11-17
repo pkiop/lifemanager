@@ -1,35 +1,65 @@
 {
-  "name": "lifemanager",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
-  },
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": ".eslintrc.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@hot-loader/react-dom": "^16.14.0",
+    "@types/react": "^16.9.54",
+    "@types/react-dom": "^16.9.9",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router": "^5.1.8",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/redux": "^3.6.0",
+    "@types/styled-components": "^5.1.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.6.2",
+    "eslint": "^7.0.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "http-errors": "~1.6.3",
+    "immer": "^7.0.14",
+    "lodash": "^4.17.20",
+    "mkdirp": "^1.0.4",
+    "morgan": "~1.9.1",
+    "my-fs": "^1.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hot-loader": "^4.13.0",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "styled-components": "^5.2.0",
+    "styled-reset": "^4.3.0",
+    "ts-loader": "^8.0.7",
+    "webpack": "^4.0.1",
+    "webpack-dev-middleware": "^4.0.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-node-externals": "^2.5.2"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.0.28",
+    "@storybook/addon-essentials": "^6.0.28",
+    "@storybook/addon-links": "^6.0.28",
+    "@storybook/react": "^6.0.28",
+    "eslint-plugin-import": "^2.22.1",
+    "install": "^0.13.0",
+    "npm": "^7.0.3",
+    "react-is": "^17.0.1",
+    "typescript": "^4.0.5",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "author": "",
+  "license": "ISC"
 }
