@@ -37,5 +37,6 @@ module.exports = {
     'no-redeclare': 1,
     'no-console': 0,
     'import/no-unresolved': 'off',
+    'import/extensions': 'off',
   },
 };
