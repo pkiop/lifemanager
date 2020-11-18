@@ -1,12 +1,16 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "",
   "main": ".eslintrc.js",
   "scripts": {
     "start": "npx webpack serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006 --no-dll",
+    "build-storybook": "build-storybook --no-dll"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
@@ -53,17 +57,19 @@
     "webpack-node-externals": "^2.5.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.3",
     "@storybook/addon-actions": "^6.0.28",
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/addon-links": "^6.0.28",
     "@storybook/react": "^6.0.28",
+    "babel-loader": "^8.2.1",
+    "react-is": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^4.8.0",
     "@typescript-eslint/parser": "^4.8.0",
     "eslint-plugin-import": "^2.22.1",
     "install": "^0.13.0",
     "lint-staged": "^10.5.1",
     "npm": "^7.0.3",
-    "react-is": "^17.0.1",
     "typescript": "^4.0.5",
     "webpack-cli": "^4.2.0",
     "webpack-dev-middleware": "^4.0.2",
