@@ -3,8 +3,6 @@ import Router from 'koa-router';
 import allRouter from '@Router/index';
 import cors from '@koa/cors';
 
-const agb = '???';
-
 const app = new Koa();
 app.use(cors());
 const router = new Router();
