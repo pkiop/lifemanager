@@ -1,6 +1,7 @@
 const path = require('path');
 const { HotModuleReplacementPlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 require('dotenv').config();
 
@@ -38,6 +39,7 @@ module.exports = {
         template: path.resolve(__dirname, 'src', 'index.html'),
       },
     ),
+    new Dotenv(),
     new HotModuleReplacementPlugin(),
   ],
 
