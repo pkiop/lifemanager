@@ -14,10 +14,8 @@ export interface Props {
 const App: FC<Props> = ({ title }) => {
   const [Title, setTitle] = useState(title);
   const onClickHandler = useCallback(
-    async (e) => {
-      const res = await axios.get('http://localhost:3000/test');
-      console.log(res);
-      setTitle(`${Title}1`);
+    async () => {
+      const res = await axios.get(`https://github.com/login/oauth/authorize?client_id=${process.env.client_id}`);
     },
     [Title],
   );
