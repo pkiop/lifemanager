@@ -1,8 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
 const { HotModuleReplacementPlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-require('dotenv').config();
+const dotenv = require('dotenv').config({
+  path: path.join(__dirname, '.env'),
+});
 
 module.exports = {
   mode: process.env.NODE_ENV, // production
@@ -38,6 +40,9 @@ module.exports = {
         template: path.resolve(__dirname, 'src', 'index.html'),
       },
     ),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(dotenv.parsed),
+    }),
     new HotModuleReplacementPlugin(),
   ],
 
