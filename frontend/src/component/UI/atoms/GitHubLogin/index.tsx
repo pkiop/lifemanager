@@ -15,7 +15,18 @@ const App: FC<Props> = ({ title }) => {
   const [Title, setTitle] = useState(title);
   const onClickHandler = useCallback(
     async () => {
-      const res = await axios.get(`https://github.com/login/oauth/authorize?client_id=${process.env.client_id}`);
+      axios.defaults.headers.get['Access-Control-Allow-Origin'] = 'http://127.0.0.1:9000';
+      console.log(location.origin);
+      const requestURL = `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}&redirect_uri=${process.env.GITHUB_REDIRECT_URL}`;
+      window.location.href = requestURL;
+      const config = {
+        // headers: {
+        //   'Access-Control-Allow-Origin': 'http://localhost:9000',
+        // },
+        withCredentials: true,
+      };
+      const res = await axios.get(requestURL, config);
+      // const res = await fetch(requestURL);
     },
     [Title],
   );
