@@ -13,6 +13,9 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
       '@Component': path.resolve(__dirname, 'src/component'),
+      '@Atom': path.resolve(__dirname, 'src/component/atoms'),
+      '@Molecule': path.resolve(__dirname, 'src/component/molecules'),
+      '@Organism': path.resolve(__dirname, 'src/component/organisms'),
       '@Image': path.resolve(__dirname, 'image'),
       '@Style': path.resolve(__dirname, 'style'),
       '@Util': path.resolve(__dirname, 'util'),
