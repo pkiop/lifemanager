@@ -15,7 +15,7 @@ const App: FC = () => (
         <Route path="login">
           <LoginPage />
         </Route>
-        <Route path="">
+        <Route path="/">
           <HomePage />
         </Route>
       </Switch>
