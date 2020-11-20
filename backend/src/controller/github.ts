@@ -5,8 +5,6 @@ const OAuth = (ctx: Koa.Context) => {
 };
 
 const OAuthCallback = (ctx: Koa.Context) => {
-  console.log('ctx: ', ctx);
-  console.log('ctx body : ', ctx.body);
   ctx.body = 'callback';
 };
 
