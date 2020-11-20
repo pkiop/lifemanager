@@ -7,22 +7,22 @@ import {
 
 const App: FC = () => {
   const [isClicked, setIsClicked] = useReducer((state) => !state, false);
+  console.log('dcdc ', document.cookie);
   useEffect(() => {
 
   }, [isClicked]);
   if (isClicked === true) {
     return <Redirect
       to={{
-        pathname: '/away',
+        pathname: '/',
       }}
     />;
   }
   return (
     <>
-      <h1>여기는 Home</h1>
+      <h1>여기는 away</h1>
       <h2>{userStore.data.username}</h2>
-      <button onClick={() => { console.log('onClick'); userStore.logIn({ username: `${userStore.data.username}1` }); }} >클릭</button>
-      <button onClick={() => setIsClicked()} >Away으로</button>
+      <button onClick={() => setIsClicked()} >Home으로</button>
     </>
   );
 };

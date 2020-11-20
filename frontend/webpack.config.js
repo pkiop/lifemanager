@@ -20,8 +20,9 @@ module.exports = {
       '@Pages': path.resolve(__dirname, 'src/components/pages'),
       '@Images': path.resolve(__dirname, 'images'),
       '@Styles': path.resolve(__dirname, 'styles'),
-      '@Utils': path.resolve(__dirname, 'utils'),
+      '@Utils': path.resolve(__dirname, 'src/utils'),
       '@Hooks': path.resolve(__dirname, 'Hooks'),
+      '@Stores': path.resolve(__dirname, 'src/stores'),
     },
   },
   entry: {

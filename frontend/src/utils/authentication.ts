@@ -8,7 +8,7 @@ export const authentication = async () => {
         authorization: accessToken,
       },
     };
-    const res = await axios.get(`${process.env.APISERVER_HOST}/auth/authentication`, config);
+    const res = await axios.get(`${process.env.APISERVER_HOST}/auth/authentication`/* , config */);
     if (res.status === 200) {
       return true;
     }
