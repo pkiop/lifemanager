@@ -21,11 +21,30 @@ const OAuthCallback = async (ctx: Koa.Context) => {
   try {
     const res = await axios.get(`${host}${queryString}`);
     const token = qs.parse(res.data).access_token;
-    ctx.cookies.set('accessToken', token as string);
+    ctx.cookies.set('accessToken', token as string, { httpOnly: false });
     ctx.redirect(`${process.env.FRONT_SERVER_INDEXPAGE}`);
   } catch (err) {
     console.log(err);
   }
 };
 
-export default { OAuth, OAuthCallback };
+const getUsername = async (ctx: Koa.Context) => {
+  console.log(ctx.request.header);
+  const config = {
+    headers: {
+      Authorization: `${ctx.request.header.authorization}`,
+      'User-Agent': 'Login-App',
+    },
+  };
+  try {
+    const resp = await axios.get(
+      'https://api.github.com/user/public_emails',
+      config,
+    );
+    ctx.body = resp.data[0].email;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+export default { OAuth, OAuthCallback, getUsername };
