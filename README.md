@@ -20,4 +20,12 @@
 
 시간을 효율적으로 사용하기 위해 하루 동안 한 일을 
 
+## History
+
+[v1.5.1](https://github.com/pkiop/lifemanager/wiki/v1.5.1)
+[v2.0.0](https://github.com/pkiop/lifemanager/wiki/v2.0.0)
+[v3.0.0](https://github.com/pkiop/lifemanager/wiki/v3.0.0)
+[v4.0.0](https://github.com/pkiop/lifemanager/wiki/v4.0.0)
+
+
 
