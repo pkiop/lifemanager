@@ -1,11 +1,11 @@
 import Koa from 'koa';
 import Router from 'koa-router';
-import githubAuth from '@Api/auth/github';
+import authRouter from '@Router/api/auth';
+import timeRecode from '@Router/api/timeRecode';
 
 const router = new Router();
 
-router.get('/auth/github/callback', githubAuth.OAuthCallback);
-router.get('/auth/github/username', githubAuth.getUsername);
-router.get('/auth/github', githubAuth.OAuth);
+router.use('/auth', authRouter.routes());
+router.use('/timeRecode', timeRecode.routes());
 
 export default router;
