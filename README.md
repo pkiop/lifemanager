@@ -20,20 +20,4 @@
 
 시간을 효율적으로 사용하기 위해 하루 동안 한 일을 
 
-## 버전 1.0.0
 
-### 사용한 기술
-
-언어 : C++
-
-DB : MySQL
-
-### 동작
-
-### Output
-
-![image](https://user-images.githubusercontent.com/34783156/99185749-44064400-278f-11eb-93d8-96f13d142eda.png)
-
-### 설명
-
-![image](https://user-images.githubusercontent.com/34783156/99185753-48caf800-278f-11eb-8da0-7365dc2544ce.png)
