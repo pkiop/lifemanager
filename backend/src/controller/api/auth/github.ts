@@ -29,7 +29,6 @@ const OAuthCallback = async (ctx: Koa.Context) => {
 };
 
 const getUsername = async (ctx: Koa.Context) => {
-  console.log(ctx.request.header);
   const config = {
     headers: {
       Authorization: `${ctx.request.header.authorization}`,
