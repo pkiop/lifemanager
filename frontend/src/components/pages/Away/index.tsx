@@ -9,15 +9,17 @@ import {
 import Axios from 'axios';
 
 const getHandler = async (setReceiveData: React.Dispatch<React.SetStateAction<string>>) => {
-  const res = await Axios(`${process.env.APISERVER_HOST}/api/timeRecode`);
+  const res = await Axios.get(`${process.env.APISERVER_HOST}/api/timeRecode`);
   console.log('res : ', res.data[0].test);
   setReceiveData(res.data[0].test);
 };
 
 const postHandler = async (setReceiveData: React.Dispatch<React.SetStateAction<string>>) => {
-  const res = await Axios(`${process.env.APISERVER_HOST}/api/timeRecode`);
-  console.log('res : ', res.data);
-  setReceiveData(res.data as string);
+  const body = {
+    data123: 'data123',
+  };
+  const res = await Axios.post(`${process.env.APISERVER_HOST}/api/timeRecode`, body);
+  setReceiveData(res.data[0].test.data123);
 };
 
 const putHandler = () => {
@@ -46,7 +48,7 @@ const App: FC = () => {
       <h2>{userStore.data.username}</h2>
       <button onClick={() => setIsClicked()} >Home으로</button>
       <button onClick={() => getHandler(setReceiveData)}>GET TR</button>
-      <button onClick={() => {}}>POST TR</button>
+      <button onClick={() => postHandler(setReceiveData)}>POST TR</button>
       <button onClick={() => {}}>PUT TR</button>
       <button onClick={() => {}}>DELETE TR</button>
       <h2>{receiveData}</h2>
