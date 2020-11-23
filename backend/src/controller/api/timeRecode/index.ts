@@ -9,7 +9,7 @@ export const post = (ctx: Koa.Context) => {
 };
 
 export const put = (ctx: Koa.Context) => {
-  console.log('id : ', ctx.request.query.id);
+  console.log('id : ', ctx.params);
   ctx.body = [{ test: ctx.request.body }];
 };
 
