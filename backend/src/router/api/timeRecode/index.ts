@@ -5,7 +5,7 @@ import timeRecodeController from 'controller/api/timeRecode';
 const router = new Router();
 router.get('/', timeRecodeController.get);
 router.post('/', timeRecodeController.post);
-router.put('/', timeRecodeController.put);
-router.delete('/', timeRecodeController.del);
+router.put('/:id', timeRecodeController.put);
+router.delete('/:id', timeRecodeController.del);
 
 export default router;
