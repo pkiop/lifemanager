@@ -1,7 +1,7 @@
 import Koa from 'koa';
 import Router from 'koa-router';
 import bodyParser from 'koa-bodyparser';
-import allRouter from '@Router/index';
+import allRouter from 'router/index';
 import cors from '@koa/cors';
 
 const app = new Koa();

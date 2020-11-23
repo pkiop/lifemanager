@@ -1,6 +1,6 @@
 import Koa from 'koa';
 import Router from 'koa-router';
-import timeRecodeController from '@Controller/api/timeRecode';
+import timeRecodeController from 'controller/api/timeRecode';
 
 const router = new Router();
 router.get('/', timeRecodeController.get);
