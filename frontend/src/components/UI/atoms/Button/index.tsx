@@ -11,7 +11,7 @@ export interface Props {
   onClick?: any;
 }
 
-const App: FC<Props> = ({ title, onClick }) => {
+const App: FC<Props> = ({ onClick, children }) => {
   const onClickHandler = useCallback(
     onClick,
     [],
@@ -19,7 +19,9 @@ const App: FC<Props> = ({ title, onClick }) => {
 
   return (
     <>
-      <Button onClick={onClickHandler}>{title}</Button>
+      <Button onClick={onClickHandler}>
+        {children}
+      </Button>
     </>
   );
 };
