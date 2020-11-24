@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import GitHubButton, { Props } from './index';
 
 export default {
-  title: 'GitHubButton',
+  title: 'Atoms/GitHubButton',
   component: GitHubButton,
   parameters: { actions: { argTypesRegex: '^on.*' } },
   argTypes: { onClick: { action: 'clicked' } },
