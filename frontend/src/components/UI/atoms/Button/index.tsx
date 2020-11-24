@@ -1,17 +1,13 @@
 import React, { FC, useCallback } from 'react';
-import styled from 'styled-components';
-
-const Button = styled.button`
-  background-color: black;
-  color: white;
-`;
+import { Button } from './style';
 
 export interface Props {
-  title?: string;
   onClick?: any;
+  children: any;
+  className?: string;
 }
 
-const App: FC<Props> = ({ onClick, children }) => {
+const App: FC<Props> = ({ onClick, children, className }) => {
   const onClickHandler = useCallback(
     onClick,
     [],
@@ -19,7 +15,7 @@ const App: FC<Props> = ({ onClick, children }) => {
 
   return (
     <>
-      <Button onClick={onClickHandler}>
+      <Button onClick={onClickHandler} className={className}>
         {children}
       </Button>
     </>
