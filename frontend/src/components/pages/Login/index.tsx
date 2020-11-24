@@ -24,8 +24,8 @@ const App: FC<any> = ({ from = { pathname: '/', search: '', hash: '' } }) => {
   return (
     <>
       <h1>여기는 로그인 페이지</h1>
-      <Button onClick={githubLogin} title={'GitHubLogin'}/>
-      <Button onClick={sampleLogin} title={'Sample Login'}/>
+      <Button onClick={githubLogin}> {'GitHubLogin'}</Button>
+      <Button onClick={sampleLogin}> {'Sample Login'}</Button>
     </>
   );
 };

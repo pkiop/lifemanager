@@ -1,13 +1,27 @@
 import Koa from 'koa';
 import Router from 'koa-router';
 import bodyParser from 'koa-bodyparser';
-import allRouter from '@Router/index';
+import allRouter from 'router/index';
 import cors from '@koa/cors';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = new Koa();
 app.use(cors());
 app.use(bodyParser());
 const router = new Router();
+
+mongoose.Promise = global.Promise;
+mongoose
+  .connect(process.env.MONGO_URI!)
+  .then((res) => {
+    console.log('success connected to mongo');
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 router.use(allRouter.routes());
 

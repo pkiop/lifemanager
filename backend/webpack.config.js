@@ -1,4 +1,5 @@
 const path = require('path');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
   name: 'ts-back-setting',
@@ -6,12 +7,13 @@ module.exports = {
   devtool: 'eval', // source-map hidden-source-map
   resolve: {
     modules: ['node_modules'],
-    extensions: ['.ts', 'json', '.jsx', '.js'],
-    alias: {
-      '@Controller': path.resolve(__dirname, 'src/controller'),
-      '@Router': path.resolve(__dirname, 'src/router'),
-      '@Api': path.resolve(__dirname, 'src/api'),
-    },
+    extensions: ['.ts', 'json', '.js'],
+    plugins: [
+      new TsconfigPathsPlugin({
+        configFile: 'tsconfig.json',
+        baseUrl: './',
+      }),
+    ],
   },
   entry: {
     index: ['./src/app.ts'],

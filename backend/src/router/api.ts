@@ -1,7 +1,7 @@
 import Koa from 'koa';
 import Router from 'koa-router';
-import authRouter from '@Router/api/auth';
-import timeRecode from '@Router/api/timeRecode';
+import authRouter from 'router/api/auth';
+import timeRecode from 'router/api/timeRecode';
 
 const router = new Router();
 

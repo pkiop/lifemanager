@@ -22,9 +22,15 @@ const postHandler = async (setReceiveData: React.Dispatch<React.SetStateAction<s
   setReceiveData(res.data[0].test.data123);
 };
 
-const putHandler = () => {
-
+const putHandler = async (setReceiveData: React.Dispatch<React.SetStateAction<string>>) => {
+  const body = {
+    data123: '456',
+  };
+  const id = 123;
+  const res = await Axios.put(`${process.env.APISERVER_HOST}/api/timeRecode/:${id}`, body);
+  setReceiveData(res.data[0].test.data123);
 };
+
 const deleteHandler = () => {
 
 };
@@ -49,7 +55,7 @@ const App: FC = () => {
       <button onClick={() => setIsClicked()} >Home으로</button>
       <button onClick={() => getHandler(setReceiveData)}>GET TR</button>
       <button onClick={() => postHandler(setReceiveData)}>POST TR</button>
-      <button onClick={() => {}}>PUT TR</button>
+      <button onClick={() => putHandler(setReceiveData)}>PUT TR</button>
       <button onClick={() => {}}>DELETE TR</button>
       <h2>{receiveData}</h2>
     </>

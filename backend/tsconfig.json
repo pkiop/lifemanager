@@ -44,11 +44,10 @@
     // "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
     "paths": {
-      "@Controller/*": ["src/controller/*"],
-      "@Router/*": ["src/router/*"],
-      "@Api/*": ["src/api/*"],
-      "@Images/*": ["src/public/Images/*"],
-      "@Utils/*": ["src/utils/*"],
+      "controller/*": ["./src/controller/*"],
+      "router/*": ["./src/router/*"],
+      "api/*": ["./src/api/*"],
+      "utils/*": ["./src/utils/*"],
       // "Root/*": ["src/*"],
       // "Site/*": ["src/site/*"],
       // "Admin/*": ["src/admin/*"],

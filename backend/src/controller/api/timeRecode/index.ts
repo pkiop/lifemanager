@@ -9,12 +9,12 @@ export const post = (ctx: Koa.Context) => {
 };
 
 export const put = (ctx: Koa.Context) => {
-  console.log('what is ctx.request in put : ', ctx.request);
-  ctx.body = [{ test: ctx.request }];
+  console.log('id : ', ctx.params);
+  ctx.body = [{ test: ctx.request.body }];
 };
 
 export const del = (ctx: Koa.Context) => {
-  console.log('what is ctx.request in delete: ', ctx.request);
+  console.log('id : ', ctx.request.query.id);
   ctx.body = [{ test: ctx.request }];
 };
 
