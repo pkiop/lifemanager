@@ -1,5 +1,5 @@
 const color = {
-  mainColor: '#5CC6BA',
+  mainColor: '#2E4B73',
 };
 
 const theme = {
