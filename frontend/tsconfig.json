@@ -51,18 +51,11 @@
       "@Organisms/*": ["components/UI/organisms/*"],
       "@Templates/*": ["components/templates/*"],
       "@Pages/*": ["components/pages/*"],
-      "@Images/*": ["image/*"],
+      "@Images/*": ["./images/*"],
       "@Styles/*": ["styles/*"],
       "@Utils/*": ["utils/*"],
       "@Hooks/*": ["Hooks/*"],
       "@Stores/*": ["stores/*"],
-      // "Root/*": ["src/*"],
-      // "Site/*": ["src/site/*"],
-      // "Admin/*": ["src/admin/*"],
-      // "Common/*": ["src/common/*"],
-      // "Assets/*": ["src/common/assets/*"],
-      // "Configs/*": ["src/common/configs/*"],
-      // "Style/*": ["src/common/style/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
