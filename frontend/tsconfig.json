@@ -52,7 +52,7 @@
       "@Templates/*": ["components/templates/*"],
       "@Pages/*": ["components/pages/*"],
       "@Images/*": ["image/*"],
-      "@Styles/*": ["style/*"],
+      "@Styles/*": ["styles/*"],
       "@Utils/*": ["utils/*"],
       "@Hooks/*": ["Hooks/*"],
       "@Stores/*": ["stores/*"],
