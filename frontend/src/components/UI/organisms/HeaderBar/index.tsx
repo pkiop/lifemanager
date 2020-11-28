@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
 import * as S from './style';
 
-export interface Props {}
+export interface Props {
+  className?: string;
+}
 
-const App: FC<Props> = ({ ...props }) => (
+const App = ({ className }: Props) => (
   <>
-    <S.HeaderBar {...props}>
-      <div>hello</div>
+    <S.HeaderBar className={className}>
+      <div>Headerbar</div>
     </S.HeaderBar>
   </>
 );
