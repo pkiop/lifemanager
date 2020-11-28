@@ -5,8 +5,9 @@ import {
 const UserSchema = new Schema({
   userId: {
     type: String,
+    required: true,
   },
-  GitHubProfileUrl: {
+  profileUrl: {
     type: String,
   },
   goalActiveTime: {
@@ -29,7 +30,7 @@ const UserSchema = new Schema({
 
 export interface User extends Document {
   userId: string;
-  GitHubProfileUrl: string;
+  profileUrl?: string;
   goalActiveTime: Array<number>;
   sleepTime: Array<number>;
   activeCategoryList: Array<string>;
