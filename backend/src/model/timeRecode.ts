@@ -17,7 +17,6 @@ const TimeRecodeSchema = new Schema({
   },
   endTime: {
     type: Array,
-    required: true,
   },
   category: {
     type: String,
@@ -32,8 +31,8 @@ const TimeRecodeSchema = new Schema({
 export interface TimeRecode extends Document {
   userId: string;
   title: string;
-  starttime : Array<number>;
-  endTime: Array<number>;
+  startTime : Array<number>;
+  endTime?: Array<number>;
   category: string;
   isActivate: boolean;
 }
