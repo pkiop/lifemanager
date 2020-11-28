@@ -43,7 +43,6 @@
     /* Module Resolution Options */
     // "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     "baseUrl": "./src",                       /* Base directory to resolve non-absolute module names. */
-    // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     "paths": {
       "@Components/*": ["components/*"],
       "@Atoms/*": ["components/UI/atoms/*"],
@@ -51,7 +50,7 @@
       "@Organisms/*": ["components/UI/organisms/*"],
       "@Templates/*": ["components/templates/*"],
       "@Pages/*": ["components/pages/*"],
-      "@Images/*": ["./images/*"],
+      "@Images/*": ["images/*"],
       "@Styles/*": ["styles/*"],
       "@Utils/*": ["utils/*"],
       "@Hooks/*": ["Hooks/*"],
