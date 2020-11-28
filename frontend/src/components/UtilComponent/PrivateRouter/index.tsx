@@ -1,13 +1,10 @@
-import React, { FC, useEffect } from 'react';
-import {
-  Route,
-  Redirect,
-} from 'react-router-dom';
+import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
 import axios from 'axios';
-import { userStore, UserInfo } from '@Stores/user';
+import { userStore } from '@Stores/user';
 import { getCookie, deleteCookie } from '@Utils/cookie';
 
-const PrivateRoute: FC<any> = ({ children, ...rest }) => {
+const PrivateRoute = ({ children, ...rest }: any) => {
   const accessTokenInCookie = getCookie('accessToken');
   if (accessTokenInCookie) {
     deleteCookie('accessToken');
@@ -15,13 +12,14 @@ const PrivateRoute: FC<any> = ({ children, ...rest }) => {
   }
 
   if (!localStorage.getItem('accessToken')) {
-    console.log('redirect ');
-    return (<Redirect
-      to={{
-        pathname: '/login',
-        state: { from: '/' },
-      }}
-    />);
+    return (
+      <Redirect
+        to={{
+          pathname: '/login',
+          state: { from: '/' },
+        }}
+      />
+    );
   }
 
   const config = {
