@@ -1,4 +1,3 @@
-import Koa from 'koa';
 import Router from 'koa-router';
 import timeRecodeController from 'controller/api/timeRecode';
 

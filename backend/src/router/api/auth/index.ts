@@ -1,4 +1,3 @@
-import Koa from 'koa';
 import Router from 'koa-router';
 import githubAuth from 'controller/api/auth/github';
 

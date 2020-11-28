@@ -15,7 +15,7 @@ const router = new Router();
 
 mongoose.Promise = global.Promise;
 mongoose
-  .connect(process.env.MONGO_URI!)
+  .connect(`${process.env.MONGO_URI!}/${process.env.MONGO_DBNAME}`, { useNewUrlParser: true })
   .then((res) => {
     console.log('success connected to mongo');
   })
