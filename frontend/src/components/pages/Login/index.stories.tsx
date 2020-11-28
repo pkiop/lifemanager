@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
 import LoginPage from '.';
 
 export default {
@@ -6,4 +8,10 @@ export default {
   component: LoginPage,
 };
 
-export const Default = () => <LoginPage />;
+export const Default = () => (
+  <BrowserRouter>
+    <GlobalThemeProvider>
+      <LoginPage />
+    </GlobalThemeProvider>
+  </BrowserRouter>
+);
