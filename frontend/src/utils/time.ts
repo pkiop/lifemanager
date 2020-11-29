@@ -13,20 +13,20 @@ export const nowHourMin = () => {
 export const calNowTime = (startTime: number[], endTime: number[]) => {
   const [startHour, startMin] = startTime;
   const [endHour, endMin] = endTime;
-
+  const EMmSM = endMin - startMin;
   if (endHour < startHour) {
     if (startMin > endMin) {
-      return [endHour + 23 - startHour, startMin - endMin];
+      return [endHour + 23 - startHour, EMmSM + 60];
     }
-    return [endHour + 24 - startHour, endMin - startMin];
+    return [endHour + 24 - startHour, EMmSM];
   }
   if (startMin > endMin) {
     if (endHour === startHour) {
-      return [endHour + 23 - startHour, startMin - endMin];
+      return [99, 99];
     }
-    return [endHour - 1 - startHour, startMin - endMin];
+    return [endHour - 1 - startHour, EMmSM + 60];
   }
-  return [endHour - startHour, endMin - startMin];
+  return [endHour - startHour, EMmSM];
 };
 
 export default {};
