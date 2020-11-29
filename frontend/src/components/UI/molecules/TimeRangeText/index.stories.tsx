@@ -7,5 +7,5 @@ export default {
 };
 
 export const Default = () => (
-  <TimeRangeText startHour={11} startMin={30} endHour={12} endMin={30} />
+  <TimeRangeText startTime={[11, 30]} endTime={[12, 30]} />
 );
