@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import * as S from './style';
 
 export interface Props {
@@ -6,11 +6,11 @@ export interface Props {
 }
 
 const App = ({ className }: Props) => (
-  <>
-    <S.RecodeInput className={className}>
-      <div>Headerbar</div>
-    </S.RecodeInput>
-  </>
+  <S.RecodeInput className={className}>
+    <S.TitleInput text="Title" />
+    <S.TimeInput />
+    <S.CategorySelectBar />
+  </S.RecodeInput>
 );
 
 export default App;
