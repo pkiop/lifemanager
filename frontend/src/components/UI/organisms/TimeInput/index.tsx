@@ -3,12 +3,12 @@ import { makeTwoNumber } from '@Utils/time';
 import * as S from './style';
 
 export interface Props {
-  startTime: number[];
-  endTime: number[];
+  startTime?: number[];
+  endTime?: number[];
   className?: string;
 }
 
-const App = ({ startTime, endTime, className }: Props) => {
+const App = ({ startTime = [0, 0], endTime = [0, 0], className }: Props) => {
   const [startHour, startMin] = startTime;
   const [endHour, endMin] = endTime;
   return (
