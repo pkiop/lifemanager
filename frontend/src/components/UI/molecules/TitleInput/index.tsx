@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './style';
 
 export interface Props {
-  text: string;
+  text?: string;
   value?: string;
   className?: string;
 }
