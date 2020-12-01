@@ -6,7 +6,6 @@ export const ToggleSwitch = styled.button`
   height: 1rem;
   border-radius: 0.5rem;
   background-color: #5c52ce;
-  border: none;
 
   .circle {
     position: absolute;

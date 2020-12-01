@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalThemePrivider from '@Styles/GlobalThemeProvider';
 import ToggleSwitch from '.';
 
 export default {
@@ -6,4 +7,8 @@ export default {
   component: ToggleSwitch,
 };
 
-export const Default = () => <ToggleSwitch text={'HELLO'} />;
+export const Default = () => (
+  <GlobalThemePrivider>
+    <ToggleSwitch />
+  </GlobalThemePrivider>
+);
