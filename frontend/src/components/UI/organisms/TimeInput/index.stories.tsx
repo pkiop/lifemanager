@@ -2,7 +2,7 @@ import React from 'react';
 import TimeInput from '.';
 
 export default {
-  title: 'Molecules/TimeInput',
+  title: 'Organisms/TimeInput',
   component: TimeInput,
 };
 
