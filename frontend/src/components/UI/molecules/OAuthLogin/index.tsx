@@ -16,7 +16,7 @@ const App = ({
   return (
     <S.LoginButton onClick={onClick} className={className}>
       <S.Icon src={icon} />
-      {ButtonTitle}
+      <S.TitleWrap>{ButtonTitle}</S.TitleWrap>
     </S.LoginButton>
   );
 };

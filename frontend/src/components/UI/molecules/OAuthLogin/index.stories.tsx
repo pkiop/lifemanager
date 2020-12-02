@@ -1,5 +1,6 @@
 import React from 'react';
 import GitHubLogo from '@Images/GitHub.png';
+import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
 import OAuthLogin from '.';
 
 export default {
@@ -8,11 +9,13 @@ export default {
 };
 
 export const GitHubLogin = () => (
-  <OAuthLogin
-    onClick={() => {
-      alert('login github');
-    }}
-    icon={GitHubLogo}
-    ButtonTitle={'Login With GitHub'}
-  />
+  <GlobalThemeProvider>
+    <OAuthLogin
+      onClick={() => {
+        alert('login github');
+      }}
+      icon={GitHubLogo}
+      ButtonTitle={'Login With GitHub'}
+    />
+  </GlobalThemeProvider>
 );
