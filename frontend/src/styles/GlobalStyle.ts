@@ -4,15 +4,10 @@ import { createGlobalStyle } from 'styled-components';
   License: none (public domain)
 */
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'BMEULJIRO';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-
-  
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -25,12 +20,11 @@ const GlobalStyle = createGlobalStyle`
   article, aside, canvas, details, embed, 
   figure, figcaption, footer, header, hgroup, 
   menu, nav, output, ruby, section, summary,
-  time, mark, audio, video {
+  time, mark, audio, video, input {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
   }
