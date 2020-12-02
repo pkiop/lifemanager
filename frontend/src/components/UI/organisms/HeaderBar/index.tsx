@@ -1,4 +1,6 @@
-import React, { FC } from 'react';
+import React from 'react';
+import LogoImg from '@Images/LifemanagerMainLogo.png';
+import hambug from '@Images/hambug.svg';
 import * as S from './style';
 
 export interface Props {
@@ -8,7 +10,13 @@ export interface Props {
 const App = ({ className }: Props) => (
   <>
     <S.HeaderBar className={className}>
-      <div>Headerbar</div>
+      <S.Logo src={LogoImg} />
+      <S.DigitalClockWrap>
+        <S.DigitalClock />
+      </S.DigitalClockWrap>
+      <S.MenuBtn>
+        <S.HambugIcon src={hambug} />
+      </S.MenuBtn>
     </S.HeaderBar>
   </>
 );
