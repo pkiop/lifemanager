@@ -1,4 +1,4 @@
-import React, { FC, useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { Button } from './style';
 
 export interface Props {
@@ -7,11 +7,8 @@ export interface Props {
   className?: string;
 }
 
-const App: FC<Props> = ({ onClick, children, className }) => {
-  const onClickHandler = useCallback(
-    onClick,
-    [],
-  );
+const App = ({ onClick, children, className }: Props) => {
+  const onClickHandler = useCallback(onClick, []);
 
   return (
     <>

@@ -1,5 +1,4 @@
-import React, { FC, useCallback, useState } from 'react';
-import styled from 'styled-components';
+import React, { useCallback, useState } from 'react';
 import { Input } from './style';
 
 export interface Props {
