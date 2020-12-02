@@ -7,8 +7,44 @@ export default {
   component: CategorySelectBar,
 };
 
+const TestLabels1 = [
+  {
+    color: 'red',
+    children: 'red',
+  },
+  {
+    color: 'blue',
+    children: 'blue',
+  },
+];
+
+const TestLabelsForOverFlow = [
+  {
+    color: 'red',
+    children: 'red',
+  },
+  {
+    color: 'blue',
+    children: 'blue',
+  },
+  {
+    color: 'green',
+    children: 'green',
+  },
+  {
+    color: 'gray',
+    children: 'gray',
+  },
+];
+
 export const Default = () => (
   <GlobalThemeProvider>
-    <CategorySelectBar />
+    <CategorySelectBar labelList={TestLabels1} />
+  </GlobalThemeProvider>
+);
+
+export const OverFlow = () => (
+  <GlobalThemeProvider>
+    <CategorySelectBar labelList={TestLabelsForOverFlow} />
   </GlobalThemeProvider>
 );

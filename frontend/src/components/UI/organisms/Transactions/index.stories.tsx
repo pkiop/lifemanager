@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
 import Transaction from '.';
 
 export default {
@@ -24,4 +25,8 @@ const temp = {
   endMin: 4,
 };
 
-export const Default = () => <Transaction {...temp} />;
+export const Default = () => (
+  <GlobalThemeProvider>
+    <Transaction {...temp} />
+  </GlobalThemeProvider>
+);

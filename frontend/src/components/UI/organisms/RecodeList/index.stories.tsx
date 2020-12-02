@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
 import RecodeList from '.';
 
 export default {
@@ -30,4 +31,8 @@ const temp = [
   },
 ];
 
-export const Default = () => <RecodeList recodeList={temp} />;
+export const Default = () => (
+  <GlobalThemeProvider>
+    <RecodeList recodeList={temp} />
+  </GlobalThemeProvider>
+);

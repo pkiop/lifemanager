@@ -1,3 +1,4 @@
+import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
 import React from 'react';
 import TimeInput from '.';
 
@@ -7,5 +8,7 @@ export default {
 };
 
 export const Default = () => (
-  <TimeInput startTime={[11, 30]} endTime={[12, 40]} />
+  <GlobalThemeProvider>
+    <TimeInput startTime={[11, 30]} endTime={[12, 40]} />
+  </GlobalThemeProvider>
 );
