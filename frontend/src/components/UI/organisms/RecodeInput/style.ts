@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import TitleInputComponent from '@Molecules/TitleInput';
+import BottomBtnsComponent from '@Molecules/BottomBtns';
 import TimeInputComponent from '@Organisms/TimeInput';
 import CategorySelectBarComponent from '@Organisms/CategorySelectBar';
 
@@ -10,5 +11,4 @@ export const RecodeInput = styled.div`
 export const TitleInput = styled(TitleInputComponent)``;
 export const TimeInput = styled(TimeInputComponent)``;
 export const CategorySelectBar = styled(CategorySelectBarComponent)``;
-
-export default {};
+export const BottomBtns = styled(BottomBtnsComponent)``;
