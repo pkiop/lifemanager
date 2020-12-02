@@ -55,6 +55,7 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     border: none;
+    padding: 0;
   }
   button:focus{
     outline:none;
