@@ -9,20 +9,28 @@ const getOAuthUrl = (ctx: Koa.Context) => {
   ctx.body = `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}&redirect_uri=${process.env.GITHUB_REDIRECT_URL}&scope=user:email`;
 };
 
-const OAuthCallback = async (ctx: Koa.Context) => {
+const getAccessTokenFromGitHub = async (code: string) => {
   const host = 'https://github.com/login/oauth/access_token?';
-  const queryString = qs.stringify({
-    client_id: process.env.GITHUB_CLIENT_ID,
-    client_secret: process.env.GITHUB_CLIENT_SECRET,
-    code: ctx.request.query.code,
-    redirect_uri: process.env.GITHUB_REDIRECT_URL,
-    state: process.env.OAUTH_STATE,
-  });
+  return axios.post(
+    host,
+    {
+      code,
+      client_id: process.env.GITHUB_CLIENT_ID,
+      client_secret: process.env.GITHUB_CLIENT_SECRET,
+    },
+    {
+      headers: {
+        accept: 'application/json',
+      },
+    },
+  );
+};
+
+const getToken = async (ctx: Koa.Context) => {
   try {
-    const res = await axios.get(`${host}${queryString}`);
+    const res = await getAccessTokenFromGitHub(ctx.request.query.code);
     const token = qs.parse(res.data).access_token;
-    ctx.cookies.set('accessToken', token as string, { httpOnly: false });
-    ctx.redirect(`${process.env.FRONT_SERVER_INDEXPAGE}`);
+    ctx.body = token;
   } catch (err) {
     console.log(err);
   }
@@ -46,4 +54,4 @@ const getUsername = async (ctx: Koa.Context) => {
   }
 };
 
-export default { getOAuthUrl, OAuthCallback, getUsername };
+export default { getOAuthUrl, getToken, getUsername };
