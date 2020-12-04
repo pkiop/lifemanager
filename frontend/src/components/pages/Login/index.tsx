@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import axios from 'axios';
 import { observer } from 'mobx-react-lite';
 import GitHubLogo from '@Images/GitHub.png';
