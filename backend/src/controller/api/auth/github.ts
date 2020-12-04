@@ -5,7 +5,7 @@ import axios from 'axios';
 
 env.config();
 
-const OAuth = (ctx: Koa.Context, next: Function) => {
+const getOAuthUrl = (ctx: Koa.Context) => {
   ctx.body = `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}&redirect_uri=${process.env.GITHUB_REDIRECT_URL}&scope=user:email`;
 };
 
@@ -46,4 +46,4 @@ const getUsername = async (ctx: Koa.Context) => {
   }
 };
 
-export default { OAuth, OAuthCallback, getUsername };
+export default { getOAuthUrl, OAuthCallback, getUsername };
