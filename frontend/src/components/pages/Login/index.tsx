@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import axios from 'axios';
-import { observer } from 'mobx-react';
+import { observer } from 'mobx-react-lite';
 import GitHubLogo from '@Images/GitHub.png';
 import GitHubLogin from '@Molecules/OAuthLogin';
 import MainTemplate from '@Templates/MainTemplate';

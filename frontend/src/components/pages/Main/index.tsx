@@ -1,5 +1,5 @@
 import React from 'react';
-import { observer } from 'mobx-react';
+import { observer } from 'mobx-react-lite';
 import MainTemplate from '@Components/templates/MainTemplate';
 import RecodeList from '@Organisms/RecodeList';
 import Board from '@Organisms/Board';
