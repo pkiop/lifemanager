@@ -1,4 +1,3 @@
-import Koa from 'koa';
 import Router from 'koa-router';
 import authRouter from 'router/api/auth';
 import timeRecode from 'router/api/timeRecode';
