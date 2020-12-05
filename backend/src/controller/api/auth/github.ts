@@ -1,6 +1,5 @@
 import Koa from 'koa';
 import env from 'dotenv';
-import qs from 'qs';
 import axios from 'axios';
 import jwt from 'jsonwebtoken';
 import { jwtConfig } from '../../../config';
@@ -41,10 +40,17 @@ const getToken = async (ctx: Koa.Context) => {
       data: { access_token: accessToken },
     } = await getAccessTokenFromGitHub(code);
 
-    const { data: profile } = await getUserProfile(accessToken);
-    const { id, login } = profile;
-    const token = jwt.sign(id, jwtConfig.jwtSecret);
-    ctx.body = { id, token };
+    const data = await getUserProfile(accessToken);
+    console.log('data ', data);
+    const { id, login, avatar_url: avatarUrl } = data.data;
+    console.log('data data ', data.data);
+    const token = jwt.sign({ id }, jwtConfig.jwtSecret);
+    ctx.body = {
+      id,
+      login,
+      avatarUrl,
+      token,
+    };
   } catch (err) {
     console.log(err);
   }
