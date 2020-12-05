@@ -50,6 +50,7 @@
       "service/*": ["src/service/*"],
       "api/*": ["src/api/*"],
       "util/*": ["src/utils/*"],
+      "config/*": ["src/config/*"],
       // "Root/*": ["src/*"],
       // "Site/*": ["src/site/*"],
       // "Admin/*": ["src/admin/*"],
