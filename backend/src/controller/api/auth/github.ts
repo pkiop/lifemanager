@@ -2,6 +2,8 @@ import Koa from 'koa';
 import env from 'dotenv';
 import qs from 'qs';
 import axios from 'axios';
+import jwt from 'jsonwebtoken';
+import { jwtConfig } from '../../../config';
 
 env.config();
 
@@ -26,11 +28,23 @@ const getAccessTokenFromGitHub = async (code: string) => {
   );
 };
 
+const getUserProfile = (accessToken: string) => axios.get('https://api.github.com/user', {
+  headers: {
+    Authorization: `token ${accessToken}`,
+  },
+});
+
 const getToken = async (ctx: Koa.Context) => {
   try {
-    const res = await getAccessTokenFromGitHub(ctx.request.query.code);
-    const token = qs.parse(res.data).access_token;
-    ctx.body = token;
+    const { code } = ctx.request.query;
+    const {
+      data: { access_token: accessToken },
+    } = await getAccessTokenFromGitHub(code);
+
+    const { data: profile } = await getUserProfile(accessToken);
+    const { id, login } = profile;
+    const token = jwt.sign(id, jwtConfig.jwtSecret);
+    ctx.body = { id, token };
   } catch (err) {
     console.log(err);
   }
