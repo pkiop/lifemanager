@@ -22,6 +22,7 @@
     "axios": "^0.21.0",
     "dotenv": "^8.2.0",
     "husky": "^4.3.0",
+    "jsonwebtoken": "^8.5.1",
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0",
@@ -35,6 +36,7 @@
     "webpack": "^5.4.0"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.13.0",
