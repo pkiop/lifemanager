@@ -1,6 +1,6 @@
 import React from 'react';
-import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
-import RecodeList from '@Organisms/RecodeList';
+import GlobalThemeProvider from 'styles/GlobalThemeProvider';
+import RecodeList from 'components/UI/organisms/RecodeList';
 import MainTemplate from '.';
 
 export default {

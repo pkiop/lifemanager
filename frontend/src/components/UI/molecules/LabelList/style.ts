@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import LabelComponent from '@Atoms/Label';
+import LabelComponent from 'components/UI/atoms/Label';
 
 export const LabelList = styled.div``;
 

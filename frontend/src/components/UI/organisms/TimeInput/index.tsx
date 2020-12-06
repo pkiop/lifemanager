@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeTwoNumber } from '@Utils/time';
+import { makeTwoNumber } from 'utils/time';
 import * as S from './style';
 
 export interface Props {

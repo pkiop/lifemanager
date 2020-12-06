@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC, useState } from 'react';
 import * as S from './style';
 
 export interface Props {
@@ -16,7 +16,7 @@ const App: FC<Props> = ({
 
   return (
     <>
-      <S.TimeInputRow >
+      <S.TimeInputRow className={className}>
         <S.TimeInput value={String(hour)} />
         <S.TimeInput value={String(min)} />
         <S.SelectBox optionList={goodCategoryList}/>

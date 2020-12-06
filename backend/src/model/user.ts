@@ -1,8 +1,10 @@
-import {
-  Schema, model, Document,
-} from 'mongoose';
+import { Schema, model, Document } from 'mongoose';
 
 const UserSchema = new Schema({
+  _id: {
+    type: String,
+    required: true,
+  },
   userId: {
     type: String,
     required: true,

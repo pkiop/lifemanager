@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
+import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import LoginPage from '.';
 
 export default {

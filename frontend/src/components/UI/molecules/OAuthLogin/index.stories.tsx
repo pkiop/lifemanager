@@ -1,6 +1,6 @@
 import React from 'react';
-import GitHubLogo from '@Images/GitHub.png';
-import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
+import GitHubLogo from 'images/GitHub.png';
+import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import OAuthLogin from '.';
 
 export default {

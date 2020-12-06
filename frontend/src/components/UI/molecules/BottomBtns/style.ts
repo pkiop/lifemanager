@@ -1,4 +1,4 @@
-import Button from '@Components/UI/atoms/Button';
+import Button from 'components/UI/atoms/Button';
 import styled, { css } from 'styled-components';
 
 export const BottomBtns = styled.div``;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import TextComponent from '@Atoms/Text';
-import InputComponent from '@Atoms/Input';
+import TextComponent from 'components/UI/atoms/Text';
+import InputComponent from 'components/UI/atoms/Input';
 
 export const TimeInput = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalThemePrivider from '@Styles/GlobalThemeProvider';
+import GlobalThemePrivider from 'styles/GlobalThemeProvider';
 import DigitalClock from '.';
 
 export default {

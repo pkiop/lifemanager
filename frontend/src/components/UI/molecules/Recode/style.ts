@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Text from '@Atoms/Text';
-import TimeRangeTextComponent from '@Molecules/TimeRangeText';
+import Text from 'components/UI/atoms/Text';
+import TimeRangeTextComponent from 'components/UI/molecules/TimeRangeText';
 
 export const Recode = styled.div`
   display: flex;

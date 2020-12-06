@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
+import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import CategorySelectBar from '.';
 
 export default {

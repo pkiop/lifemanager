@@ -1,9 +1,8 @@
 import React from 'react';
-import { observer } from 'mobx-react-lite';
-import MainTemplate from '@Components/templates/MainTemplate';
-import RecodeList from '@Organisms/RecodeList';
-import Board from '@Organisms/Board';
-import BottomBtns from '@Molecules/BottomBtns';
+import MainTemplate from 'components/templates/MainTemplate';
+import RecodeList from 'components/UI/organisms/RecodeList';
+import Board from 'components/UI/organisms/Board';
+import BottomBtns from 'components/UI/molecules/BottomBtns';
 
 const App = ({ recodeList, className }: any) => {
   const contents = (
@@ -22,4 +21,4 @@ const App = ({ recodeList, className }: any) => {
   return <MainTemplate contents={contents} className={className} />;
 };
 
-export default observer(App);
+export default App;

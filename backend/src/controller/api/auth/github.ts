@@ -2,6 +2,7 @@ import Koa from 'koa';
 import env from 'dotenv';
 import axios from 'axios';
 import jwt from 'jsonwebtoken';
+import { UserModel } from 'model/user';
 import { jwtConfig } from '../../../config';
 
 env.config();
@@ -41,9 +42,18 @@ const getToken = async (ctx: Koa.Context) => {
     } = await getAccessTokenFromGitHub(code);
 
     const data = await getUserProfile(accessToken);
-    console.log('data ', data);
     const { id, login, avatar_url: avatarUrl } = data.data;
-    console.log('data data ', data.data);
+
+    let user = await UserModel.findOne({ id }).exec();
+    if (!user) {
+      user = new UserModel({
+        _id: `github${id}`,
+        userId: login,
+        profileUrl: avatarUrl,
+      });
+      await Promise.all([user.save()]);
+    }
+
     const token = jwt.sign({ id }, jwtConfig.jwtSecret);
     ctx.body = {
       id,

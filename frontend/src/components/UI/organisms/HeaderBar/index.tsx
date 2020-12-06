@@ -1,6 +1,6 @@
 import React from 'react';
-import LogoImg from '@Images/LifemanagerMainLogo.png';
-import hambug from '@Images/hambug.svg';
+import LogoImg from 'images/LifemanagerMainLogo.png';
+import hambug from 'images/hambug.svg';
 import * as S from './style';
 
 export interface Props {

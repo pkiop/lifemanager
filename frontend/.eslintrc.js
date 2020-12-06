@@ -33,7 +33,7 @@ module.exports = {
       2,
     ],
     'no-unused-vars': 1,
-    'no-use-before-define': 1,
+    'no-use-before-define': 0,
     'no-redeclare': 1,
     'no-console': 0,
     'import/no-unresolved': 'off',
