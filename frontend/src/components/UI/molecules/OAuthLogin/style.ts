@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import Input from '@Atoms/Input';
-import Select from '@Atoms/Select';
-import Button from '@Atoms/Button';
-import Img from '@Atoms/Img';
+import Button from 'components/UI/atoms/Button';
+import Img from 'components/UI/atoms/Img';
 
 export const Icon = styled(Img)`
   margin-left: 0.4rem;

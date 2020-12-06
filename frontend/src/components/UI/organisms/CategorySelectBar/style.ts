@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import LabelListComponent from '@Molecules/LabelList';
-import ToggleSwitchComponent from '@Atoms/ToggleSwitch';
+import LabelListComponent from 'components/UI/molecules/LabelList';
+import ToggleSwitchComponent from 'components/UI/atoms/ToggleSwitch';
 
 export const CategorySelectBar = styled.div`
   background-color: ${({ theme }) => theme.color.mainColor};

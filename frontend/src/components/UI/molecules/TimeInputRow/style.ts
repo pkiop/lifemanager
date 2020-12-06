@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Input from '@Atoms/Input';
-import Select from '@Atoms/Select';
-import Button from '@Atoms/Button';
+import Input from 'components/UI/atoms/Input';
+import Select from 'components/UI/atoms/Select';
+import Button from 'components/UI/atoms/Button';
 
 export const TimeInputRow = styled.div`
 `;

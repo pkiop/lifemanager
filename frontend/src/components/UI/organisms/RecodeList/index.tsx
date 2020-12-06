@@ -1,5 +1,5 @@
 import React from 'react';
-import { RecodeType } from '@Molecules/Recode';
+import { RecodeType } from 'components/UI/molecules/Recode';
 import * as S from './style';
 
 export interface Props {

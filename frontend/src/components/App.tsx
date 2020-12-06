@@ -1,8 +1,8 @@
 import React from 'react';
-import LoginPage from '@Components/pages/Login';
-import NotFound from '@Components/pages/NotFound';
-import OAuthCallbackPage from '@Pages/OAuthCallbackPage';
-import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
+import LoginPage from 'components/pages/Login';
+import NotFound from 'components/pages/NotFound';
+import OAuthCallbackPage from 'components/pages/OAuthCallbackPage';
+import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {

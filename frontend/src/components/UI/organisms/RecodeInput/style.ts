@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import TitleInputComponent from '@Molecules/TitleInput';
-import BottomBtnsComponent from '@Molecules/BottomBtns';
-import TimeInputComponent from '@Organisms/TimeInput';
-import CategorySelectBarComponent from '@Organisms/CategorySelectBar';
+import TitleInputComponent from 'components/UI/molecules/TitleInput';
+import BottomBtnsComponent from 'components/UI/molecules/BottomBtns';
+import TimeInputComponent from 'components/UI/organisms/TimeInput';
+import CategorySelectBarComponent from 'components/UI/organisms/CategorySelectBar';
 
 export const RecodeInput = styled.div`
   background-color: ${({ theme }) => theme.color.mainColor};

@@ -1,5 +1,5 @@
-import React, { FC, useState, useEffect } from 'react';
-import TimeInputRow from '@Molecules/TimeInputRow';
+import React, { useState } from 'react';
+import TimeInputRow from 'components/UI/molecules/TimeInputRow';
 import {
   Transaction, Row1, RowElse, TitleInput, TimeInput,
 } from './style';
@@ -13,14 +13,14 @@ export interface Props {
   endMin: number;
 }
 
-const App: FC<Props> = ({
+const App = ({
   transactionNumber,
   title,
   startHour,
   startMin,
   endHour,
   endMin,
-}) => {
+}: Props) => {
   const [goodCategoryList] = useState([
     { id: 'abcke', value: '개발' },
     { id: 'eknxd', value: '운동' },

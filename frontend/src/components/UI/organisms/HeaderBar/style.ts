@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Img from '@Atoms/Img';
-import DigitalClockComponent from '@Atoms/DigitalClock';
-import Button from '@Atoms/Button';
+import Img from 'components/UI/atoms/Img';
+import DigitalClockComponent from 'components/UI/atoms/DigitalClock';
+import Button from 'components/UI/atoms/Button';
 
 export const HeaderBar = styled.div`
   background-color: ${({ theme }) => theme.color.mainColor};

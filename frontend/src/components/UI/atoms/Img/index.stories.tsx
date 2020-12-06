@@ -1,5 +1,5 @@
 import React from 'react';
-import GitHubLogo from '@Images/GitHub.png';
+import GitHubLogo from 'images/GitHub.png';
 import Img from './index';
 
 export default {

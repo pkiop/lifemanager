@@ -1,5 +1,5 @@
 import React from 'react';
-import { LabelType } from '@Atoms/Label';
+import { LabelType } from 'components/UI/atoms/Label';
 import * as S from './style';
 
 export interface Props {

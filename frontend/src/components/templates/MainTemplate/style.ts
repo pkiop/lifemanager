@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import HeaderBarComponent from '@Organisms/HeaderBar';
+import HeaderBarComponent from 'components/UI/organisms/HeaderBar';
 
 export const MainTemplate = styled.div`
   display: flex;

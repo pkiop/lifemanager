@@ -1,4 +1,4 @@
-import GlobalThemeProvider from '@Styles/GlobalThemeProvider';
+import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import React from 'react';
 import TimeInput from '.';
 

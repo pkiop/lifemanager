@@ -1,8 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import axios from 'axios';
-import { userStore } from '@Stores/user';
-import { getCookie, deleteCookie } from '@Utils/cookie';
+import { getCookie, deleteCookie } from 'utils/cookie';
 
 const PrivateRoute = ({ children, ...rest }: any) => {
   const accessTokenInCookie = getCookie('accessToken');
@@ -30,7 +29,8 @@ const PrivateRoute = ({ children, ...rest }: any) => {
   };
   axios(`${process.env.APISERVER_HOST}/api/auth/github/username`, config)
     .then((res) => {
-      userStore.logIn({ username: res.data });
+      // userStore.logIn({ username: res.data });
+      console.log('res : ', res);
     })
     .catch((err) => {
       console.log('err : ', err);
@@ -39,7 +39,7 @@ const PrivateRoute = ({ children, ...rest }: any) => {
   return (
     <Route
       {...rest}
-      render={({ location }) => (userStore.data.username !== 'noUser' ? (
+      render={({ location }) => (true /* userStore.data.username !== 'noUser' */ ? (
         children
       ) : (
         <Redirect

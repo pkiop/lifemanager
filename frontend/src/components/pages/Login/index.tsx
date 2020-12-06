@@ -1,9 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import { observer } from 'mobx-react-lite';
-import GitHubLogo from '@Images/GitHub.png';
-import GitHubLogin from '@Molecules/OAuthLogin';
-import MainTemplate from '@Templates/MainTemplate';
+import GitHubLogo from 'images/GitHub.png';
+import GitHubLogin from 'components/UI/molecules/OAuthLogin';
+import MainTemplate from 'components/templates/MainTemplate';
 
 const githubLogin = async () => {
   const res = await axios.get(`${process.env.APISERVER_HOST}/api/auth/github`);
@@ -21,4 +20,4 @@ const App = ({ className }: any) => {
   return <MainTemplate contents={contents} className={className} />;
 };
 
-export default observer(App);
+export default App;

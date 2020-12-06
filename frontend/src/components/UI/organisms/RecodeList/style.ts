@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import RecodeComponent from '@Molecules/Recode';
+import RecodeComponent from 'components/UI/molecules/Recode';
 
 export const RecodeList = styled.div``;
 

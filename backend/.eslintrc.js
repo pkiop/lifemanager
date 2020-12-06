@@ -21,6 +21,7 @@ module.exports = {
     ],
     'no-unused-vars': 1,
     'no-use-before-define': 1,
+    'no-underscore-dangle': 0,
     'no-redeclare': 1,
     'no-console': 0,
     'import/no-unresolved': 'off',

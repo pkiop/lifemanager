@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
+import React from 'react';
 
-const App: FC = () => (
+const App = () => (
   <>
     <h1>404 Not Found</h1>
   </>
