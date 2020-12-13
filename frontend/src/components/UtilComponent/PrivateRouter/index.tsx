@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import axios from 'axios';
-import { getCookie, deleteCookie } from 'utils/cookie';
+import { getCookie, deleteCookie } from 'libs/cookie';
 
 const PrivateRoute = ({ children, ...rest }: any) => {
   const accessTokenInCookie = getCookie('accessToken');

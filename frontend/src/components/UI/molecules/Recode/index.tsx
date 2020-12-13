@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeTwoNumber, nowHourMin, calNowTime } from 'utils/time';
+import { makeTwoNumber, nowHourMin, calNowTime } from 'libs/time';
 import * as S from './style';
 
 export interface RecodeType {
