@@ -30,7 +30,7 @@ const UserSchema = new Schema({
   },
 });
 
-export interface User extends Document {
+export interface IUser extends Document {
   userId: string;
   profileUrl?: string;
   goalActiveTime: Array<number>;
@@ -39,4 +39,4 @@ export interface User extends Document {
   excludeCategoryList: Array<string>;
 }
 
-export const UserModel = model<User>('users', UserSchema);
+export const UserModel = model<IUser>('users', UserSchema);

@@ -35,35 +35,30 @@ const getUserProfile = (accessToken: string) => axios.get('https://api.github.co
 });
 
 const getToken = async (ctx: Koa.Context) => {
-  try {
-    const { code } = ctx.request.query;
-    const {
-      data: { access_token: accessToken },
-    } = await getAccessTokenFromGitHub(code);
+  const { code } = ctx.request.query;
+  const {
+    data: { access_token: accessToken },
+  } = await getAccessTokenFromGitHub(code);
 
-    const data = await getUserProfile(accessToken);
-    const { id, login, avatar_url: avatarUrl } = data.data;
+  const data = await getUserProfile(accessToken);
+  const { id, login, avatar_url: avatarUrl } = data.data;
 
-    let user = await UserModel.findOne({ id }).exec();
-    if (!user) {
-      user = new UserModel({
-        _id: `github${id}`,
-        userId: login,
-        profileUrl: avatarUrl,
-      });
-      await Promise.all([user.save()]);
-    }
-
-    const token = jwt.sign({ id }, jwtConfig.jwtSecret);
-    ctx.body = {
-      id,
-      login,
-      avatarUrl,
-      token,
-    };
-  } catch (err) {
-    console.log(err);
+  let user = await UserModel.findOne({ _id: `github${id}` }).exec();
+  if (!user) {
+    user = new UserModel({
+      _id: `github${id}`,
+      userId: login,
+      profileUrl: avatarUrl,
+    });
+    await Promise.all([user.save()]);
   }
+
+  const token = jwt.sign({ id: `github${id}` }, jwtConfig.jwtSecret);
+  ctx.cookies.set('access_token', token, {
+    httpOnly: true,
+    maxAge: 1000 * 60 * 60 * 24,
+  });
+  ctx.body = { user, token };
 };
 
 const getUsername = async (ctx: Koa.Context) => {
