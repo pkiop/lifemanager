@@ -1,11 +1,12 @@
 import React from 'react';
-import axios from 'axios';
+import axios from 'libs/axios';
 import GitHubLogo from 'images/GitHub.png';
 import GitHubLogin from 'components/UI/molecules/OAuthLogin';
 import MainTemplate from 'components/templates/MainTemplate';
 
 const githubLogin = async () => {
   const res = await axios.get(`${process.env.REACT_APP_APISERVER_HOST}/api/auth/github`);
+  console.log('res : ', res);
   window.location.href = res.data;
 };
 
