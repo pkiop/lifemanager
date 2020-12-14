@@ -9,10 +9,6 @@ const GET_ONEUSER = 'user/GET_ONEUSER';
 const GET_ONEUSER_SUCCESS = 'user/GET_ONEUSER_SUCCESS';
 const GET_ONEUSER_FAILURE = 'user/GET_ONEUSER_FAILURE';
 
-// const GET_USERS = 'sample/GET_USERS';
-// const GET_USERS_SUCCESS = 'sample/GET_USERS_SUCCESS';
-// const GET_USERS_FAILURE = 'sample/GET_USERS_FAILURE';
-
 interface User {
   userId: String;
 }
