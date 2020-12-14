@@ -5,7 +5,7 @@ import GitHubLogin from 'components/UI/molecules/OAuthLogin';
 import MainTemplate from 'components/templates/MainTemplate';
 
 const githubLogin = async () => {
-  const res = await axios.get(`${process.env.APISERVER_HOST}/api/auth/github`);
+  const res = await axios.get(`${process.env.REACT_APP_APISERVER_HOST}/api/auth/github`);
   window.location.href = res.data;
 };
 
