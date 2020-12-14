@@ -1,6 +1,6 @@
 import axios from './axios';
 
-axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+// axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
 export const getOneUser = (id: number) => axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`);
 
