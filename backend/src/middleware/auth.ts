@@ -11,7 +11,6 @@ export const authorization = async (
   try {
     const key = 'access_token';
     const accessToken = ctx.cookies.get(key);
-
     if (!accessToken) {
       throw authentificationError;
     }

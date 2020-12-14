@@ -22,6 +22,7 @@ const PrivateRoute = ({ children, ...rest }: any) => {
   }
 
   const config = {
+    withCredentials: true,
     headers: {
       Authorization: `bearer ${localStorage.getItem('accessToken')}`,
       'User-Agent': 'Login-App',
@@ -29,7 +30,6 @@ const PrivateRoute = ({ children, ...rest }: any) => {
   };
   axios(`${process.env.APISERVER_HOST}/api/auth/github/username`, config)
     .then((res) => {
-      // userStore.logIn({ username: res.data });
       console.log('res : ', res);
     })
     .catch((err) => {
