@@ -14,7 +14,7 @@ const App = ({ location }: { location: any }) => {
       if (code == null) return;
       setIsLoading(false);
       const token = await axios.get(
-        `${process.env.APISERVER_HOST}/api/auth/github/getToken?code=${code}`,
+        `${process.env.REACT_APP_APISERVER_HOST}/api/auth/github/getToken?code=${code}`,
       );
       localStorage.setItem('token', token.data.token);
       setIsLoading(true);
