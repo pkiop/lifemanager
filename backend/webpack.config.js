@@ -11,7 +11,7 @@ module.exports = {
     plugins: [
       new TsconfigPathsPlugin({
         configFile: 'tsconfig.json',
-        baseUrl: './',
+        baseUrl: './src',
       }),
     ],
   },
