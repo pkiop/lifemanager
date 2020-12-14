@@ -75,6 +75,17 @@ const user = (state = initaialState, action: UserAction) => {
     return {
       username: action,
     };
+  case LOADUSER_SUCCESS:
+    return {
+      ...state,
+      username: action,
+    };
+
+  case LOADUSER_FAILUSER:
+    return {
+      ...state,
+      error: true,
+    };
 
   case GET_ONEUSER:
     return {
