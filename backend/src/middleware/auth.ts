@@ -15,7 +15,7 @@ export const authorization = async (
       throw authentificationError;
     }
     const decodedData = jwt.verify(accessToken, jwtConfig.jwtSecret) as any;
-    const user = await UserModel.findOne({ id: decodedData.id });
+    const user = await UserModel.findOne({ _id: decodedData.id });
     if (!user) {
       throw authentificationError;
     }
