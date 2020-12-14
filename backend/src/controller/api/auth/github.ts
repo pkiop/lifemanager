@@ -44,7 +44,7 @@ const getToken = async (ctx: Koa.Context) => {
     const data = await getUserProfile(accessToken);
     const { id, login, avatar_url: avatarUrl } = data.data;
 
-    let user = await UserModel.findOne({ id }).exec();
+    let user = await UserModel.findOne({ _id: `github${id}` }).exec();
     if (!user) {
       user = new UserModel({
         _id: `github${id}`,
