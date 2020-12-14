@@ -1,6 +1,7 @@
 import React from 'react';
 import LoginPage from 'components/pages/Login';
 import NotFound from 'components/pages/NotFound';
+import Main from 'components/pages/Main';
 import OAuthCallbackPage from 'components/pages/OAuthCallbackPage';
 import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -13,6 +14,7 @@ const App = () => {
         <Switch>
           <Route exact path="/oauthcallback" component={OAuthCallbackPage} />
           <Route path="/login" component={LoginPage} />
+          <Route exact path="/" component={Main} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
