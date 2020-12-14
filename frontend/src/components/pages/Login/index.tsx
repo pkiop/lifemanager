@@ -6,7 +6,6 @@ import MainTemplate from 'components/templates/MainTemplate';
 
 const githubLogin = async () => {
   const res = await axios.get(`${process.env.REACT_APP_APISERVER_HOST}/api/auth/github`);
-  console.log('res : ', res);
   window.location.href = res.data;
 };
 
