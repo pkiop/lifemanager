@@ -1,24 +1,32 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import axios from 'axios';
 import qs from 'query-string';
+import { getTokenAndUser } from 'libs/api';
+import { useDispatch } from 'react-redux';
+import { setUser } from 'modules/user';
+import { setCookie } from 'libs/cookie';
 
 const App = ({ location }: { location: any }) => {
   const history = useHistory();
-  console.log('dodo');
   const { code } = qs.parse(location.search);
   const [isLoading, setIsLoading] = useState(false);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const getToken = async () => {
       if (code == null) return;
       setIsLoading(false);
-      const token = await axios.get(
-        `${process.env.REACT_APP_APISERVER_HOST}/api/auth/github/getToken?code=${code}`,
-      );
-      localStorage.setItem('token', token.data.token);
-      setIsLoading(true);
-      history.push('/');
+      try {
+        const userInfo = await getTokenAndUser(code as string);
+        setCookie('access_token', userInfo.data.token);
+        dispatch(setUser(userInfo.data));
+
+        setIsLoading(true);
+        history.push('/');
+      } catch (e) {
+        console.log(e);
+        history.push('/not-found');
+      }
     };
     getToken();
   }, []);
