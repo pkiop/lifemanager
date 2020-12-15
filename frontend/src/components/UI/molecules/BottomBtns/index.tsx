@@ -10,8 +10,8 @@ export interface Props {
 }
 
 const App = ({
-  lgText = 'Add recode',
-  smText = 'finish',
+  lgText = 'Add Recode',
+  smText = 'Finish',
   lgOnClick,
   smOnClick,
   className,
