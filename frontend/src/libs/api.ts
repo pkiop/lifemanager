@@ -13,3 +13,11 @@ export const getTokenAndUser = (code: string) => axios.get(
 export const authentication = () => axios.get(
   `${process.env.REACT_APP_APISERVER_HOST}/auth/authentication`,
 );
+
+export const getTimeRecode = () => axios.get(
+  `${process.env.REACT_APP_APISERVER_HOST}/timeRecode`,
+);
+
+export const postTimeRecode = (payload: any) => axios.post(
+  `${process.env.REACT_APP_APISERVER_HOST}/timeRecode`, payload,
+);
