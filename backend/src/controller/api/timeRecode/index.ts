@@ -3,11 +3,15 @@ import { addOneTimeRecode, getAllTimeRecode } from 'service/timeRecode';
 
 export const get = async (ctx: Koa.Context) => {
   const res = await getAllTimeRecode();
-  ctx.body = [{ data: res }];
+  ctx.body = { data: res };
 };
 
 export const post = async (ctx: Koa.Context) => {
-  await addOneTimeRecode(ctx.request.body);
+  try {
+    await addOneTimeRecode(ctx.request.body);
+  } catch (e) {
+    ctx.status = 500;
+  }
   ctx.status = 201;
   ctx.body = { message: 'success' };
 };
