@@ -9,7 +9,6 @@ export interface Props {
 
 const App = ({ onClick, children, className }: Props) => {
   const onClickHandler = useCallback(onClick, []);
-  console.log('onClickHandler :', onClickHandler);
   return (
     <>
       <Button onClick={onClickHandler} className={className}>
