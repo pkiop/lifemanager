@@ -15,9 +15,9 @@ export const authentication = () => axios.get(
 );
 
 export const getTimeRecode = () => axios.get(
-  `${process.env.REACT_APP_APISERVER_HOST}/timeRecode`,
+  `${process.env.REACT_APP_APISERVER_HOST}/api/timeRecode`,
 );
 
 export const postTimeRecode = (payload: any) => axios.post(
-  `${process.env.REACT_APP_APISERVER_HOST}/timeRecode`, payload,
+  `${process.env.REACT_APP_APISERVER_HOST}/api/timeRecode`, payload,
 );
