@@ -6,6 +6,7 @@ import BottomBtns from 'components/UI/molecules/BottomBtns';
 import { loadUser } from 'modules/user/index';
 import { useDispatch, useSelector } from 'react-redux';
 import RecodeInput from 'components/UI/organisms/RecodeInput';
+import { loadTimeRecode } from 'modules/timeRecode';
 
 const TestLabelsForOverFlow = [
   {
@@ -27,17 +28,20 @@ const TestLabelsForOverFlow = [
 ];
 const App = () => {
   const user = useSelector<any>((state: any) => state.user.user && state.user.user.title);
-  const timeRecodes = useSelector<Array<any>>((state: any) => state.payload);
+  const timeRecodes = useSelector<Array<any>>((state: any) => state.timeRecode.timeRecodeList);
   const dispatch = useDispatch();
-  dispatch(loadUser());
   useEffect(() => {
-  }, [user]);
+    dispatch(loadUser());
+    dispatch(loadTimeRecode());
+  }, []);
+  // eslint-disable-next-line no-debugger
+  // debugger;
   const contents = (
     <>
       <div>user : {user}</div>
       <Board />
       <RecodeInput labelList={TestLabelsForOverFlow} />
-      <RecodeList recodeList={timeRecodes as [] ? [] : []} />
+      <RecodeList recodeList={timeRecodes as any ? timeRecodes as any : []} />
       <BottomBtns
         lgText={'Add Recode'}
         smText={'Finish'}
