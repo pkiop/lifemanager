@@ -1,6 +1,4 @@
-import {
-  Schema, model, Document,
-} from 'mongoose';
+import { Schema, model, Document } from 'mongoose';
 
 const TimeRecodeSchema = new Schema({
   userId: {
@@ -31,7 +29,7 @@ const TimeRecodeSchema = new Schema({
 export interface TimeRecode extends Document {
   userId: string;
   title: string;
-  startTime : Array<number>;
+  startTime: Array<number>;
   endTime?: Array<number>;
   category: string;
   isActivate: boolean;

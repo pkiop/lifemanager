@@ -1,4 +1,4 @@
-import Koa from 'koa';
+import Koa from '../oldsrc/koa';
 
 export const getUserByAccessToken = (ctx: Koa.Context) => {
   ctx.body = ctx.request.body.user;
