@@ -1,4 +1,4 @@
-import { TimeRecodeModel, TimeRecode } from 'model/timeRecode';
+import { TimeRecodeModel, TimeRecode } from '../oldsrc/model/timeRecode';
 
 export const getAllTimeRecode = async () => {
   const res = await TimeRecodeModel.find();

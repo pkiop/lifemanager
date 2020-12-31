@@ -1,7 +1,7 @@
-import Router from 'koa-router';
-import userController from 'controller/api/user';
-import { authorization } from 'middleware/auth';
-import compose from 'koa-compose';
+import Router from '../oldsrc/koa-router';
+import userController from '../oldsrc/controller/api/user';
+import { authorization } from '../oldsrc/middleware/auth';
+import compose from '../oldsrc/koa-compose';
 
 const router = new Router();
 router.get(

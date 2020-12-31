@@ -1,6 +1,6 @@
-import Router from 'koa-router';
-import timeRecodeController from 'controller/api/timeRecode';
-import { authorization } from 'middleware/auth';
+import Router from '../oldsrc/koa-router';
+import timeRecodeController from '../oldsrc/controller/api/timeRecode';
+import { authorization } from '../oldsrc/middleware/auth';
 
 const router = new Router();
 router.use('/', authorization);
