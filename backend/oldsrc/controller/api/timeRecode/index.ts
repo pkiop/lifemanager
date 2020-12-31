@@ -1,5 +1,8 @@
-import Koa from 'koa';
-import { addOneTimeRecode, getAllTimeRecode } from 'service/timeRecode';
+import Koa from '../oldsrc/koa';
+import {
+  addOneTimeRecode,
+  getAllTimeRecode,
+} from '../oldsrc/service/timeRecode';
 
 export const get = async (ctx: Koa.Context) => {
   const res = await getAllTimeRecode();

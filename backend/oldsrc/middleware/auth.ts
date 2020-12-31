@@ -1,8 +1,8 @@
-import Koa from 'koa';
-import jwt from 'jsonwebtoken';
-import { jwtConfig } from 'config/index';
-import { authentificationError } from 'libs/error';
-import { UserModel } from 'model/user';
+import Koa from '../oldsrc/koa';
+import jwt from '../oldsrc/jsonwebtoken';
+import { jwtConfig } from '../oldsrc/config/index';
+import { authentificationError } from '../oldsrc/libs/error';
+import { UserModel } from '../oldsrc/model/user';
 
 export const authorization = async (
   ctx: Koa.Context,

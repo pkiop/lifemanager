@@ -1,4 +1,4 @@
-import { TimeRecodeModel, TimeRecode } from 'model/timeRecode';
+import { TimeRecodeModel, TimeRecode } from '../oldsrc/model/timeRecode';
 
 export const getAllTimeRecode = async () => {
   const res = await TimeRecodeModel.find();
@@ -6,10 +6,20 @@ export const getAllTimeRecode = async () => {
 };
 
 export const addOneTimeRecode = async ({
-  userId, title, startTime, endTime, category, isActivate,
+  userId,
+  title,
+  startTime,
+  endTime,
+  category,
+  isActivate,
 }: TimeRecode) => {
   const newTimeRecode = new TimeRecodeModel({
-    userId, title, startTime, endTime, category, isActivate,
+    userId,
+    title,
+    startTime,
+    endTime,
+    category,
+    isActivate,
   });
   return newTimeRecode.save();
 };

@@ -1,5 +1,5 @@
-import Router from 'koa-router';
-import githubAuth from 'controller/api/auth/github';
+import Router from '../oldsrc/koa-router';
+import githubAuth from '../oldsrc/controller/api/auth/github';
 
 const router = new Router();
 router.get('/github/username', githubAuth.getUsername);

@@ -1,6 +1,6 @@
-import Koa from 'koa';
-import Router from 'koa-router';
-import apiRouter from 'router/api';
+import Koa from '../oldsrc/koa';
+import Router from '../oldsrc/koa-router';
+import apiRouter from '../oldsrc/router/api';
 
 const router = new Router();
 

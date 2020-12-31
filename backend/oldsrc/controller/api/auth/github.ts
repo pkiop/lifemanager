@@ -1,8 +1,8 @@
-import Koa from 'koa';
-import env from 'dotenv';
-import axios from 'axios';
-import jwt from 'jsonwebtoken';
-import { UserModel } from 'model/user';
+import Koa from '../oldsrc/koa';
+import env from '../oldsrc/dotenv';
+import axios from '../oldsrc/axios';
+import jwt from '../oldsrc/jsonwebtoken';
+import { UserModel } from '../oldsrc/model/user';
 import { jwtConfig } from '../../../config';
 
 env.config();
