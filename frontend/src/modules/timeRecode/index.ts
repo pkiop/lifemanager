@@ -1,35 +1,49 @@
 import * as api from 'libs/api';
 
-const TIMERECODE = 'timeRecode/TIMERECODE';
-const TIMERECODE_SUCCESS = 'timeRecode/TIMERECODE_SUCCESS';
-const TIMERECODE_FAILUSER = 'timeRecode/TIMERECODE_FAILRE';
+const SETTIMERECODE = 'timeRecode/SETTIMERECODE';
+const SETTIMERECODE_SUCCESS = 'timeRecode/SETTIMERECODE_SUCCESS';
+const SETTIMERECODE_FAILURE = 'timeRecode/SETTIMERECODE_FAILURE';
+
+const LOADTIMERECODE = 'timeRecode/LOADTIMERECODE';
+const LOADTIMERECODE_SUCCESS = 'timeRecode/LOADTIMERECODE_SUCCESS';
+const LOADTIMERECODE_FAILUSER = 'timeRecode/LOADTIMERECODE_FAILRE';
 
 export interface ITimeRecode {
   userId?: string;
   title?: string;
-  startTime? : Array<number>;
+  startTime?: Array<number>;
   endTime?: Array<number>;
   category?: string;
   isActivate?: boolean;
 }
 
-interface TimeRecodeAction {
-  type: string,
-  payload: any,
-}
-
-// export const setUser = (userInfo: User) => ({ type: SETUSER, user: userInfo });
-export const loadTimeRecode = () => async (dispatch: any) => {
-  dispatch({ type: TIMERECODE });
+export const setTimeRecode = (recode: any) => async (dispatch: any) => {
+  dispatch({ type: SETTIMERECODE, recode });
   try {
-    const response = await api.getTimeRecode();
+    const res = await api.postTimeRecode(recode);
     dispatch({
-      type: TIMERECODE_SUCCESS,
-      payload: response.data,
+      type: SETTIMERECODE_SUCCESS,
     });
   } catch (e) {
     dispatch({
-      type: TIMERECODE_FAILUSER,
+      type: SETTIMERECODE_FAILURE,
+      payload: e,
+      error: true,
+    });
+  }
+};
+
+export const loadTimeRecode = () => async (dispatch: any) => {
+  dispatch({ type: LOADTIMERECODE });
+  try {
+    const response = await api.getTimeRecode();
+    dispatch({
+      type: LOADTIMERECODE_SUCCESS,
+      timeRecodeList: response.data.data,
+    });
+  } catch (e) {
+    dispatch({
+      type: LOADTIMERECODE_FAILUSER,
       payload: e,
       error: true,
     });
@@ -48,19 +62,36 @@ const initaialState = {
   },
 };
 
-const timeRecode = (state = initaialState, action: TimeRecodeAction) => {
+const timeRecode = (state = initaialState, action: any) => {
   switch (action.type) {
-  case TIMERECODE:
+  case SETTIMERECODE: {
     return {
-      payload: action,
+      ...state,
+      timeRecodeInput: { ...action.recode },
     };
-  case TIMERECODE_SUCCESS:
+  }
+  case SETTIMERECODE_SUCCESS: {
+    return {
+      ...state,
+    };
+  }
+  case SETTIMERECODE_FAILURE: {
+    return {
+      ...state,
+    };
+  }
+  case LOADTIMERECODE:
     return {
       ...state,
       payload: action,
     };
+  case LOADTIMERECODE_SUCCESS:
+    return {
+      ...state,
+      timeRecodeList: [...action.timeRecodeList],
+    };
 
-  case TIMERECODE_FAILUSER:
+  case LOADTIMERECODE_FAILUSER:
     return {
       ...state,
       error: true,
