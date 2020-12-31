@@ -1,10 +1,13 @@
 import React from 'react';
-import LoginPage from 'components/pages/Login';
-import NotFound from 'components/pages/NotFound';
-import Main from 'components/pages/Main';
-import OAuthCallbackPage from 'components/pages/OAuthCallbackPage';
+import LoginPage from 'pages/Login';
+import NotFound from 'pages/NotFound';
+import Main from 'pages/Main';
 import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Amplify from 'aws-amplify';
+import awsconfig from 'aws-exports';
+
+Amplify.configure(awsconfig);
 
 const App = () => {
   console.log('app start2');
@@ -12,7 +15,6 @@ const App = () => {
     <GlobalThemeProvider>
       <Router>
         <Switch>
-          <Route exact path="/oauthcallback" component={OAuthCallbackPage} />
           <Route path="/login" component={LoginPage} />
           <Route exact path="/" component={Main} />
           <Route path="*" component={NotFound} />
