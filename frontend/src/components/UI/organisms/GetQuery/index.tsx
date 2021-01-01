@@ -24,8 +24,12 @@ function GET_RECODETEST() {
   }
   return (
     <>
+      <div>{data?.recode?.userId}</div>
       <div>{data?.recode?.title}</div>
       <div>{data?.recode?.startTime}</div>
+      <div>{data?.recode?.endTime}</div>
+      <div>{data?.recode?.category}</div>
+      <div>{data?.recode?.isActive}</div>
     </>
   );
 }
