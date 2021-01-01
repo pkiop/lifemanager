@@ -7,6 +7,7 @@ import { loadUser } from 'modules/user/index';
 import { useDispatch, useSelector } from 'react-redux';
 import RecodeInput from 'components/UI/organisms/RecodeInput';
 import { loadTimeRecode } from 'modules/timeRecode';
+import GetQuery from 'components/UI/organisms/GetQuery';
 
 const TestLabelsForOverFlow = [
   {
@@ -26,6 +27,7 @@ const TestLabelsForOverFlow = [
     children: 'gray',
   },
 ];
+
 const App = () => {
   const user = useSelector<any>((state: any) => state.user.user && state.user.user.title);
   const timeRecodes = useSelector<Array<any>>((state: any) => state.timeRecode.timeRecodeList);
@@ -48,6 +50,7 @@ const App = () => {
         lgOnClick={() => alert('add')}
         smOnClick={() => alert('finish')}
       />
+      <GetQuery />
     </>
   );
 

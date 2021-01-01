@@ -33,7 +33,6 @@ const App = ({ className }: any) => {
       default:
       }
     });
-    console.log('loginState : ', loginState);
 
     Auth.currentAuthenticatedUser()
       .then((user) => setLoginState({ user }))
