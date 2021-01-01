@@ -1,6 +1,7 @@
 import { GraphQLServer } from 'graphql-yoga';
 
 type Recode = {
+  id: String;
   userId: String;
   title: String;
   startTime: [number];
@@ -8,10 +9,20 @@ type Recode = {
   category: String;
   isActivate: Boolean;
 };
+
 const typeDefs = `
 
   type Recode {
+    id: ID!,
     userId: String!,
+    title: String!,
+    startTime: [Int]!,
+    endTime: [Int],
+    category: String!,
+    isActivate: Boolean!
+  }
+
+  input RecodeInput {
     title: String!,
     startTime: [Int]!,
     endTime: [Int],
@@ -25,7 +36,7 @@ const typeDefs = `
   }
 
   type Mutation {
-    addRecode(userId: String): Boolean!
+    addRecode(recode: RecodeInput): Boolean!
   }
 `;
 
@@ -35,7 +46,7 @@ const resolvers = {
     bye: (_: any, { a, b }: any) => `${a} ${b}`,
   },
   Mutation: {
-    addRecode: (userId: string) => true,
+    addRecode: (recode: Recode) => true,
   },
 };
 
