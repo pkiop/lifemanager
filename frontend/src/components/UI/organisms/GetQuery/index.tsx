@@ -4,8 +4,12 @@ import { gql, useQuery } from '@apollo/client';
 const GET_RECODE = gql`  
   {
     Recode { 
+      userId
       title
       startTime
+      endTime
+      category
+      isActivate
     }
   }
 `;
