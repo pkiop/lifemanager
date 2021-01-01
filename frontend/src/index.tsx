@@ -4,6 +4,10 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
+import { ApolloProvider } from '@apollo/client';
+// import { ApolloProvider } from 'react-apollo';
+// import { ApolloProvider } from '@apollo/react-hooks';
+import client from 'Apollo';
 import rootReducer from './modules';
 import App from './App';
 
@@ -12,9 +16,11 @@ const store = createStore(rootReducer, applyMiddleware(logger, ReduxThunk));
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <ApolloProvider client={client as any}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

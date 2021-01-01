@@ -9,8 +9,7 @@ import awsconfig from 'aws-exports';
 
 Amplify.configure(awsconfig);
 
-const App = () => {
-  console.log('app start2');
+function App() {
   return (
     <GlobalThemeProvider>
       <Router>
@@ -22,6 +21,6 @@ const App = () => {
       </Router>
     </GlobalThemeProvider>
   );
-};
+}
 
 export default App;
