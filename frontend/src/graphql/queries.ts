@@ -2,32 +2,41 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getTodo = /* GraphQL */ `
-  query GetTodo($id: ID!) {
-    getTodo(id: $id) {
+export const getAllTimeRecodeByUserId = /* GraphQL */ `
+  query GetAllTimeRecodeByUserId {
+    getAllTimeRecodeByUserId {
       id
-      name
-      description
-      createdAt
-      updatedAt
+      userId
+      title
+      startTime {
+        hour
+        min
+      }
+      endTime {
+        hour
+        min
+      }
+      category
+      isActive
     }
   }
 `;
-export const listTodos = /* GraphQL */ `
-  query ListTodos(
-    $filter: ModelTodoFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        name
-        description
-        createdAt
-        updatedAt
+export const getAllTimeRecode = /* GraphQL */ `
+  query GetAllTimeRecode {
+    getAllTimeRecode {
+      id
+      userId
+      title
+      startTime {
+        hour
+        min
       }
-      nextToken
+      endTime {
+        hour
+        min
+      }
+      category
+      isActive
     }
   }
 `;

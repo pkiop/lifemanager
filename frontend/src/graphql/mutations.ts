@@ -2,45 +2,55 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createTodo = /* GraphQL */ `
-  mutation CreateTodo(
-    $input: CreateTodoInput!
-    $condition: ModelTodoConditionInput
+export const addTimeRecode = /* GraphQL */ `
+  mutation AddTimeRecode(
+    $userId: String!
+    $title: String!
+    $startTime: AddRecodeTime!
+    $endTime: AddRecodeTime!
+    $category: String!
+    $isActive: Boolean!
   ) {
-    createTodo(input: $input, condition: $condition) {
+    AddTimeRecode(
+      userId: $userId
+      title: $title
+      startTime: $startTime
+      endTime: $endTime
+      category: $category
+      isActive: $isActive
+    ) {
       id
-      name
-      description
-      createdAt
-      updatedAt
+      userId
+      title
+      startTime {
+        hour
+        min
+      }
+      endTime {
+        hour
+        min
+      }
+      category
+      isActive
     }
   }
 `;
-export const updateTodo = /* GraphQL */ `
-  mutation UpdateTodo(
-    $input: UpdateTodoInput!
-    $condition: ModelTodoConditionInput
-  ) {
-    updateTodo(input: $input, condition: $condition) {
+export const deleteTimeRecodeById = /* GraphQL */ `
+  mutation DeleteTimeRecodeById($id: ID!) {
+    DeleteTimeRecodeById(id: $id) {
       id
-      name
-      description
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const deleteTodo = /* GraphQL */ `
-  mutation DeleteTodo(
-    $input: DeleteTodoInput!
-    $condition: ModelTodoConditionInput
-  ) {
-    deleteTodo(input: $input, condition: $condition) {
-      id
-      name
-      description
-      createdAt
-      updatedAt
+      userId
+      title
+      startTime {
+        hour
+        min
+      }
+      endTime {
+        hour
+        min
+      }
+      category
+      isActive
     }
   }
 `;
