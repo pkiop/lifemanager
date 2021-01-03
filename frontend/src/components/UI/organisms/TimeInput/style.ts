@@ -6,13 +6,18 @@ export const TimeInput = styled.div`
   display: flex;
 `;
 
-export const Text = styled(TextComponent)``;
+export const Text = styled(TextComponent)`
+  width: 8em;
+  text-align: center;
+`;
 
 export const TimeWrap = styled.div``;
 export const Wrap = styled.div`
   display: flex;
 `;
 
-export const Input = styled(InputComponent)``;
+export const Input = styled(InputComponent)`
+  margin-left: 0.4em;
+`;
 
 export default {};
