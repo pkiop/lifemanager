@@ -7,7 +7,6 @@ const App = () => {
   const dispatch = useDispatch();
 
   dispatch(getOneUser(1));
-  console.log('render : ');
   return (
     <>
       <div>temp</div>
