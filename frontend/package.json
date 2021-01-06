@@ -19,7 +19,7 @@
     "aws-amplify": "^3.3.13",
     "aws-appsync": "^4.0.1",
     "aws-appsync-auth-link": "^3.0.2",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
     "immer": "^8.0.0",
