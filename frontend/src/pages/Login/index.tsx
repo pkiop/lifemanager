@@ -17,6 +17,7 @@ const loginOnClick = () => Auth.federatedSignIn();
 
 const App = ({ className }: any) => {
   const [loginState, setLoginState] = useState<any>({ user: null, customState: null });
+
   useEffect(() => {
     Hub.listen('auth', ({ payload: { event, data } }) => {
       switch (event) {
@@ -40,6 +41,9 @@ const App = ({ className }: any) => {
   }, []);
 
   const { user } = loginState;
+  if (user) {
+    localStorage.setItem('loginUserName', user.attributes.name);
+  }
 
   const contents = (
     <>
