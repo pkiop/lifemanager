@@ -7,3 +7,4 @@ sessions
 .env
 dist
 .DS_Store
+frontend/.graphqlconfig.yml

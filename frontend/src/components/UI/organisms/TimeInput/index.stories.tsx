@@ -9,6 +9,6 @@ export default {
 
 export const Default = () => (
   <GlobalThemeProvider>
-    <TimeInput startTime={[11, 30]} endTime={[12, 40]} />
+    <TimeInput startTime={{ hour: 11, min: 30 }} endTime={{ hour: 12, min: 40 }} />
   </GlobalThemeProvider>
 );

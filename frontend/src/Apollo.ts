@@ -8,7 +8,7 @@ import appSyncConfig from 'aws-exports';
 const url = appSyncConfig.aws_appsync_graphqlEndpoint;
 const region = appSyncConfig.aws_appsync_region;
 const auth = {
-  type: 'AMAZON_COGNITO_USER_POOLS',
+  type: 'API_KEY',
   apiKey: appSyncConfig.aws_appsync_apiKey,
 };
 const link = ApolloLink.from([

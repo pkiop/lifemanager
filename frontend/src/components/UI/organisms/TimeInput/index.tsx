@@ -2,9 +2,13 @@ import React from 'react';
 import { makeTwoNumber } from 'libs/time';
 import * as S from './style';
 
+export interface IRecodeTime {
+  hour: number,
+  min: number,
+}
 export interface Props {
-  startTime?: number[];
-  endTime?: number[];
+  startTime?: IRecodeTime;
+  endTime?: IRecodeTime;
   className?: string;
   startHourRef?: any;
   startMinRef?: any;
@@ -13,12 +17,12 @@ export interface Props {
 }
 
 const App = ({
-  startTime = [0, 0],
-  endTime = [0, 0],
+  startTime = { hour: 0, min: 0 },
+  endTime = { hour: 0, min: 0 },
   className, startHourRef, startMinRef, endHourRef, endMinRef, ...props
 }: Props) => {
-  const [startHour, startMin] = startTime;
-  const [endHour, endMin] = endTime;
+  const { hour: startHour, min: startMin } = startTime;
+  const { hour: endHour, min: endMin } = endTime;
   return (
     <S.TimeInput className={className} {...props}>
       <S.TimeWrap>
