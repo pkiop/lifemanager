@@ -40,7 +40,6 @@ const App = ({ className }: any) => {
   }, []);
 
   const { user } = loginState;
-  console.log('user :: ', user);
 
   const contents = (
     <>
