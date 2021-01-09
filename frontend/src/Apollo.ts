@@ -5,7 +5,6 @@ import { AUTH_TYPE } from 'aws-appsync';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import appSyncConfig from 'aws-exports';
 import Amplify, { Auth } from 'aws-amplify';
-import { withAuthenticator } from 'aws-amplify-react';
 
 Amplify.configure(appSyncConfig);
 

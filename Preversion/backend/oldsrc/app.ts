@@ -1,10 +1,10 @@
 import mongoose from 'mongoose';
-import Koa from '../oldsrc/koa';
-import Router from '../oldsrc/koa-router';
-import bodyParser from '../oldsrc/koa-bodyparser';
-import allRouter from '../oldsrc/router/index';
-import cors from '../oldsrc/@koa/cors';
-import dotenv from '../oldsrc/dotenv';
+import Koa from './koa';
+import Router from './koa-router';
+import bodyParser from './koa-bodyparser';
+import allRouter from './router/index';
+import cors from './@koa/cors';
+import dotenv from './dotenv';
 
 dotenv.config();
 
