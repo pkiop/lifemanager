@@ -4,7 +4,7 @@ import { LabelType } from 'components/UI/atoms/Label';
 import { setTimeRecode, ITimeRecode } from 'modules/timeRecode';
 import { IRecodeTime } from 'components/UI/organisms/TimeInput';
 import { gql, useQuery, useMutation } from '@apollo/client';
-import { addTimeRecode } from 'graphql/mutations';
+import { createTimeRecode } from 'graphql/mutations';
 import * as S from './style';
 
 export interface Props {
@@ -18,8 +18,7 @@ const App = ({ labelList, className }: Props) => {
   const startMinRef = useRef<HTMLInputElement>(null);
   const endHourRef = useRef<HTMLInputElement>(null);
   const endMinRef = useRef<HTMLInputElement>(null);
-  const [addTimeRecodeMutation, { data }] = useMutation(gql`${addTimeRecode}`);
-  console.log('mutation result : ', data);
+  const [addTimeRecodeMutation, { data }] = useMutation(gql`${createTimeRecode}`);
   const onclickHandler = () => {
     const title = titleRef.current && titleRef.current.value;
     const startHour = startHourRef.current && startHourRef.current.value;
@@ -36,12 +35,15 @@ const App = ({ labelList, className }: Props) => {
     };
     addTimeRecodeMutation({
       variables: {
-        userId: 'pkiop',
-        title,
-        startTime,
-        endTime,
-        category: 'develop',
-        isActive: true,
+        input: {
+          id: 'temp',
+          userId: 'pkiop',
+          title,
+          startTime,
+          endTime,
+          category: 'develop',
+          isActive: true,
+        },
       },
     });
   };

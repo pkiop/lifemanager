@@ -4,10 +4,7 @@ import NotFound from 'pages/NotFound';
 import Main from 'pages/Main';
 import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Amplify from 'aws-amplify';
-import awsconfig from 'aws-exports';
-
-Amplify.configure(awsconfig);
+import { withAuthenticator } from 'aws-amplify-react';
 
 function App() {
   return (
@@ -15,7 +12,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/login" component={LoginPage} />
-          <Route exact path="/" component={Main} />
+          <Route exact path="/" component={withAuthenticator(Main)} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
