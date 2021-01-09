@@ -18,6 +18,11 @@ const App = ({ labelList, className }: Props) => {
   const startMinRef = useRef<HTMLInputElement>(null);
   const endHourRef = useRef<HTMLInputElement>(null);
   const endMinRef = useRef<HTMLInputElement>(null);
+
+  const cognitoLastUser = `CognitoIdentityServiceProvider.${process.env.REACT_APP_AWS_COGNITO_ISP}.LastAuthUser`;
+  const cognitoProvider = `CognitoIdentityServiceProvider.${process.env.REACT_APP_AWS_COGNITO_ISP}.${localStorage.getItem(cognitoLastUser)}.userData`;
+  const userName = JSON.parse(localStorage.getItem(cognitoProvider)!)?.UserAttributes[3].Value;
+
   const [addTimeRecodeMutation, { data }] = useMutation(gql`${createTimeRecode}`);
   const onclickHandler = () => {
     const title = titleRef.current && titleRef.current.value;
@@ -33,16 +38,18 @@ const App = ({ labelList, className }: Props) => {
       hour: Number(endHour),
       min: Number(endMin),
     };
+
+    const category = 'develop';
+    const isActive = true;
     addTimeRecodeMutation({
       variables: {
         input: {
-          id: 'temp',
-          userId: 'pkiop',
+          userId: userName,
           title,
           startTime,
           endTime,
-          category: 'develop',
-          isActive: true,
+          category,
+          isActive,
         },
       },
     });
