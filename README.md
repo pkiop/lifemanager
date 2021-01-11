@@ -1,4 +1,8 @@
-## Life Manager
+## Life Manager v5.0
+
+## 기술 스택
+![image](https://user-images.githubusercontent.com/34783156/104201114-bda76f00-546c-11eb-8b77-3fda882c2f7f.png)
+
 
 하루동안 한 일을 기록하면 유용한 정보들을 시각화해서 보여주는 어플리케이션
 
