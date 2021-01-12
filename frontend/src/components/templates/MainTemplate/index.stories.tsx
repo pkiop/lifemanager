@@ -11,22 +11,22 @@ export default {
 const temp = [
   {
     title: 'lifemanager',
-    startTime: [11, 30],
-    endTime: [12, 30],
+    startTime: { hour: 11, min: 30 },
+    endTime: { hour: 12, min: 30 },
     category: 'develop',
     isActive: true,
   },
   {
     title: '낮잠',
-    startTime: [13, 30],
-    endTime: [14, 0],
+    startTime: { hour: 11, min: 30 },
+    endTime: { hour: 12, min: 30 },
     category: 'sleep',
     isActive: false,
   },
   {
     title: '부캠',
-    startTime: [23, 30],
-    endTime: [0, 20],
+    startTime: { hour: 11, min: 30 },
+    endTime: { hour: 12, min: 30 },
     category: 'develop',
     isActive: true,
   },
