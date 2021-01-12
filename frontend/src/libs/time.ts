@@ -1,3 +1,5 @@
+import { IHmTime } from 'components/UI/organisms/GetQuery';
+
 export const makeTwoNumber = (num: number) => {
   if (num < 10) {
     return `0${num}`;
@@ -7,26 +9,26 @@ export const makeTwoNumber = (num: number) => {
 
 export const nowHourMin = () => {
   const nowTime = new Date();
-  return [nowTime.getHours(), nowTime.getMinutes()];
+  return { hour: nowTime.getHours(), min: nowTime.getMinutes() };
 };
 
-export const calNowTime = (startTime: number[], endTime: number[]) => {
-  const [startHour, startMin] = startTime;
-  const [endHour, endMin] = endTime;
+export const calNowTime = (startTime: IHmTime, endTime: IHmTime) => {
+  const { hour: startHour, min: startMin } = startTime;
+  const { hour: endHour, min: endMin } = endTime;
   const EMmSM = endMin - startMin;
   if (endHour < startHour) {
     if (startMin > endMin) {
-      return [endHour + 23 - startHour, EMmSM + 60];
+      return { hour: endHour + 23 - startHour, min: EMmSM + 60 };
     }
-    return [endHour + 24 - startHour, EMmSM];
+    return { hour: endHour + 24 - startHour, min: EMmSM };
   }
   if (startMin > endMin) {
     if (endHour === startHour) {
-      return [99, 99];
+      return { hour: 99, min: 99 };
     }
-    return [endHour - 1 - startHour, EMmSM + 60];
+    return { hour: endHour - 1 - startHour, min: EMmSM + 60 };
   }
-  return [endHour - startHour, EMmSM];
+  return { hour: endHour - startHour, min: EMmSM };
 };
 
 export default {};

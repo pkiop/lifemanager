@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import LoginPage from 'pages/Login';
 import NotFound from 'pages/NotFound';
 import MainPage from 'pages/Main';

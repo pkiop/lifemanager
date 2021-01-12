@@ -1,16 +1,17 @@
 import React from 'react';
 import { makeTwoNumber } from 'libs/time';
+import { IHmTime } from 'components/UI/organisms/GetQuery';
 import * as S from './style';
 
 export interface Props {
-  startTime: Array<number>;
-  endTime: Array<number>;
+  startTime: IHmTime;
+  endTime: IHmTime;
   className?: string;
 }
 
 const App = ({ startTime, endTime, className }: Props) => {
-  const [startHour, startMin] = startTime;
-  const [endHour, endMin] = endTime;
+  const { hour: startHour, min: startMin } = startTime;
+  const { hour: endHour, min: endMin } = endTime;
   const timeText = `${makeTwoNumber(startHour)}:${makeTwoNumber(
     startMin,
   )}~${makeTwoNumber(endHour)}:${makeTwoNumber(endMin)}`;

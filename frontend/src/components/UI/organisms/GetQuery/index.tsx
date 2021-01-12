@@ -1,9 +1,29 @@
+import Recode from 'components/UI/molecules/Recode';
 import React from 'react';
-import { gql, useQuery } from '@apollo/client';
-import { listTimeRecodes } from 'graphql/queries';
 
-function GET_RECODETEST() {
-  const { loading, error, data } = useQuery(gql`${listTimeRecodes}`);
+export interface IHmTime {
+  hour: number,
+  min: number,
+}
+
+export interface ITimeRecode {
+  title: string,
+  startTime: IHmTime,
+  endTime: IHmTime,
+  category: string,
+  isActive: boolean,
+}
+
+interface Props {
+  timeRecodes: ITimeRecode[];
+  loading: boolean;
+  error: any;
+  className?: string;
+}
+
+function App({
+  timeRecodes, loading, error, className,
+}:Props) {
   if (loading) {
     return <div>loading</div>;
   }
@@ -11,17 +31,13 @@ function GET_RECODETEST() {
     return <div>error</div>;
   }
 
-  const res = data?.listTimeRecodes?.items?.map((el: any) => (
-    <>
-      <div>{el.userId}</div>
-      <div>{el.title}</div>
-      <div>{el.startTime.hour}</div>
-      <div>{el.startTime.min}</div>
-      <div>{el.endTime.hour}</div>
-      <div>{el.endTime.min}</div>
-      <div>{el.category}</div>
-      <div>{el.isActive}</div>
-    </>
+  const res = timeRecodes.map((recode: ITimeRecode) => (
+    <Recode
+      title={recode.title}
+      startTime={recode.startTime}
+      endTime={recode.endTime}
+      category={recode.category}
+      isActive={recode.isActive} />
   ));
   return (
     <>
@@ -30,4 +46,4 @@ function GET_RECODETEST() {
   );
 }
 
-export default GET_RECODETEST;
+export default App;

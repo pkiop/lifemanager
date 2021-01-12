@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import GitHubLogo from 'images/GitHub.png';
+import GoogleLogo from 'images/googlelogo.png';
+import LifemanagerLogo from 'images/LifemanagerMainLogo.png';
 import OAuthLogin from 'components/UI/molecules/OAuthLogin';
-import MainTemplate from 'components/templates/MainTemplate';
 import { CognitoHostedUIIdentityProvider } from '@aws-amplify/auth';
 import { Auth, Hub } from 'aws-amplify';
+import * as S from './style';
 
 const googleLoginOnClick = () => Auth.federatedSignIn({
   provider: CognitoHostedUIIdentityProvider.Google,
 });
-
-const facebookLoginOnClick = () => Auth.federatedSignIn({
-  provider: CognitoHostedUIIdentityProvider.Facebook,
-});
-
-const loginOnClick = () => Auth.federatedSignIn();
 
 const App = ({ className }: any) => {
   const [loginState, setLoginState] = useState<any>({ user: null, customState: null });
@@ -41,30 +36,17 @@ const App = ({ className }: any) => {
   }, []);
 
   const { user } = loginState;
-  if (user) {
-    localStorage.setItem('loginUserName', user.attributes.name);
-  }
 
-  const contents = (
-    <>
+  return (
+    <S.LoginPage className={className}>
+      <S.Img src={LifemanagerLogo}/>
       <OAuthLogin
-        icon={GitHubLogo}
+        icon={GoogleLogo}
         ButtonTitle={'Login With Google'}
         onClick={googleLoginOnClick}
       />
-      <OAuthLogin
-        icon={GitHubLogo}
-        ButtonTitle={'Login With Facebook'}
-        onClick={facebookLoginOnClick}
-      />
-      <OAuthLogin
-        icon={GitHubLogo}
-        ButtonTitle={'Login'}
-        onClick={loginOnClick}
-      />
-    </>
+    </S.LoginPage>
   );
-  return <MainTemplate contents={contents} className={className} />;
 };
 
 export default App;

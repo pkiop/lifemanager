@@ -8,8 +8,8 @@ export default {
 
 const temp = {
   title: 'lifemanager',
-  startTime: [11, 30],
-  endTime: [12, 30],
+  startTime: { hour: 11, min: 30 },
+  endTime: { hour: 12, min: 30 },
   category: 'develop',
   isActive: true,
 };
