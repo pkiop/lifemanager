@@ -1,11 +1,12 @@
 import React from 'react';
 import { makeTwoNumber, nowHourMin, calNowTime } from 'libs/time';
+import { IHmTime } from 'components/UI/organisms/GetQuery';
 import * as S from './style';
 
 export interface RecodeType {
   title: string;
-  startTime: Array<number>;
-  endTime?: Array<number>;
+  startTime: IHmTime;
+  endTime?: IHmTime;
   category: string;
   isActive: boolean;
   className?: string;
@@ -28,7 +29,7 @@ const App = ({
       <S.UnderWrap>
         <S.TimeRangeText startTime={startTime} endTime={endTime} />
         <S.MiniText
-          text={`${makeTwoNumber(nowTime[0])}:${makeTwoNumber(nowTime[1])}`}
+          text={`${makeTwoNumber(nowTime.hour)}:${makeTwoNumber(nowTime.min)}`}
         />
         <S.MiniText text={category} />
         <S.MiniText text={isActive ? '활용' : '제외'} />
