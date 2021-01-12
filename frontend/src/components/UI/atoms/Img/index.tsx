@@ -6,14 +6,12 @@ export interface Props {
   className?: string;
 }
 
-const App = ({ src, className }: Props) => {
-  console.log('img');
-
+function App({ src, className }: Props) {
   return (
     <>
       <S.Img src={src} className={className} />
     </>
   );
-};
+}
 
 export default App;
