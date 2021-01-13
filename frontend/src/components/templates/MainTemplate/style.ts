@@ -5,6 +5,11 @@ export const MainTemplate = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
 export const HeaderBar = styled(HeaderBarComponent)``;
+
+export const Contents = styled.div`
+  width: 90%;
+`;
