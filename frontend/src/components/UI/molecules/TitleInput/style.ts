@@ -3,8 +3,8 @@ import TextComponent from 'components/UI/atoms/Text';
 import InputComponent from 'components/UI/atoms/Input';
 
 export const TitleInput = styled.div`
-  background-color: ${({ theme }) => theme.color.bage};
-  border-radius: 0.6rem;
+  background-color: ${({ theme }) => theme.color.beige};
+  border-radius: ${({ theme }) => theme.size.mainInputRadius};
 `;
 
 export const Text = styled(TextComponent)`

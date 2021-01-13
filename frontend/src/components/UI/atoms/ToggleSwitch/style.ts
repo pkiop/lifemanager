@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const ToggleSwitch = styled.button`
   position: relative;
-  width: 1.7rem;
-  height: 1rem;
-  border-radius: 0.5rem;
+  height: ${({ theme }) => theme.size.categoryLabelSize.height};
+  width: calc(${({ theme }) => theme.size.categoryLabelSize.height} + 1rem);
+  border-radius: calc(${({ theme }) => theme.size.categoryLabelSize.height} / 2);
   background-color: #5c52ce;
 
   .circle {
@@ -12,14 +12,14 @@ export const ToggleSwitch = styled.button`
     top: 0;
     right: -0.1px;
     background-color: white;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 0.5rem;
+    height: ${({ theme }) => theme.size.categoryLabelSize.height};
+    width: ${({ theme }) => theme.size.categoryLabelSize.height};;
+    border-radius: calc(${({ theme }) => theme.size.categoryLabelSize.height} / 2);
     transition: 0.3s;
   }
 
   .circle.active {
-    right: 0.71rem;
+    right: 1rem;
   }
 `;
 

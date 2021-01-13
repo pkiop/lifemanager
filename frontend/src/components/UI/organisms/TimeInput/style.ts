@@ -3,10 +3,10 @@ import TextComponent from 'components/UI/atoms/Text';
 import InputComponent from 'components/UI/atoms/Input';
 
 export const TimeInput = styled.div`
-  background-color: ${({ theme }) => theme.color.bage};
+  background-color: ${({ theme }) => theme.color.beige};
   display: flex;
   justify-content: center;
-  border-radius: 0.5rem;
+  border-radius: ${({ theme }) => theme.size.mainInputRadius};
   padding: 0 0.5rem;
   box-sizing: border-box;
 `;
@@ -19,7 +19,7 @@ export const TimeWrap = styled.div`
   box-sizing: border-box;
   margin: 0.5rem 0.5rem;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: ${({ theme }) => theme.size.mainInputRadius};
   display: flex;
   font-weight: 600;
   flex-direction: column;
