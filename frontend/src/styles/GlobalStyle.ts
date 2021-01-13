@@ -29,16 +29,11 @@ const GlobalStyle = createGlobalStyle`
     vertical-align: baseline;
     box-sizing: border-box;
   }
-  html, body {
+
+  html, body, #root, .Section__container___3YYTG {
     height: 100%;
   }
 
-  #root {
-    height: 100%;
-    & > div {
-      height: 100%;
-    }
-  }
 
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 
