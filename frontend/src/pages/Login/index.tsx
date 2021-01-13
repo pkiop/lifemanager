@@ -18,12 +18,12 @@ const App = ({ className }: any) => {
       switch (event) {
       case 'signIn':
         setLoginState({ user: data });
+        window.location.href = '/';
         break;
       case 'signOut':
         setLoginState({ user: null });
         break;
       case 'customOAuthState':
-        console.log('customOAuthState');
         setLoginState({ customState: data });
         break;
       default:
