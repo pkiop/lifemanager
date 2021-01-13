@@ -9,20 +9,19 @@ export interface Props {
   className?: string;
 }
 
-const App = ({
+function App({
   lgText = 'Add Recode',
   smText = 'Finish',
   lgOnClick,
   smOnClick,
   className,
-}: Props) => {
-  console.log('temp');
+}: Props) {
   return (
     <S.BottomBtns className={className}>
       <S.LgBtn onClick={lgOnClick}>{lgText}</S.LgBtn>
       <S.SmBtn onClick={smOnClick}>{smText}</S.SmBtn>
     </S.BottomBtns>
   );
-};
+}
 
 export default App;
