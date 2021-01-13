@@ -56,7 +56,7 @@ function App({ labelList, refetch, className }: Props) {
 
   return (
     <S.RecodeInput className={className}>
-      <S.TitleInput titleRef={titleRef} text={'timeRecode.title'} />
+      <S.TitleInput titleRef={titleRef} text={'Title'} />
       <S.TimeInput
         startHourRef={startHourRef}
         startMinRef={startMinRef}

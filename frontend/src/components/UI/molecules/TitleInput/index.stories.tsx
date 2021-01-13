@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import TitleInput from '.';
 
 export default {
@@ -6,4 +7,10 @@ export default {
   component: TitleInput,
 };
 
-export const HELLO = () => <TitleInput text={'Title'} value={'HELLO'} />;
+export function HELLO() {
+  return (
+    <GlobalThemeProvider>
+      <TitleInput text={'Title'} value={'HELLO'} />
+    </GlobalThemeProvider>
+  );
+}
