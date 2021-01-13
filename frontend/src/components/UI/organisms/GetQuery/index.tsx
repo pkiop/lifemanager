@@ -30,9 +30,15 @@ function App({
   if (error) {
     return <div>error</div>;
   }
+  if (timeRecodes === null) return (<></>);
 
   const res = timeRecodes.map((recode: ITimeRecode) => (
     <Recode
+      key={recode.title
+        + recode.startTime.hour
+        + recode.startTime.min
+        + recode.endTime.hour
+        + recode.endTime.min}
       title={recode.title}
       startTime={recode.startTime}
       endTime={recode.endTime}
