@@ -19,7 +19,7 @@ const App = ({ labelList, className }: Props) => {
     return (
       <S.LabelList className={className}>
         {labelComponentList.slice(0, 3)}
-        <S.More>더</S.More>
+        <S.More>...</S.More>
       </S.LabelList>
     );
   }

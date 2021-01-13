@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalThemePrivider from 'styles/GlobalThemeProvider';
 import LabelList from '.';
 
 export default {
@@ -35,5 +36,17 @@ const TestLabelsForOverFlow = [
     children: 'gray',
   },
 ];
-export const Default = () => <LabelList labelList={TestLabels1} />;
-export const Overflow = () => <LabelList labelList={TestLabelsForOverFlow} />;
+export function Default() {
+  return (
+    <GlobalThemePrivider>
+      <LabelList labelList={TestLabels1} />
+    </GlobalThemePrivider>
+  );
+}
+export function Overflow() {
+  return (
+    <GlobalThemePrivider>
+      <LabelList labelList={TestLabelsForOverFlow} />
+    </GlobalThemePrivider>
+  );
+}

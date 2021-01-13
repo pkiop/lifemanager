@@ -7,11 +7,13 @@ export interface Props {
   className?: string;
 }
 
-const App = ({ labelList, className }: Props) => (
-  <S.CategorySelectBar className={className}>
-    <S.CategoryList labelList={labelList} />
-    <S.ToggleSwitch />
-  </S.CategorySelectBar>
-);
+function App({ labelList, className }: Props) {
+  return (
+    <S.CategorySelectBar className={className}>
+      <S.CategoryList labelList={labelList} />
+      <S.ToggleSwitch />
+    </S.CategorySelectBar>
+  );
+}
 
 export default App;
