@@ -23,15 +23,15 @@ function App({ labelList, refetch, className }: Props) {
 
   const [addTimeRecodeMutation, { data }] = useMutation(gql`${createTimeRecode}`);
   const onclickHandler = async () => {
-    const title = titleRef.current && titleRef.current.value;
-    const startHour = startHourRef.current && startHourRef.current.value;
-    const startMin = startMinRef.current && startMinRef.current.value;
+    const title = titleRef?.current?.value;
+    const startHour = startHourRef?.current?.value;
+    const startMin = startMinRef?.current?.value;
     const startTime = {
       hour: Number(startHour),
       min: Number(startMin),
     };
-    const endHour = endHourRef.current && endHourRef.current.value;
-    const endMin = endMinRef.current && endMinRef.current.value;
+    const endHour = endHourRef?.current?.value;
+    const endMin = endMinRef?.current?.value;
     const endTime = {
       hour: Number(endHour),
       min: Number(endMin),
@@ -52,6 +52,21 @@ function App({ labelList, refetch, className }: Props) {
       },
     });
     refetch();
+    if (titleRef?.current) {
+      titleRef.current.value = '';
+    }
+    if (startHourRef?.current) {
+      startHourRef.current.value = '';
+    }
+    if (startMinRef?.current) {
+      startMinRef.current.value = '';
+    }
+    if (endHourRef?.current) {
+      endHourRef.current.value = '';
+    }
+    if (endMinRef?.current) {
+      endMinRef.current.value = '';
+    }
   };
 
   return (

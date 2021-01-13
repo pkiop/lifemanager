@@ -40,6 +40,7 @@ export const Input = styled(InputComponent)`
   width: 2.5rem;
   font-size: 1rem;
   margin-left: 0.4em;
+  text-align: center;
 `;
 
 export default {};
