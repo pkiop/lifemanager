@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
 import Board from 'components/UI/organisms/Board';
@@ -25,17 +26,19 @@ const TestLabelsForOverFlow = [
   },
 ];
 
-const App = () => {
-  const { loading, error, data } = useQuery(gql`${listTimeRecodes}`);
+function App() {
+  const {
+    loading, error, data, refetch,
+  } = useQuery(gql`${listTimeRecodes}`);
   const contents = (
     <>
       <Board />
-      <RecodeInput labelList={TestLabelsForOverFlow} />
+      <RecodeInput labelList={TestLabelsForOverFlow} refetch={refetch} />
       <GetQuery timeRecodes={data?.listTimeRecodes?.items} loading={loading} error={error} />
     </>
   );
 
   return <MainTemplate contents={contents} />;
-};
+}
 
 export default App;

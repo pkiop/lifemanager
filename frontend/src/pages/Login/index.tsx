@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GoogleLogo from 'images/googlelogo.png';
 import LifemanagerLogo from 'images/LifemanagerMainLogo.png';
-import OAuthLogin from 'components/UI/molecules/OAuthLogin';
 import { CognitoHostedUIIdentityProvider } from '@aws-amplify/auth';
 import { Auth, Hub } from 'aws-amplify';
 import * as S from './style';
@@ -18,12 +17,12 @@ const App = ({ className }: any) => {
       switch (event) {
       case 'signIn':
         setLoginState({ user: data });
+        window.location.href = '/';
         break;
       case 'signOut':
         setLoginState({ user: null });
         break;
       case 'customOAuthState':
-        console.log('customOAuthState');
         setLoginState({ customState: data });
         break;
       default:
@@ -40,7 +39,7 @@ const App = ({ className }: any) => {
   return (
     <S.LoginPage className={className}>
       <S.Img src={LifemanagerLogo}/>
-      <OAuthLogin
+      <S.GoogleLogin
         icon={GoogleLogo}
         ButtonTitle={'Login With Google'}
         onClick={googleLoginOnClick}

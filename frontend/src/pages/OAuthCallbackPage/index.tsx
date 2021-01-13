@@ -24,7 +24,6 @@ const App = ({ location }: { location: any }) => {
         setIsLoading(true);
         history.push('/');
       } catch (e) {
-        console.log(e);
         history.push('/not-found');
       }
     };

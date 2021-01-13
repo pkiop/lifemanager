@@ -5,7 +5,11 @@ import TimeInputComponent from 'components/UI/organisms/TimeInput';
 import CategorySelectBarComponent from 'components/UI/organisms/CategorySelectBar';
 
 export const RecodeInput = styled.div`
-  background-color: ${({ theme }) => theme.color.mainColor};
+  & > div {
+    :not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
 `;
 
 export const TitleInput = styled(TitleInputComponent)``;

@@ -11,9 +11,9 @@ export interface Props extends LabelType {
   className?: string;
 }
 
-const App = ({
+function App({
   color = '#C4C4C4', onClick, children, className,
-}: Props) => {
+}: Props) {
   const onClickHandler = useCallback(onClick, []);
 
   return (
@@ -23,6 +23,6 @@ const App = ({
       </S.Label>
     </>
   );
-};
+}
 
 export default App;
