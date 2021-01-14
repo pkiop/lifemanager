@@ -9,6 +9,6 @@ export default {
 
 export const Default = () => (
   <GlobalThemeProvider>
-    <NavBar />
+    <NavBar navPlusOnClick={() => {}}/>
   </GlobalThemeProvider>
 );
