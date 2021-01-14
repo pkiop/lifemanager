@@ -1,26 +1,56 @@
+import Recode from 'components/UI/molecules/Recode';
 import React from 'react';
-import { RecodeType } from 'components/UI/molecules/Recode';
 import * as S from './style';
 
-export interface Props {
-  recodeList: RecodeType[];
+export interface IHmTime {
+  hour: number,
+  min: number,
+}
+
+export interface ITimeRecode {
+  title: string,
+  startTime: IHmTime,
+  endTime: IHmTime,
+  category: string,
+  isActive: boolean,
+}
+
+interface Props {
+  timeRecodes: ITimeRecode[];
+  loading: boolean;
+  error: any;
   className?: string;
 }
 
-const App = ({ recodeList, className }: Props) => {
-  const RecodeComponentList = recodeList.map((recode, index) => (
-    <S.Recode
-      key={`${index}${recode.title}`}
+function App({
+  timeRecodes, loading, error, className,
+}:Props) {
+  if (loading) {
+    return <div>loading</div>;
+  }
+  if (error) {
+    return <div>error</div>;
+  }
+  if (timeRecodes === null) return (<></>);
+
+  const res = timeRecodes.map((recode: ITimeRecode) => (
+    <Recode
+      key={recode.title
+        + recode.startTime.hour
+        + recode.startTime.min
+        + recode.endTime.hour
+        + recode.endTime.min}
       title={recode.title}
       startTime={recode.startTime}
       endTime={recode.endTime}
       category={recode.category}
-      isActive={recode.isActive}
-    />
+      isActive={recode.isActive} />
   ));
   return (
-    <S.RecodeList className={className}>{RecodeComponentList}</S.RecodeList>
+    <S.RecodeList>
+      {res}
+    </S.RecodeList>
   );
-};
+}
 
 export default App;
