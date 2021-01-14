@@ -25,6 +25,7 @@ export const LgBtn = styled(Button)`
   :hover {
     background-color: ${({ theme }) => theme.color.submitGreenHover};
     transition: 0.3s;
+    cursor: pointer;
   }
 `;
 export const SmBtn = styled(Button)`
@@ -36,6 +37,7 @@ export const SmBtn = styled(Button)`
   :hover {
     background-color: ${({ theme }) => theme.color.deleteRedHover};
     transition: 0.3s;
+    cursor: pointer;
   }
 
 `;

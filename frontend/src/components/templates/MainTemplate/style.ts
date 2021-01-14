@@ -11,5 +11,6 @@ export const MainTemplate = styled.div`
 export const HeaderBar = styled(HeaderBarComponent)``;
 
 export const Contents = styled.div`
+  margin-top: 1rem;
   width: 90%;
 `;

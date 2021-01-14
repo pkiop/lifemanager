@@ -6,8 +6,10 @@ export interface Props {
   className?: string;
 }
 
-const App = ({ text, className }: Props) => (
-  <S.Text className={className}>{text}</S.Text>
-);
+function App({ text, className }: Props) {
+  return (
+    <S.Text className={className}>{text}</S.Text>
+  );
+}
 
 export default App;

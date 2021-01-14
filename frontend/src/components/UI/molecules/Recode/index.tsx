@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeTwoNumber, nowHourMin, calNowTime } from 'libs/time';
-import { IHmTime } from 'components/UI/organisms/GetQuery';
+import { IHmTime } from 'components/UI/organisms/RecodeList';
 import * as S from './style';
 
 export interface RecodeType {
@@ -12,14 +12,14 @@ export interface RecodeType {
   className?: string;
 }
 
-const App = ({
+function App({
   title,
   startTime,
   endTime = nowHourMin(),
   category,
   isActive,
   className,
-}: RecodeType) => {
+}: RecodeType) {
   const nowTime = calNowTime(startTime, endTime);
   return (
     <S.Recode className={className}>
@@ -36,6 +36,6 @@ const App = ({
       </S.UnderWrap>
     </S.Recode>
   );
-};
+}
 
 export default App;

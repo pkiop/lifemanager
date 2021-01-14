@@ -1,4 +1,5 @@
 const color = {
+  black: '#000000',
   mainColor: '#2E4B73',
   beige: '#ECE6CC',
   beigeCompare: '#E0980C',

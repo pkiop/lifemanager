@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
 import React from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
-import Board from 'components/UI/organisms/Board';
+// import Board from 'components/UI/organisms/Board';
 import RecodeInput from 'components/UI/organisms/RecodeInput';
-import GetQuery from 'components/UI/organisms/GetQuery';
+import RecodeList from 'components/UI/organisms/RecodeList';
 import { gql, useQuery } from '@apollo/client';
 import { listTimeRecodes } from 'graphql/queries';
 
@@ -32,9 +32,8 @@ function App() {
   } = useQuery(gql`${listTimeRecodes}`);
   const contents = (
     <>
-      <Board />
       <RecodeInput labelList={TestLabelsForOverFlow} refetch={refetch} />
-      <GetQuery timeRecodes={data?.listTimeRecodes?.items} loading={loading} error={error} />
+      <RecodeList timeRecodes={data?.listTimeRecodes?.items} loading={loading} error={error} />
     </>
   );
 
