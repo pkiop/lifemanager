@@ -1,4 +1,4 @@
-import { IHmTime } from 'components/UI/organisms/GetQuery';
+import { IHmTime } from 'components/UI/organisms/RecodeList';
 
 export const makeTwoNumber = (num: number) => {
   if (num < 10) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeTwoNumber } from 'libs/time';
-import { IHmTime } from 'components/UI/organisms/GetQuery';
+import { IHmTime } from 'components/UI/organisms/RecodeList';
 import * as S from './style';
 
 export interface Props {
