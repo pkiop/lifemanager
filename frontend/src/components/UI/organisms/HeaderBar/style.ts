@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import Img from 'components/UI/atoms/Img';
 import DigitalClockComponent from 'components/UI/atoms/DigitalClock';
-import Button from 'components/UI/atoms/Button';
 
 export const HeaderBar = styled.div`
-  background-color: ${({ theme }) => theme.color.mainColor};
+  background-color: ${({ theme }) => theme.color.black};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,17 +29,16 @@ export const DigitalClock = styled(DigitalClockComponent)`
   text-align: left;
 `;
 
-export const MenuBtn = styled(Button)`
-  width: 2rem;
-  height: 2rem;
-  padding: 0;
-  background-color: none;
+export const UserProfile = styled.div`
   margin-right: 0.4rem;
+  display: flex;
+  align-items: center;
 `;
 
-export const HambugIcon = styled(Img)`
-  width: 100%;
-  height: 100%;
+export const UserImg = styled(Img)`
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
 `;
 
 export default {};
