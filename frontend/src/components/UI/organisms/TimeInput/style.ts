@@ -42,5 +42,3 @@ export const Input = styled(InputComponent)`
   margin-left: 0.4em;
   text-align: center;
 `;
-
-export default {};
