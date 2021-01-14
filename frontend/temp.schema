@@ -1,0 +1,45 @@
+input AddRecodeTime {
+	hour: Int
+	min: Int
+}
+
+input AddTimeRecode {
+	userId: String!
+	title: String!
+	startTime: [Int]!
+	endTime: [Int]!
+	category: String!
+	isActive: Boolean!
+}
+
+type Mutation {
+	AddTimeRecode(
+		userId: String!,
+		title: String!,
+		startTime: AddRecodeTime!,
+		endTime: AddRecodeTime!,
+		category: String!,
+		isActive: Boolean!
+	): TimeRecode
+	DeleteTimeRecodeById(id: ID!): TimeRecode
+}
+
+type Query {
+	getAllTimeRecodeByUserId: TimeRecode
+	getAllTimeRecode: [TimeRecode]
+}
+
+type RecodeTime {
+	hour: Int
+	min: Int
+}
+
+type TimeRecode {
+	id: ID
+	userId: String
+	title: String
+	startTime: RecodeTime
+	endTime: RecodeTime
+	category: String
+	isActive: Boolean
+}
