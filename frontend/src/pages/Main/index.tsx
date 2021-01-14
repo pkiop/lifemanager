@@ -1,11 +1,10 @@
 /* eslint-disable max-len */
-import React from 'react';
+import React, { useCallback, useReducer } from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
-// import Board from 'components/UI/organisms/Board';
-import RecodeInput from 'components/UI/organisms/RecodeInput';
 import RecodeList from 'components/UI/organisms/RecodeList';
 import { gql, useQuery } from '@apollo/client';
 import { listTimeRecodes } from 'graphql/queries';
+import * as S from './style';
 
 const TestLabelsForOverFlow = [
   {
@@ -30,14 +29,18 @@ function App() {
   const {
     loading, error, data, refetch,
   } = useQuery(gql`${listTimeRecodes}`);
+  const [bRecodeInput, toggleBRecodeInput] = useReducer((state: boolean) => !state, false);
+  const navPlusOnClick = useCallback(() => toggleBRecodeInput(), []);
+
   const contents = (
     <>
-      <RecodeInput labelList={TestLabelsForOverFlow} refetch={refetch} />
+      <S.RecodeInput labelList={TestLabelsForOverFlow} refetch={refetch} className={bRecodeInput ? 'active' : ''}/>
       <RecodeList timeRecodes={data?.listTimeRecodes?.items} loading={loading} error={error} />
+      <S.RecodeInputCover onClick={navPlusOnClick} className={bRecodeInput ? 'active' : ''} />
     </>
   );
 
-  return <MainTemplate contents={contents} />;
+  return <MainTemplate contents={contents} navPlusOnClick={navPlusOnClick}/>;
 }
 
 export default App;
