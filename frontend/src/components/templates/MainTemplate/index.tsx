@@ -8,6 +8,7 @@ function App({ contents, className }: any) {
       <S.Contents>
         {contents}
       </S.Contents>
+      <S.NavBar />
     </S.MainTemplate>
   );
 }

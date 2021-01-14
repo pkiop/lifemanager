@@ -3,6 +3,7 @@ const color = {
   mainColor: '#2E4B73',
   beige: '#ECE6CC',
   beigeCompare: '#E0980C',
+  navbar: '#3F93FD',
   timeInput: '#F87878',
   submitGreen: '#28A745',
   submitGreenHover: '#218838',
