@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import * as S from './style';
 
 export interface Props {
-  lgText?: string;
-  smText?: string;
-  lgOnClick?: () => void;
-  smOnClick?: () => void;
   className?: string;
 }
 

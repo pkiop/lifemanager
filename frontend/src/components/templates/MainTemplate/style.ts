@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import HeaderBarComponent from 'components/UI/organisms/HeaderBar';
 import NavBarComponent from 'components/UI/organisms/NavBar';
+import theme from 'styles/theme';
 
 export const MainTemplate = styled.div`
   display: flex;
@@ -9,8 +10,7 @@ export const MainTemplate = styled.div`
   align-items: center;
 `;
 
-const headerBarHeight = '2.5rem';
-const navBarHeight = '3rem';
+const { headerBarHeight, navbarHeight } = theme.size;
 export const HeaderBar = styled(HeaderBarComponent)`
   position: fixed;
   top:0;
@@ -24,7 +24,7 @@ export const NavBar = styled(NavBarComponent)`
   position: fixed;
   left: 0;
   bottom: 0;
-  height: ${navBarHeight};
+  height: ${navbarHeight};
 `;
 
 export const Contents = styled.div`
