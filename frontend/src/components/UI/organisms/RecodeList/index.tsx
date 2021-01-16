@@ -47,7 +47,7 @@ function App({
       isActive={recode.isActive} />
   ));
   return (
-    <S.RecodeList>
+    <S.RecodeList className={className}>
       {res}
     </S.RecodeList>
   );
