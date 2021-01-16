@@ -36,8 +36,8 @@ function App() {
 
   const contents = (
     <>
-      <S.RecodeInput labelList={TestLabelsForOverFlow} refetch={refetch} className={bRecodeInput ? 'active' : ''}/>
       <RecodeList timeRecodes={data?.listTimeRecodes?.items} loading={loading} error={error} />
+      <S.RecodeInput labelList={TestLabelsForOverFlow} refetch={refetch} className={bRecodeInput ? 'active' : ''}/>
       <S.RecodeInputCover onClick={navPlusOnClick} className={bRecodeInput ? 'active' : ''} />
     </>
   );
