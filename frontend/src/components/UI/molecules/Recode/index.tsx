@@ -3,7 +3,8 @@ import { makeTwoNumber, nowHourMin, calNowTime } from 'libs/time';
 import { IHmTime } from 'components/UI/organisms/RecodeList';
 import * as S from './style';
 
-export interface RecodeType {
+export interface IRecode {
+  id? : string;
   title: string;
   startTime: IHmTime;
   endTime?: IHmTime;
@@ -13,13 +14,14 @@ export interface RecodeType {
 }
 
 function App({
+  id,
   title,
   startTime,
   endTime = nowHourMin(),
   category,
   isActive,
   className,
-}: RecodeType) {
+}: IRecode) {
   const nowTime = calNowTime(startTime, endTime);
   return (
     <S.Recode className={className}>

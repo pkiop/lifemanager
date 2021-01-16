@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
-import React, { useCallback, useReducer } from 'react';
+import React, { useCallback, useState, useReducer } from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
+// import { IRecode } from 'components/UI/molecules/Recode';
 import RecodeList from 'components/UI/organisms/RecodeList';
 import { gql, useQuery } from '@apollo/client';
 import { listTimeRecodes } from 'graphql/queries';
@@ -30,6 +31,7 @@ function App() {
     loading, error, data, refetch,
   } = useQuery(gql`${listTimeRecodes}`);
   const [bRecodeInput, toggleBRecodeInput] = useReducer((state: boolean) => !state, false);
+  // const [clickedRecode, setClickedRecode] = useState<IRecode>();
   const navPlusOnClick = useCallback(() => toggleBRecodeInput(), []);
 
   const contents = (
