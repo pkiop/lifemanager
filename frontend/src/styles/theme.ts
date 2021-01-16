@@ -18,6 +18,7 @@ const size = {
     height: '1.4rem',
   },
   mainInputRadius: '0.5rem',
+  headerBarHeight: '2.5rem',
   navbarHeight: '3rem',
 };
 
