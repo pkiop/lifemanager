@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { LabelType } from 'components/UI/atoms/Label';
 import { gql, useMutation, useQuery } from '@apollo/client';
 import { createTimeRecode, updateTimeRecode } from 'graphql/mutations';
@@ -13,7 +13,7 @@ export interface Props {
   className?: string;
 }
 
-function App({
+function RecodeInput({
   labelList, refetch, recodeId, className,
 }: Props) {
   const titleRef = useRef<HTMLInputElement>(null);
@@ -21,10 +21,12 @@ function App({
   const startMinRef = useRef<HTMLInputElement>(null);
   const endHourRef = useRef<HTMLInputElement>(null);
   const endMinRef = useRef<HTMLInputElement>(null);
+
   const {
     loading, error, data: onedata,
   } = useQuery(gql`${getTimeRecode}`, {
-    variables: { id: recodeId },
+    // TODO: id가 적절한 값이 아닐 때 query보내지 않는 걸 구현
+    variables: { id: recodeId === '' ? 'nodata' : recodeId! },
   });
 
   const cognitoLastUser = `CognitoIdentityServiceProvider.${process.env.REACT_APP_AWS_COGNITO_ISP}.LastAuthUser`;
@@ -50,7 +52,7 @@ function App({
 
     const category = 'develop';
     const isActive = true;
-    if (recodeId && !error) {
+    if (recodeId) {
       await updateTimeRecodeMutation({
         variables: {
           input: {
@@ -80,28 +82,9 @@ function App({
     }
 
     refetch();
-    if (titleRef?.current) {
-      titleRef.current.value = '';
-    }
-    if (startHourRef?.current) {
-      startHourRef.current.value = '';
-    }
-    if (startMinRef?.current) {
-      startMinRef.current.value = '';
-    }
-    if (endHourRef?.current) {
-      endHourRef.current.value = '';
-    }
-    if (endMinRef?.current) {
-      endMinRef.current.value = '';
-    }
   };
 
-  if (loading) {
-    return (<>Loading...</>);
-  }
-
-  if (recodeId !== '') {
+  if (recodeId !== '' && !loading && !error) {
     const {
       title, startTime, endTime, category, isActive,
     }: IRecode = onedata.getTimeRecode;
@@ -122,6 +105,24 @@ function App({
     }
   }
 
+  if (recodeId === '' && !loading) {
+    if (titleRef?.current) {
+      titleRef.current.value = '';
+    }
+    if (startHourRef?.current) {
+      startHourRef.current.value = '';
+    }
+    if (startMinRef?.current) {
+      startMinRef.current.value = '';
+    }
+    if (endHourRef?.current) {
+      endHourRef.current.value = '';
+    }
+    if (endMinRef?.current) {
+      endMinRef.current.value = '';
+    }
+  }
+
   return (
     <S.RecodeInput className={className}>
       <S.TitleInput titleRef={titleRef} text={'Title'} />
@@ -137,4 +138,4 @@ function App({
   );
 }
 
-export default App;
+export default RecodeInput;
