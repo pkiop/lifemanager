@@ -50,7 +50,7 @@ function App({
 
     const category = 'develop';
     const isActive = true;
-    if (recodeId) {
+    if (recodeId && !error) {
       await updateTimeRecodeMutation({
         variables: {
           input: {
@@ -98,11 +98,7 @@ function App({
   };
 
   if (loading) {
-    console.log('loading!!');
-    return (<></>);
-  }
-  if (error) {
-    console.log('error : ', error);
+    return (<>Loading...</>);
   }
 
   if (recodeId !== '') {
