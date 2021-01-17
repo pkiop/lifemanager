@@ -5,26 +5,28 @@ import * as S from './style';
 
 export interface IRecode {
   id? : string;
+  userId?: string;
   title: string;
   startTime: IHmTime;
   endTime?: IHmTime;
   category: string;
   isActive: boolean;
+  onClick?: any;
   className?: string;
 }
 
 function App({
-  id,
   title,
   startTime,
   endTime = nowHourMin(),
   category,
   isActive,
+  onClick,
   className,
 }: IRecode) {
   const nowTime = calNowTime(startTime, endTime);
   return (
-    <S.Recode className={className}>
+    <S.Recode onClick={onClick} className={className} >
       <S.UpperWrap>
         <S.Title text={title} />
       </S.UpperWrap>
