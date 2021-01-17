@@ -1,4 +1,6 @@
-import React, { useCallback, useState, useReducer } from 'react';
+import React, {
+  useCallback, useState, useReducer,
+} from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
 import RecodeList from 'components/UI/organisms/RecodeList';
 import { gql, useQuery } from '@apollo/client';
@@ -28,6 +30,7 @@ function App() {
   const [clickedRecodeId, setClickedRecodeId] = useState<string>('');
   const [bRecodeInput, toggleBRecodeInput] = useReducer((state: boolean) => !state, false);
   const toggleRecodeInput = useCallback(() => toggleBRecodeInput(), []);
+  const plusOnClick = useCallback(() => { toggleBRecodeInput(); setClickedRecodeId(''); }, []);
 
   const {
     loading, error, data, refetch,
@@ -46,7 +49,7 @@ function App() {
     </>
   );
 
-  return <MainTemplate contents={contents} navPlusOnClick={toggleRecodeInput}/>;
+  return <MainTemplate contents={contents} navPlusOnClick={plusOnClick} />;
 }
 
 export default App;
