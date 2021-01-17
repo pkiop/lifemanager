@@ -25,7 +25,7 @@ interface Props {
   className?: string;
 }
 
-function App({
+function RecodeList({
   timeRecodes, loading, error, setUpdateRecodeId, toggleRecodeInput, className,
 }:Props) {
   const recodeOnClick = (recodeId: string) => useCallback(() => {
@@ -61,4 +61,4 @@ function App({
   );
 }
 
-export default App;
+export default RecodeList;

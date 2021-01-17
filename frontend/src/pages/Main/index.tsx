@@ -26,7 +26,7 @@ const TestLabelsForOverFlow = [
   },
 ];
 
-function App() {
+function Main() {
   const [clickedRecodeId, setClickedRecodeId] = useState<string>('');
   const [bRecodeInput, toggleBRecodeInput] = useReducer((state: boolean) => !state, false);
   const toggleRecodeInput = useCallback(() => toggleBRecodeInput(), []);
@@ -52,4 +52,4 @@ function App() {
   return <MainTemplate contents={contents} navPlusOnClick={plusOnClick} />;
 }
 
-export default App;
+export default Main;
