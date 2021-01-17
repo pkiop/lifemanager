@@ -1,5 +1,5 @@
 import Recode from 'components/UI/molecules/Recode';
-import React from 'react';
+import React, { useCallback } from 'react';
 import * as S from './style';
 
 export interface IHmTime {
@@ -8,6 +8,7 @@ export interface IHmTime {
 }
 
 export interface ITimeRecode {
+  id: string,
   title: string,
   startTime: IHmTime,
   endTime: IHmTime,
@@ -19,12 +20,18 @@ interface Props {
   timeRecodes: ITimeRecode[];
   loading: boolean;
   error: any;
+  setUpdateRecodeId?: any;
+  toggleRecodeInput?: any;
   className?: string;
 }
 
 function App({
-  timeRecodes, loading, error, className,
+  timeRecodes, loading, error, setUpdateRecodeId, toggleRecodeInput, className,
 }:Props) {
+  const recodeOnClick = (recodeId: string) => useCallback(() => {
+    setUpdateRecodeId(recodeId);
+    toggleRecodeInput();
+  }, []);
   if (loading) {
     return <div>loading</div>;
   }
@@ -44,6 +51,7 @@ function App({
       startTime={recode.startTime}
       endTime={recode.endTime}
       category={recode.category}
+      onClick={recodeOnClick(recode.id)}
       isActive={recode.isActive} />
   ));
   return (
