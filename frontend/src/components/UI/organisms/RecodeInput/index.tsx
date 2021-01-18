@@ -140,7 +140,6 @@ function RecodeInput({
       endMinRef.current.value = '';
     }
   }
-  useEffect(() => {}, [recodeId]);
 
   return (
     <S.RecodeInput className={className}>
