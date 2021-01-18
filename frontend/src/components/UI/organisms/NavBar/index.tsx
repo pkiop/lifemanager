@@ -6,16 +6,14 @@ export interface Props {
   className?: string;
 }
 
-function App({ navPlusOnClick, className }: Props) {
+function NavBar({ navPlusOnClick, className }: Props) {
   return (
-    <>
-      <S.NavBar className={className}>
-        <S.AddBtn onClick={navPlusOnClick}>
-          <S.PlusText>+</S.PlusText>
-        </S.AddBtn>
-      </S.NavBar>
-    </>
+    <S.NavBar className={className}>
+      <S.AddBtn onClick={navPlusOnClick}>
+        <S.PlusText>+</S.PlusText>
+      </S.AddBtn>
+    </S.NavBar>
   );
 }
 
-export default App;
+export default NavBar;
