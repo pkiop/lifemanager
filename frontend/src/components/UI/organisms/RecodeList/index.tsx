@@ -28,10 +28,11 @@ interface Props {
 function RecodeList({
   timeRecodes, loading, error, setUpdateRecodeId, toggleRecodeInput, className,
 }:Props) {
-  const recodeOnClick = (recodeId: string) => useCallback(() => {
+  const recodeOnClick = (recodeId: string) => () => {
     setUpdateRecodeId(recodeId);
     toggleRecodeInput();
-  }, []);
+  };
+
   if (loading) {
     return <div>loading</div>;
   }
@@ -39,7 +40,6 @@ function RecodeList({
     return <div>error</div>;
   }
   if (timeRecodes === null) return (<></>);
-
   const res = timeRecodes.map((recode: ITimeRecode) => (
     <Recode
       key={recode.title

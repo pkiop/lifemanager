@@ -9,6 +9,7 @@ export const createTimeRecode = /* GraphQL */ `
   ) {
     createTimeRecode(input: $input, condition: $condition) {
       id
+      date
       userId
       title
       startTime {
@@ -34,6 +35,7 @@ export const updateTimeRecode = /* GraphQL */ `
   ) {
     updateTimeRecode(input: $input, condition: $condition) {
       id
+      date
       userId
       title
       startTime {
@@ -59,6 +61,7 @@ export const deleteTimeRecode = /* GraphQL */ `
   ) {
     deleteTimeRecode(input: $input, condition: $condition) {
       id
+      date
       userId
       title
       startTime {

@@ -4,7 +4,7 @@ import React, {
 import MainTemplate from 'components/templates/MainTemplate';
 import RecodeList from 'components/UI/organisms/RecodeList';
 import { gql, useQuery } from '@apollo/client';
-import { listTimeRecodes } from 'graphql/queries';
+import { listOneDateRecode } from 'graphql/queries';
 import * as S from './style';
 
 const TestLabelsForOverFlow = [
@@ -34,17 +34,21 @@ function Main() {
 
   const {
     loading, error, data, refetch,
-  } = useQuery(gql`${listTimeRecodes}`);
+  } = useQuery(gql`${listOneDateRecode}`, {
+    variables: {
+      date: '2021-01-18',
+    },
+  });
 
   const contents = (
     <>
       <RecodeList
         setUpdateRecodeId={setClickedRecodeId}
-        timeRecodes={data?.listTimeRecodes?.items}
+        timeRecodes={data?.listOneDateRecode?.items}
         toggleRecodeInput={toggleRecodeInput}
         loading={loading}
         error={error} />
-      <S.RecodeInput recodeId={clickedRecodeId} labelList={TestLabelsForOverFlow} refetch={refetch} className={bRecodeInput ? 'active' : ''}/>
+      <S.RecodeInput toggleRecodeInput={toggleRecodeInput} recodeId={clickedRecodeId} labelList={TestLabelsForOverFlow} refetch={refetch} className={bRecodeInput ? 'active' : ''}/>
       <S.RecodeInputCover onClick={toggleRecodeInput} className={bRecodeInput ? 'active' : ''} />
     </>
   );

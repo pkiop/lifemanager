@@ -39,12 +39,12 @@ const TestLabelsForOverFlow = [
 
 export const Default = () => (
   <GlobalThemeProvider>
-    <RecodeInput labelList={TestLabels1} />
+    <RecodeInput labelList={TestLabels1} recodeId={'abc'} />
   </GlobalThemeProvider>
 );
 
 export const Overflow = () => (
   <GlobalThemeProvider>
-    <RecodeInput labelList={TestLabelsForOverFlow} />
+    <RecodeInput labelList={TestLabelsForOverFlow} recodeId={'abc'}/>
   </GlobalThemeProvider>
 );

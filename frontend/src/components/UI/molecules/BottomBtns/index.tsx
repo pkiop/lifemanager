@@ -4,12 +4,12 @@ import * as S from './style';
 export interface Props {
   lgText?: string;
   smText?: string;
-  lgOnClick?: () => void;
-  smOnClick?: () => void;
+  lgOnClick?: any;
+  smOnClick?: any;
   className?: string;
 }
 
-function App({
+function BottomBtn({
   lgText = 'Add Recode',
   smText = 'Finish',
   lgOnClick,
@@ -24,4 +24,4 @@ function App({
   );
 }
 
-export default App;
+export default BottomBtn;

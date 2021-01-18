@@ -9,7 +9,7 @@ const googleLoginOnClick = () => Auth.federatedSignIn({
   provider: CognitoHostedUIIdentityProvider.Google,
 });
 
-const App = ({ className }: any) => {
+const LoginPage = ({ className }: any) => {
   const [loginState, setLoginState] = useState<any>({ user: null, customState: null });
 
   useEffect(() => {
@@ -32,6 +32,7 @@ const App = ({ className }: any) => {
     Auth.currentAuthenticatedUser()
       .then((user) => setLoginState({ user }))
       .catch(() => console.log('Not signed in'));
+    return () => setLoginState(null);
   }, []);
 
   const { user } = loginState;
@@ -48,4 +49,4 @@ const App = ({ className }: any) => {
   );
 };
 
-export default App;
+export default LoginPage;

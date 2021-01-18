@@ -6,6 +6,7 @@ export const onCreateTimeRecode = /* GraphQL */ `
   subscription OnCreateTimeRecode {
     onCreateTimeRecode {
       id
+      date
       userId
       title
       startTime {
@@ -28,6 +29,7 @@ export const onUpdateTimeRecode = /* GraphQL */ `
   subscription OnUpdateTimeRecode {
     onUpdateTimeRecode {
       id
+      date
       userId
       title
       startTime {
@@ -50,6 +52,7 @@ export const onDeleteTimeRecode = /* GraphQL */ `
   subscription OnDeleteTimeRecode {
     onDeleteTimeRecode {
       id
+      date
       userId
       title
       startTime {

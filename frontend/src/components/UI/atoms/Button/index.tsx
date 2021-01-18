@@ -1,5 +1,5 @@
-import React, { useCallback } from 'react';
-import { Button } from './style';
+import React from 'react';
+import * as S from './style';
 
 export interface Props {
   onClick?: any;
@@ -7,15 +7,14 @@ export interface Props {
   className?: string;
 }
 
-const App = ({ onClick, children, className }: Props) => {
-  const onClickHandler = useCallback(onClick, []);
+function Button({ onClick, children, className }: Props) {
   return (
     <>
-      <Button onClick={onClickHandler} className={className}>
+      <S.Button onClick={onClick} className={className}>
         {children}
-      </Button>
+      </S.Button>
     </>
   );
-};
+}
 
-export default App;
+export default Button;
