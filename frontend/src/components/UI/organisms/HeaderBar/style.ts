@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Img from 'components/UI/atoms/Img';
 import DigitalClockComponent from 'components/UI/atoms/DigitalClock';
+import DatePickerComponent from 'components/UI/atoms/DatePicker';
 
 export const HeaderBar = styled.div`
   background-color: ${({ theme }) => theme.color.black};
@@ -20,6 +21,17 @@ export const Logo = styled(Img)`
 
 export const DigitalClockWrap = styled.div`
   padding: 0.3rem;
+`;
+
+export const DatePicker = styled(DatePickerComponent)`
+  background-color: black ;
+  color: white ;
+  text-align: center;
+  color: transparent;
+  text-shadow: 0 0 0 white;
+  :focus {
+    outline: none;
+  }
 `;
 
 export const DigitalClock = styled(DigitalClockComponent)`

@@ -15,7 +15,7 @@ function App({ className }: Props) {
       <S.HeaderBar className={className}>
         <S.Logo src={LogoImg} />
         <S.DigitalClockWrap>
-          <S.DigitalClock />
+          <S.DatePicker />
         </S.DigitalClockWrap>
         <S.UserProfile>
           <S.UserImg src={userImage} />

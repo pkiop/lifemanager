@@ -6,7 +6,7 @@ export interface Props {
   className?: string;
 }
 
-function App({ src, className }: Props) {
+function Img({ src, className }: Props) {
   return (
     <>
       <S.Img src={src} className={className} />
@@ -14,4 +14,4 @@ function App({ src, className }: Props) {
   );
 }
 
-export default App;
+export default Img;
