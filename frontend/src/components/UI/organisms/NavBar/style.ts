@@ -5,7 +5,7 @@ export const NavBar = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.color.navbar};
-  z-index: 100;
+  z-index: 99;
 `;
 
 export const AddBtn = styled.div`

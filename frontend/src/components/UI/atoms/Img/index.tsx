@@ -4,12 +4,13 @@ import * as S from './style';
 export interface Props {
   src: any;
   className?: string;
+  onClick?: any;
 }
 
-function Img({ src, className }: Props) {
+function Img({ src, className, onClick }: Props) {
   return (
     <>
-      <S.Img src={src} className={className} />
+      <S.Img src={src} className={className} onClick={onClick} />
     </>
   );
 }
