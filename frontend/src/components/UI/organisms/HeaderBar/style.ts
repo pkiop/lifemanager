@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Img from 'components/UI/atoms/Img';
 import DigitalClockComponent from 'components/UI/atoms/DigitalClock';
 import DatePickerComponent from 'components/UI/atoms/DatePicker';
+import UserModalComponent from 'components/UI/organisms/Modal';
 
 export const HeaderBar = styled.div`
   background-color: ${({ theme }) => theme.color.black};
@@ -34,6 +35,8 @@ export const DatePicker = styled(DatePickerComponent)`
   }
 `;
 
+const UserRight = '0.4rem';
+
 export const DigitalClock = styled(DigitalClockComponent)`
   width: 3.25rem;
   color: white;
@@ -42,7 +45,7 @@ export const DigitalClock = styled(DigitalClockComponent)`
 `;
 
 export const UserProfile = styled.div`
-  margin-right: 0.4rem;
+  margin-right: ${UserRight};
   display: flex;
   align-items: center;
 `;
@@ -53,4 +56,7 @@ export const UserImg = styled(Img)`
   border-radius: 1rem;
 `;
 
-export default {};
+export const UserModal = styled(UserModalComponent)`
+  right: ${UserRight};
+  top: ${({ theme }) => theme.size.headerBarHeight};
+`;
