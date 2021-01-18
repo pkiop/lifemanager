@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useCallback, useRef } from 'react';
 import { LabelType } from 'components/UI/atoms/Label';
 import { gql, useMutation, useQuery } from '@apollo/client';
-import { createTimeRecode, updateTimeRecode } from 'graphql/mutations';
+import { createTimeRecode, updateTimeRecode, deleteTimeRecode } from 'graphql/mutations';
 import { getTimeRecode } from 'graphql/queries';
 import { IRecode } from 'components/UI/molecules/Recode';
 import * as S from './style';
@@ -9,12 +9,13 @@ import * as S from './style';
 export interface Props {
   labelList: LabelType[];
   refetch?: any;
-  recodeId?: string;
+  toggleRecodeInput?: any;
+  recodeId: string;
   className?: string;
 }
 
 function RecodeInput({
-  labelList, refetch, recodeId, className,
+  labelList, refetch, recodeId, toggleRecodeInput, className,
 }: Props) {
   const titleRef = useRef<HTMLInputElement>(null);
   const startHourRef = useRef<HTMLInputElement>(null);
@@ -35,6 +36,8 @@ function RecodeInput({
 
   const [addTimeRecodeMutation] = useMutation(gql`${createTimeRecode}`);
   const [updateTimeRecodeMutation] = useMutation(gql`${updateTimeRecode}`);
+  const [deleteTimeRecodeMutation] = useMutation(gql`${deleteTimeRecode}`);
+
   const onclickHandler = async () => {
     const title = titleRef?.current?.value;
     const startHour = startHourRef?.current?.value;
@@ -71,6 +74,7 @@ function RecodeInput({
         variables: {
           input: {
             userId: userName,
+            date: '2021-01-18',
             title,
             startTime,
             endTime,
@@ -80,7 +84,21 @@ function RecodeInput({
         },
       });
     }
+    refetch();
+  };
 
+  const deleteClickHandler = async () => {
+    toggleRecodeInput();
+    if (recodeId === '') {
+      return;
+    }
+    await deleteTimeRecodeMutation({
+      variables: {
+        input: {
+          id: recodeId,
+        },
+      },
+    });
     refetch();
   };
 
@@ -122,6 +140,7 @@ function RecodeInput({
       endMinRef.current.value = '';
     }
   }
+  useEffect(() => {}, [recodeId]);
 
   return (
     <S.RecodeInput className={className}>
@@ -133,7 +152,12 @@ function RecodeInput({
         endMinRef={endMinRef}
       />
       <S.CategorySelectBar labelList={labelList} />
-      <S.BottomBtns lgOnClick={onclickHandler}/>
+      <S.BottomBtns
+        lgOnClick={onclickHandler}
+        lgText={recodeId === '' ? 'Add Recode' : 'Update Recode'}
+        smOnClick={deleteClickHandler}
+        smText={recodeId === '' ? 'Close' : 'Delete'}
+      />
     </S.RecodeInput>
   );
 }
