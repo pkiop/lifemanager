@@ -5,6 +5,7 @@ import { AUTH_TYPE } from 'aws-appsync';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import appSyncConfig from 'aws-exports';
 import Amplify, { Auth } from 'aws-amplify';
+import { userVar } from 'graphql/localState';
 
 Amplify.configure(appSyncConfig);
 
@@ -22,6 +23,7 @@ const link = ApolloLink.from([
 const typeDefs = gql`
   extend type User {
     username: String!
+    selectedDate: Date!
   }
 
   extend type Query {
@@ -31,12 +33,25 @@ const typeDefs = gql`
   extend type Mutation {
     setUser(username: String!): Boolean!
   }
-
 `;
+
+const cache = new InMemoryCache({
+  typePolicies: {
+    Query: {
+      fields: {
+        getUser: {
+          read() {
+            return userVar();
+          },
+        },
+      },
+    },
+  },
+});
 
 const client = new ApolloClient({
   link,
-  cache: new InMemoryCache(),
+  cache,
   typeDefs,
 } as any);
 
