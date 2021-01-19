@@ -3,7 +3,8 @@ import React, {
 } from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
 import RecodeList from 'components/UI/organisms/RecodeList';
-import { gql, useQuery } from '@apollo/client';
+import { gql, useQuery, useReactiveVar } from '@apollo/client';
+import { userVar } from 'graphql/localState';
 import { listOneDateRecode } from 'graphql/queries';
 import * as S from './style';
 
@@ -31,14 +32,17 @@ function Main() {
   const [bRecodeInput, toggleBRecodeInput] = useReducer((state: boolean) => !state, false);
   const toggleRecodeInput = useCallback(() => toggleBRecodeInput(), []);
   const plusOnClick = useCallback(() => { toggleBRecodeInput(); setClickedRecodeId(''); }, []);
-
+  const userReactiveVar = useReactiveVar(userVar);
   const {
     loading, error, data, refetch,
   } = useQuery(gql`${listOneDateRecode}`, {
     variables: {
-      date: '2021-01-18',
+      date: userReactiveVar.selectedDate,
     },
   });
+  if (error) {
+    console.error('error : ', error);
+  }
 
   const contents = (
     <>
@@ -48,7 +52,13 @@ function Main() {
         toggleRecodeInput={toggleRecodeInput}
         loading={loading}
         error={error} />
-      <S.RecodeInput toggleRecodeInput={toggleRecodeInput} recodeId={clickedRecodeId} labelList={TestLabelsForOverFlow} refetch={refetch} className={bRecodeInput ? 'active' : ''}/>
+      <S.RecodeInput
+        selectedDate={userReactiveVar.selectedDate}
+        toggleRecodeInput={toggleRecodeInput}
+        recodeId={clickedRecodeId}
+        labelList={TestLabelsForOverFlow}
+        refetch={refetch}
+        className={bRecodeInput ? 'active' : ''}/>
       <S.RecodeInputCover onClick={toggleRecodeInput} className={bRecodeInput ? 'active' : ''} />
     </>
   );

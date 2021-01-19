@@ -1,5 +1,6 @@
 import Recode from 'components/UI/molecules/Recode';
-import React, { useCallback } from 'react';
+import React from 'react';
+import Loading from 'components/UI/atoms/Loading';
 import * as S from './style';
 
 export interface IHmTime {
@@ -34,7 +35,9 @@ function RecodeList({
   };
 
   if (loading) {
-    return <div>loading</div>;
+    return (
+      <Loading />
+    );
   }
   if (error) {
     return <div>error</div>;

@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDatePicker from 'react-datepicker';
 
 import 'react-datepicker/dist/react-datepicker.css';
 
 interface Props {
+  userVar: any;
+  setUserVar?: any;
   className?: string;
 }
-function DatePicker({ className }: Props) {
-  const [startDate, setStartDate] = useState<Date>(new Date());
-
+function DatePicker({ userVar, setUserVar, className }: Props) {
   return (
     <ReactDatePicker
+      dateFormat={'yyyy/MM/dd'}
       className={className}
-      selected={startDate}
-      onChange={(date:Date) => setStartDate(date)}
+      selected={new Date(userVar.selectedDate)}
+      onChange={(date:Date) => setUserVar({ ...userVar, selectedDate: date.toISOString().split('T')[0] })}
     />);
 }
 
