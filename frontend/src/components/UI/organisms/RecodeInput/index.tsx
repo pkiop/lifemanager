@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useRef } from 'react';
+import React, { useRef } from 'react';
 import { LabelType } from 'components/UI/atoms/Label';
 import { gql, useMutation, useQuery } from '@apollo/client';
 import { createTimeRecode, updateTimeRecode, deleteTimeRecode } from 'graphql/mutations';
@@ -11,11 +11,12 @@ export interface Props {
   refetch?: any;
   toggleRecodeInput?: any;
   recodeId: string;
+  selectedDate?: any;
   className?: string;
 }
 
 function RecodeInput({
-  labelList, refetch, recodeId, toggleRecodeInput, className,
+  labelList, refetch, recodeId, toggleRecodeInput, className, selectedDate,
 }: Props) {
   const titleRef = useRef<HTMLInputElement>(null);
   const startHourRef = useRef<HTMLInputElement>(null);
@@ -74,7 +75,7 @@ function RecodeInput({
         variables: {
           input: {
             userId: userName,
-            date: '2021-01-18',
+            date: selectedDate,
             title,
             startTime,
             endTime,
