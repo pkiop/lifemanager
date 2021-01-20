@@ -3,29 +3,13 @@ import React, {
 } from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
 import RecodeList from 'components/UI/organisms/RecodeList';
-import { gql, useQuery, useReactiveVar } from '@apollo/client';
+import {
+  gql, useMutation, useQuery, useReactiveVar,
+} from '@apollo/client';
 import { userVar } from 'graphql/localState';
-import { listOneDateRecode } from 'graphql/queries';
+import { listTimeRecodes, getUser } from 'graphql/queries';
+import { createUser } from 'graphql/mutations';
 import * as S from './style';
-
-const TestLabelsForOverFlow = [
-  {
-    color: 'red',
-    children: 'red',
-  },
-  {
-    color: 'blue',
-    children: 'blue',
-  },
-  {
-    color: 'green',
-    children: 'green',
-  },
-  {
-    color: 'gray',
-    children: 'gray',
-  },
-];
 
 function Main() {
   const [clickedRecodeId, setClickedRecodeId] = useState<string>('');
@@ -35,11 +19,27 @@ function Main() {
   const userReactiveVar = useReactiveVar(userVar);
   const {
     loading, error, data, refetch,
-  } = useQuery(gql`${listOneDateRecode}`, {
+  } = useQuery(gql`${listTimeRecodes}`, {
     variables: {
       date: userReactiveVar.selectedDate,
     },
   });
+  const {
+    loading: userLoading, error: userError, data: userData,
+  } = useQuery(gql`${getUser}`);
+
+  // #TODO let 없이 로직 수정하기..
+  let tempLabelList = [];
+  if (!userLoading && !userError) {
+    tempLabelList = userData?.getUser?.items[0]?.categoryList;
+  }
+
+  // #TODO Login 시 user정보가 하나도 없는 user라면 카테고리 설정 페이지로 이동
+  const [addUserData] = useMutation(gql`${createUser}`);
+
+  if (userError) {
+    console.error('userError', userError);
+  }
   if (error) {
     console.error('error : ', error);
   }
@@ -48,7 +48,7 @@ function Main() {
     <>
       <RecodeList
         setUpdateRecodeId={setClickedRecodeId}
-        timeRecodes={data?.listOneDateRecode?.items}
+        timeRecodes={data?.listTimeRecodes?.items}
         toggleRecodeInput={toggleRecodeInput}
         loading={loading}
         error={error} />
@@ -56,7 +56,7 @@ function Main() {
         selectedDate={userReactiveVar.selectedDate}
         toggleRecodeInput={toggleRecodeInput}
         recodeId={clickedRecodeId}
-        labelList={TestLabelsForOverFlow}
+        labelList={tempLabelList}
         refetch={refetch}
         className={bRecodeInput ? 'active' : ''}/>
       <S.RecodeInputCover onClick={toggleRecodeInput} className={bRecodeInput ? 'active' : ''} />
