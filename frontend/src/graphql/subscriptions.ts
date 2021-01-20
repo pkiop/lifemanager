@@ -6,8 +6,8 @@ export const onCreateTimeRecode = /* GraphQL */ `
   subscription OnCreateTimeRecode {
     onCreateTimeRecode {
       id
-      date
       userId
+      date
       title
       startTime {
         hour
@@ -29,8 +29,8 @@ export const onUpdateTimeRecode = /* GraphQL */ `
   subscription OnUpdateTimeRecode {
     onUpdateTimeRecode {
       id
-      date
       userId
+      date
       title
       startTime {
         hour
@@ -52,8 +52,8 @@ export const onDeleteTimeRecode = /* GraphQL */ `
   subscription OnDeleteTimeRecode {
     onDeleteTimeRecode {
       id
-      date
       userId
+      date
       title
       startTime {
         hour
@@ -65,6 +65,42 @@ export const onDeleteTimeRecode = /* GraphQL */ `
       }
       category
       isActive
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const onCreateUser = /* GraphQL */ `
+  subscription OnCreateUser {
+    onCreateUser {
+      id
+      username
+      categoryList
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const onUpdateUser = /* GraphQL */ `
+  subscription OnUpdateUser {
+    onUpdateUser {
+      id
+      username
+      categoryList
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const onDeleteUser = /* GraphQL */ `
+  subscription OnDeleteUser {
+    onDeleteUser {
+      id
+      username
+      categoryList
       createdAt
       updatedAt
       owner
