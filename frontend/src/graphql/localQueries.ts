@@ -1,6 +1,6 @@
-export const getUser = /* GraphQL */ `
-  query GetUser {
-    getUser @client {
+export const getClientUser = /* GraphQL */ `
+  query GetClientUser {
+    getClientUser @client {
       username
     }
   }

@@ -6,8 +6,8 @@ export const getTimeRecode = /* GraphQL */ `
   query GetTimeRecode($id: ID!) {
     getTimeRecode(id: $id) {
       id
-      date
       userId
+      date
       title
       startTime {
         hour
@@ -25,24 +25,26 @@ export const getTimeRecode = /* GraphQL */ `
     }
   }
 `;
-export const listOneDateRecode = /* GraphQL */ `
-  query ListOneDateRecode($date: AWSDate!) {
-    listOneDateRecode(date: $date) {
+export const listTimeRecodes = /* GraphQL */ `
+  query ListTimeRecodes(
+    $date: AWSDate
+  ) {
+    listTimeRecodes(date: $date) {
       items {
         id
-        date
         userId
+        date
         title
+        category
+        isActive
         startTime {
           hour
           min
         }
-        endTime {
+	      endTime {
           hour
           min
         }
-        category
-        isActive
         createdAt
         updatedAt
         owner
@@ -51,28 +53,34 @@ export const listOneDateRecode = /* GraphQL */ `
     }
   }
 `;
-export const listTimeRecodes = /* GraphQL */ `
-  query ListTimeRecodes(
-    $filter: ModelTimeRecodeFilterInput
+export const getUser = /* GraphQL */ `
+  query GetUser {
+    getUser {
+      items {
+        username
+        categoryList{
+          labelName
+          color
+        }
+        owner
+      }
+    }
+  }
+`;
+export const listUsers = /* GraphQL */ `
+  query ListUsers(
+    $filter: ModelUserFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listTimeRecodes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        date
-        userId
-        title
-        startTime {
-          hour
-          min
+        username
+        categoryList {
+          labelName
+          color
         }
-        endTime {
-          hour
-          min
-        }
-        category
-        isActive
         createdAt
         updatedAt
         owner

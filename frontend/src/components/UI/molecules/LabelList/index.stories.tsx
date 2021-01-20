@@ -10,30 +10,30 @@ export default {
 const TestLabels1 = [
   {
     color: 'red',
-    children: 'red',
+    labelName: 'red',
   },
   {
     color: 'blue',
-    children: 'blue',
+    labelName: 'blue',
   },
 ];
 
 const TestLabelsForOverFlow = [
   {
     color: 'red',
-    children: 'red',
+    labelName: 'red',
   },
   {
     color: 'blue',
-    children: 'blue',
+    labelName: 'blue',
   },
   {
     color: 'green',
-    children: 'green',
+    labelName: 'green',
   },
   {
     color: 'gray',
-    children: 'gray',
+    labelName: 'gray',
   },
 ];
 export function Default() {

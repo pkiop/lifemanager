@@ -9,8 +9,8 @@ export const createTimeRecode = /* GraphQL */ `
   ) {
     createTimeRecode(input: $input, condition: $condition) {
       id
-      date
       userId
+      date
       title
       startTime {
         hour
@@ -35,8 +35,8 @@ export const updateTimeRecode = /* GraphQL */ `
   ) {
     updateTimeRecode(input: $input, condition: $condition) {
       id
-      date
       userId
+      date
       title
       startTime {
         hour
@@ -61,8 +61,8 @@ export const deleteTimeRecode = /* GraphQL */ `
   ) {
     deleteTimeRecode(input: $input, condition: $condition) {
       id
-      date
       userId
+      date
       title
       startTime {
         hour
@@ -74,6 +74,51 @@ export const deleteTimeRecode = /* GraphQL */ `
       }
       category
       isActive
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const createUser = /* GraphQL */ `
+  mutation CreateUser(
+    $input: CreateUserInput!
+    $condition: ModelUserConditionInput
+  ) {
+    createUser(input: $input, condition: $condition) {
+      id
+      username
+      categoryList
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const updateUser = /* GraphQL */ `
+  mutation UpdateUser(
+    $input: UpdateUserInput!
+    $condition: ModelUserConditionInput
+  ) {
+    updateUser(input: $input, condition: $condition) {
+      id
+      username
+      categoryList
+      createdAt
+      updatedAt
+      owner
+    }
+  }
+`;
+export const deleteUser = /* GraphQL */ `
+  mutation DeleteUser(
+    $input: DeleteUserInput!
+    $condition: ModelUserConditionInput
+  ) {
+    deleteUser(input: $input, condition: $condition) {
+      id
+      username
+      categoryList
       createdAt
       updatedAt
       owner

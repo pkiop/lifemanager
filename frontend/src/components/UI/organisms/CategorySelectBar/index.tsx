@@ -7,7 +7,7 @@ export interface Props {
   className?: string;
 }
 
-function App({ labelList, className }: Props) {
+function CategorySelectBar({ labelList, className }: Props) {
   return (
     <S.CategorySelectBar className={className}>
       <S.CategoryList labelList={labelList} />
@@ -16,4 +16,4 @@ function App({ labelList, className }: Props) {
   );
 }
 
-export default App;
+export default CategorySelectBar;

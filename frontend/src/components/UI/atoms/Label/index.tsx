@@ -3,7 +3,7 @@ import * as S from './style';
 
 export interface LabelType {
   color?: string;
-  children: any;
+  labelName: string;
 }
 
 export interface Props extends LabelType {
@@ -11,18 +11,18 @@ export interface Props extends LabelType {
   className?: string;
 }
 
-function App({
-  color = '#C4C4C4', onClick, children, className,
+function Label({
+  color = '#C4C4C4', onClick, labelName, className,
 }: Props) {
   const onClickHandler = useCallback(onClick, []);
 
   return (
     <>
       <S.Label color={color} onClick={onClickHandler} className={className}>
-        {children}
+        {labelName}
       </S.Label>
     </>
   );
 }
 
-export default App;
+export default Label;

@@ -27,11 +27,11 @@ const typeDefs = gql`
   }
 
   extend type Query {
-    getUser: User!
+    getClientUser: User!
   }
 
   extend type Mutation {
-    setUser(username: String!): Boolean!
+    getClientUser(username: String!): Boolean!
   }
 `;
 
@@ -39,7 +39,7 @@ const cache = new InMemoryCache({
   typePolicies: {
     Query: {
       fields: {
-        getUser: {
+        getClientUser: {
           read() {
             return userVar();
           },
