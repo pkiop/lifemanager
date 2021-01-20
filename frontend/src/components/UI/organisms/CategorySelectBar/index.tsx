@@ -4,14 +4,15 @@ import * as S from './style';
 
 export interface Props {
   labelList: LabelType[];
+  switchDivRef?: React.RefObject<HTMLDivElement>;
   className?: string;
 }
 
-function CategorySelectBar({ labelList, className }: Props) {
+function CategorySelectBar({ labelList, switchDivRef, className }: Props) {
   return (
     <S.CategorySelectBar className={className}>
       <S.CategoryList labelList={labelList} />
-      <S.ToggleSwitch />
+      <S.ToggleSwitch switchDivRef={switchDivRef}/>
     </S.CategorySelectBar>
   );
 }
