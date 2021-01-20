@@ -23,6 +23,7 @@ function RecodeInput({
   const startMinRef = useRef<HTMLInputElement>(null);
   const endHourRef = useRef<HTMLInputElement>(null);
   const endMinRef = useRef<HTMLInputElement>(null);
+  const switchButtonRef = useRef<HTMLDivElement>(null);
 
   const {
     loading, error, data: onedata,
@@ -31,13 +32,13 @@ function RecodeInput({
     variables: { id: recodeId === '' ? 'nodata' : recodeId! },
   });
 
-  const cognitoLastUser = `CognitoIdentityServiceProvider.${process.env.REACT_APP_AWS_COGNITO_ISP}.LastAuthUser`;
-  const cognitoProvider = `CognitoIdentityServiceProvider.${process.env.REACT_APP_AWS_COGNITO_ISP}.${localStorage.getItem(cognitoLastUser)}.userData`;
-  const userName = JSON.parse(localStorage.getItem(cognitoProvider)!)?.UserAttributes[3].Value;
-
   const [addTimeRecodeMutation] = useMutation(gql`${createTimeRecode}`);
   const [updateTimeRecodeMutation] = useMutation(gql`${updateTimeRecode}`);
   const [deleteTimeRecodeMutation] = useMutation(gql`${deleteTimeRecode}`);
+
+  const cognitoLastUser = `CognitoIdentityServiceProvider.${process.env.REACT_APP_AWS_COGNITO_ISP}.LastAuthUser`;
+  const cognitoProvider = `CognitoIdentityServiceProvider.${process.env.REACT_APP_AWS_COGNITO_ISP}.${localStorage.getItem(cognitoLastUser)}.userData`;
+  const userName = JSON.parse(localStorage.getItem(cognitoProvider)!)?.UserAttributes[3].Value;
 
   const onclickHandler = async () => {
     const title = titleRef?.current?.value;
@@ -53,9 +54,9 @@ function RecodeInput({
       hour: Number(endHour),
       min: Number(endMin),
     };
+    const bActive = switchButtonRef?.current?.classList.contains('active');
 
     const category = 'develop';
-    const isActive = true;
     if (recodeId) {
       await updateTimeRecodeMutation({
         variables: {
@@ -66,7 +67,7 @@ function RecodeInput({
             startTime,
             endTime,
             category,
-            isActive,
+            isActive: bActive,
           },
         },
       });
@@ -80,7 +81,7 @@ function RecodeInput({
             startTime,
             endTime,
             category,
-            isActive,
+            isActive: bActive,
           },
         },
       });
@@ -122,9 +123,13 @@ function RecodeInput({
     if (endMinRef?.current) {
       endMinRef.current.value = String(endTime?.min);
     }
-  }
 
-  if (recodeId === '' && !loading) {
+    if (isActive) {
+      switchButtonRef?.current?.classList.add('active');
+    } else {
+      switchButtonRef?.current?.classList.remove('active');
+    }
+  } else if (recodeId === '' && !loading) {
     if (titleRef?.current) {
       titleRef.current.value = '';
     }
@@ -140,8 +145,10 @@ function RecodeInput({
     if (endMinRef?.current) {
       endMinRef.current.value = '';
     }
+    if (switchButtonRef?.current?.classList.contains('active') === false) {
+      switchButtonRef?.current?.classList.add('active');
+    }
   }
-
   return (
     <S.RecodeInput className={className}>
       <S.TitleInput titleRef={titleRef} text={'Title'} />
@@ -151,7 +158,7 @@ function RecodeInput({
         endHourRef={endHourRef}
         endMinRef={endMinRef}
       />
-      <S.CategorySelectBar labelList={labelList} />
+      <S.CategorySelectBar labelList={labelList} switchDivRef={switchButtonRef} />
       <S.BottomBtns
         lgOnClick={onclickHandler}
         lgText={recodeId === '' ? 'Add Recode' : 'Update Recode'}

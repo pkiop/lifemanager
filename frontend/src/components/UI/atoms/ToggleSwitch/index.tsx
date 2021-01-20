@@ -2,6 +2,7 @@ import React from 'react';
 import * as S from './style';
 
 export interface Props {
+  switchDivRef?: React.RefObject<HTMLDivElement>
   className?: string;
 }
 
@@ -23,10 +24,12 @@ const onClickHandler = (e: any) => {
     target.classList.add('active');
   }
 };
-const App = ({ className }: Props) => (
-  <S.ToggleSwitch onClick={onClickHandler} className={className}>
-    <div className={'circle'} />
-  </S.ToggleSwitch>
-);
+function ToggleSwitch({ className, switchDivRef }: Props) {
+  return (
+    <S.ToggleSwitch onClick={onClickHandler} className={className}>
+      <div ref={switchDivRef} className={'circle active'} />
+    </S.ToggleSwitch>
+  );
+}
 
-export default App;
+export default ToggleSwitch;
