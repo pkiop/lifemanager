@@ -8,22 +8,20 @@ export interface Props {
 }
 
 const mapFunc = (label: LabelType) => (
-  <S.Label key={label.color} color={label.color}>
-    {label.children}
-  </S.Label>
+  <S.Label key={label.color + label.labelName} color={label.color} labelName={label.labelName} />
 );
 
-const App = ({ labelList, className }: Props) => {
+function LabelList({ labelList, className }: Props) {
   const labelComponentList = labelList.map(mapFunc);
   if (labelList.length > 3) {
     return (
       <S.LabelList className={className}>
         {labelComponentList.slice(0, 3)}
-        <S.More>...</S.More>
+        <S.More labelName='...' />
       </S.LabelList>
     );
   }
   return <S.LabelList className={className}>{labelComponentList}</S.LabelList>;
-};
+}
 
-export default App;
+export default LabelList;

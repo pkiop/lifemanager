@@ -10,12 +10,11 @@ export const HELLO = () => {
   const subTitle = 'HELLO';
   return (
     <Label
+      labelName={'red'}
       color="red"
       onClick={() => {
         alert(subTitle);
       }}
-    >
-      {subTitle}
-    </Label>
+    />
   );
 };
