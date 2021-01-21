@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { LabelType } from 'components/UI/atoms/Label';
 import { gql, useMutation, useQuery } from '@apollo/client';
 import { createTimeRecode, updateTimeRecode, deleteTimeRecode } from 'graphql/mutations';
@@ -25,6 +25,7 @@ function RecodeInput({
   const endMinRef = useRef<HTMLInputElement>(null);
   const switchButtonRef = useRef<HTMLDivElement>(null);
 
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
   const {
     loading, error, data: onedata,
   } = useQuery(gql`${getTimeRecode}`, {
@@ -56,7 +57,6 @@ function RecodeInput({
     };
     const bActive = switchButtonRef?.current?.classList.contains('active');
 
-    const category = 'develop';
     if (recodeId) {
       await updateTimeRecodeMutation({
         variables: {
@@ -66,7 +66,7 @@ function RecodeInput({
             title,
             startTime,
             endTime,
-            category,
+            category: selectedCategory,
             isActive: bActive,
           },
         },
@@ -80,7 +80,7 @@ function RecodeInput({
             title,
             startTime,
             endTime,
-            category,
+            category: selectedCategory,
             isActive: bActive,
           },
         },
@@ -104,6 +104,14 @@ function RecodeInput({
     refetch();
   };
 
+  let categorySelectBar = (
+    <S.CategorySelectBar
+      labelList={labelList}
+      selectedCategory={selectedCategory}
+      setSelectedCategory={setSelectedCategory}
+      switchDivRef={switchButtonRef}
+    />);
+
   if (recodeId !== '' && !loading && !error) {
     const {
       title, startTime, endTime, category, isActive,
@@ -123,6 +131,14 @@ function RecodeInput({
     if (endMinRef?.current) {
       endMinRef.current.value = String(endTime?.min);
     }
+
+    categorySelectBar = (
+      <S.CategorySelectBar
+        labelList={labelList}
+        selectedCategory={selectedCategory === '' ? category : selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        switchDivRef={switchButtonRef}
+      />);
 
     if (isActive) {
       switchButtonRef?.current?.classList.add('active');
@@ -158,7 +174,8 @@ function RecodeInput({
         endHourRef={endHourRef}
         endMinRef={endMinRef}
       />
-      <S.CategorySelectBar labelList={labelList} switchDivRef={switchButtonRef} />
+      {categorySelectBar}
+
       <S.BottomBtns
         lgOnClick={onclickHandler}
         lgText={recodeId === '' ? 'Add Recode' : 'Update Recode'}

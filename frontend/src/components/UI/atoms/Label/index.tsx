@@ -8,20 +8,19 @@ export interface LabelType {
 
 export interface Props extends LabelType {
   onClick?: any;
+  idx?: number;
   className?: string;
 }
 
 function Label({
-  color = '#C4C4C4', onClick, labelName, className,
+  color = '#C4C4C4', onClick, idx, labelName, className,
 }: Props) {
   const onClickHandler = useCallback(onClick, []);
 
   return (
-    <>
-      <S.Label color={color} onClick={onClickHandler} className={className}>
-        {labelName}
-      </S.Label>
-    </>
+    <S.Label color={color} onClick={onClickHandler} className={className}>
+      {labelName}
+    </S.Label>
   );
 }
 
