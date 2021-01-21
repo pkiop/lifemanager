@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { LabelType } from 'components/UI/atoms/Label';
 import * as S from './style';
 
@@ -9,8 +9,13 @@ export interface Props {
   className?: string;
 }
 
-const mapFunc = (selectedCategory:string, setSelectedCategory: any) => (label: LabelType) => (
-  <S.Label
+const mapFunc = (selectedCategory:string,
+  setSelectedCategory: any, bMoreLabelVisible: boolean) => (label: LabelType, idx: number) => {
+  const categoryClassName = selectedCategory === label.labelName ? 'active' : '';
+  const overflowClassName = idx > 2 ? 'overflow' : '';
+  const visibleClassName = idx > 2 && bMoreLabelVisible ? 'visible' : '';
+  const classNameInput = `${categoryClassName} ${overflowClassName} ${visibleClassName}`;
+  return (<S.Label
     key={label.color + label.labelName}
     color={label.color}
     onClick={(e: any) => {
@@ -21,19 +26,26 @@ const mapFunc = (selectedCategory:string, setSelectedCategory: any) => (label: L
       setSelectedCategory(label.labelName);
     }}
     labelName={label.labelName}
-    className={selectedCategory === label.labelName ? 'active' : ''}
-  />
-);
+    className={classNameInput}
+    idx={(idx - 2) * 2}
+  />);
+};
 
 function LabelList({
   labelList, selectedCategory, setSelectedCategory, className,
 }: Props) {
-  const labelComponentList = labelList.map(mapFunc(selectedCategory || '', setSelectedCategory));
+  const [bMoreLabelVisible, setBMoreLabelVisible] = useState<boolean>(false);
+  const labelComponentList = labelList.map(mapFunc(selectedCategory || '', setSelectedCategory, bMoreLabelVisible));
+  const moreOnClick = () => {
+    setBMoreLabelVisible((state:boolean) => !state);
+  };
+
   if (labelList.length > 3) {
     return (
       <S.LabelList className={className}>
         {labelComponentList.slice(0, 3)}
-        <S.More labelName='...' />
+        <S.More onClick={moreOnClick} labelName={bMoreLabelVisible ? 'X' : '...'} />
+        {labelComponentList.slice(3)}
       </S.LabelList>
     );
   }
