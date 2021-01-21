@@ -26,7 +26,6 @@ function RecodeInput({
   const switchButtonRef = useRef<HTMLDivElement>(null);
 
   const [selectedCategory, setSelectedCategory] = useState<string>('');
-
   const {
     loading, error, data: onedata,
   } = useQuery(gql`${getTimeRecode}`, {
@@ -136,7 +135,7 @@ function RecodeInput({
     categorySelectBar = (
       <S.CategorySelectBar
         labelList={labelList}
-        selectedCategory={category}
+        selectedCategory={selectedCategory === '' ? category : selectedCategory}
         setSelectedCategory={setSelectedCategory}
         switchDivRef={switchButtonRef}
       />);
