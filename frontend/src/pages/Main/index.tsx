@@ -31,7 +31,13 @@ function Main() {
   // #TODO let 없이 로직 수정하기..
   let tempLabelList = [];
   if (!userLoading && !userError) {
-    tempLabelList = userData?.getUser?.items[0]?.categoryList;
+    if (userData) {
+      if (userData.getUser.items.length !== 0) {
+        tempLabelList = userData.getUser.items[0]?.categoryList;
+      } else {
+        tempLabelList = [{ color: '#123455', labelName: 'develop' }, { color: '#938193', labelName: 'sleep' }, { color: '#000111', labelName: 'reading' }, { color: '#eeeeee', labelName: 'else' }];
+      }
+    }
   }
 
   // #TODO Login 시 user정보가 하나도 없는 user라면 카테고리 설정 페이지로 이동

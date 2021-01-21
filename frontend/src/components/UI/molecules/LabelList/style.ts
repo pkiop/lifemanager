@@ -10,6 +10,9 @@ export const Label = styled(LabelComponent)`
   :not(:last-child) {
     margin-right: 0.5rem;
   }
+  &.active {
+    color: yellow;
+  }
 `;
 
 export const More = styled(LabelComponent)`
