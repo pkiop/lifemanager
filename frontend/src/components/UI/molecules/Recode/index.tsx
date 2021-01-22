@@ -18,6 +18,18 @@ export interface Props extends IRecode {
   className?: string;
 }
 
+const getNowTime = (startTime: IHmTime, endTime: IHmTime) => {
+  const calTime = calNowTime(startTime, endTime);
+  if (calTime.hour === 99) {
+    const nowTime = {
+      hour: new Date().getHours(),
+      min: new Date().getMinutes(),
+    };
+    return calNowTime(startTime, nowTime);
+  }
+  return calTime;
+};
+
 function Recode({
   title,
   startTime,
@@ -27,7 +39,8 @@ function Recode({
   onClick,
   className,
 }: Props) {
-  const nowTime = calNowTime(startTime, endTime);
+  const nowTime = getNowTime(startTime, endTime);
+
   return (
     <S.Recode onClick={onClick} className={className} >
       <S.UpperWrap>
