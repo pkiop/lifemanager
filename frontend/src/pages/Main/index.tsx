@@ -37,7 +37,6 @@ function Main() {
   if (!userLoading && !userError) {
     if (userData) {
       if (userData.getUser.items.length !== 0) {
-        console.log(userData.getUser.items[0]);
         tempLabelList = userData.getUser.items[0]?.categoryList;
         tempGoalTime = userData.getUser.items[0]?.goalTime;
       } else {
