@@ -11,11 +11,14 @@ export interface IRecode {
   endTime?: IHmTime;
   category: string;
   isActive: boolean;
+}
+
+export interface Props extends IRecode {
   onClick?: any;
   className?: string;
 }
 
-function App({
+function Recode({
   title,
   startTime,
   endTime = nowHourMin(),
@@ -23,7 +26,7 @@ function App({
   isActive,
   onClick,
   className,
-}: IRecode) {
+}: Props) {
   const nowTime = calNowTime(startTime, endTime);
   return (
     <S.Recode onClick={onClick} className={className} >
@@ -42,4 +45,4 @@ function App({
   );
 }
 
-export default App;
+export default Recode;
