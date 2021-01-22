@@ -26,6 +26,14 @@ interface Props {
   className?: string;
 }
 
+const timeRecodeStartHourSort = (recode1:ITimeRecode, recode2: ITimeRecode) => {
+  const startTimeDiff = recode1.startTime.hour - recode2.startTime.hour;
+  if (startTimeDiff === 0) {
+    return recode1.startTime.min - recode2.startTime.min;
+  }
+  return startTimeDiff;
+};
+
 function RecodeList({
   timeRecodes, loading, error, setUpdateRecodeId, toggleRecodeInput, className,
 }:Props) {
@@ -42,21 +50,25 @@ function RecodeList({
   if (error) {
     return <div>error</div>;
   }
+
   if (timeRecodes === null) return (<></>);
-  const res = timeRecodes.map((recode: ITimeRecode) => (
-    <Recode
-      key={recode.title
+  const res = timeRecodes.slice().sort(timeRecodeStartHourSort).map((recode: ITimeRecode) => {
+    console.log('recode : ', recode);
+    return (
+      <Recode
+        key={recode.title
         + recode.startTime.hour
         + recode.startTime.min
         + recode.endTime.hour
         + recode.endTime.min}
-      title={recode.title}
-      startTime={recode.startTime}
-      endTime={recode.endTime}
-      category={recode.category}
-      onClick={recodeOnClick(recode.id)}
-      isActive={recode.isActive} />
-  ));
+        title={recode.title}
+        startTime={recode.startTime}
+        endTime={recode.endTime}
+        category={recode.category}
+        onClick={recodeOnClick(recode.id)}
+        isActive={recode.isActive} />
+    );
+  });
   return (
     <S.RecodeList className={className}>
       {res}
