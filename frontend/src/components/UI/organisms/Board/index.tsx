@@ -1,6 +1,6 @@
 import React from 'react';
 import { IRecode } from 'components/UI/molecules/Recode';
-import { calNowTime } from 'libs/time';
+import { nowHourMin, calNowTime } from 'libs/time';
 import * as S from './style';
 
 export interface Props {
@@ -11,7 +11,7 @@ export interface Props {
 
 function Board({ goalTime, recodeList, className }: Props) {
   const nowTime = recodeList?.reduce((acc: number, recode: IRecode) => {
-    const endTime = recode.endTime ? recode.endTime : { hour: 0, min: 0 };
+    const endTime = recode.endTime?.hour ? recode.endTime : nowHourMin();
     const calValue = calNowTime(recode.startTime, endTime);
     return acc + calValue.hour + calValue.min / 60;
   }, 0).toFixed(1);

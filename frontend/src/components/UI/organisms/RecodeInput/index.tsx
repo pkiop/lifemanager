@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { LabelType } from 'components/UI/atoms/Label';
 import { gql, useMutation, useQuery } from '@apollo/client';
 import { createTimeRecode, updateTimeRecode, deleteTimeRecode } from 'graphql/mutations';
@@ -24,6 +24,7 @@ function RecodeInput({
   const endHourRef = useRef<HTMLInputElement>(null);
   const endMinRef = useRef<HTMLInputElement>(null);
   const switchButtonRef = useRef<HTMLDivElement>(null);
+  const [fullFetched, setFullFetched] = useState<boolean>(false);
 
   const [selectedCategory, setSelectedCategory] = useState<string>('');
   const {
@@ -32,6 +33,9 @@ function RecodeInput({
     // TODO: id가 적절한 값이 아닐 때 query보내지 않는 걸 구현
     variables: { id: recodeId === '' ? 'nodata' : recodeId! },
   });
+  useEffect(() => {
+    setFullFetched(false);
+  }, [recodeId]);
 
   const [addTimeRecodeMutation] = useMutation(gql`${createTimeRecode}`);
   const [updateTimeRecodeMutation] = useMutation(gql`${updateTimeRecode}`);
@@ -52,8 +56,8 @@ function RecodeInput({
     const endHour = endHourRef?.current?.value;
     const endMin = endMinRef?.current?.value;
     const endTime = {
-      hour: Number(endHour),
-      min: Number(endMin),
+      hour: endHour ? Number(endHour) : null,
+      min: endHour ? Number(endMin) : null,
     };
     const bActive = switchButtonRef?.current?.classList.contains('active');
 
@@ -112,7 +116,8 @@ function RecodeInput({
       switchDivRef={switchButtonRef}
     />);
 
-  if (recodeId !== '' && !loading && !error) {
+  if (fullFetched === false && recodeId !== '' && !loading && !error) {
+    setFullFetched(true);
     const {
       title, startTime, endTime, category, isActive,
     }: IRecode = onedata.getTimeRecode;
@@ -132,6 +137,8 @@ function RecodeInput({
       endMinRef.current.value = String(endTime?.min);
     }
 
+    setSelectedCategory(category);
+
     categorySelectBar = (
       <S.CategorySelectBar
         labelList={labelList}
@@ -145,7 +152,8 @@ function RecodeInput({
     } else {
       switchButtonRef?.current?.classList.remove('active');
     }
-  } else if (recodeId === '' && !loading) {
+  } else if (fullFetched === false && recodeId === '' && !loading) {
+    setFullFetched(true);
     if (titleRef?.current) {
       titleRef.current.value = '';
     }
@@ -161,6 +169,7 @@ function RecodeInput({
     if (endMinRef?.current) {
       endMinRef.current.value = '';
     }
+    setSelectedCategory('');
     if (switchButtonRef?.current?.classList.contains('active') === false) {
       switchButtonRef?.current?.classList.add('active');
     }
