@@ -6,4 +6,4 @@ export default {
   component: Board,
 };
 
-export const Default = () => <Board />;
+export const Default = () => <Board goalTime={13}/>;
