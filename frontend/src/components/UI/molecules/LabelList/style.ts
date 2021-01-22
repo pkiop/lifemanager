@@ -11,6 +11,7 @@ export const Label = styled(LabelComponent)`
   margin-right: 0.5rem;
   &.active {
     color: yellow;
+    border: 2px solid yellow;
   }
   &.overflow {
     display: none;

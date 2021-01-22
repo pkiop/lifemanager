@@ -17,6 +17,7 @@ function Main() {
   const toggleRecodeInput = useCallback(() => toggleBRecodeInput(), []);
   const plusOnClick = useCallback(() => { toggleBRecodeInput(); setClickedRecodeId(''); }, []);
   const userReactiveVar = useReactiveVar(userVar);
+
   const {
     loading, error, data, refetch,
   } = useQuery(gql`${listTimeRecodes}`, {
@@ -24,6 +25,7 @@ function Main() {
       date: userReactiveVar.selectedDate,
     },
   });
+
   const {
     loading: userLoading, error: userError, data: userData,
   } = useQuery(gql`${getUser}`);

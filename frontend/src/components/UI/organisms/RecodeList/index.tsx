@@ -26,6 +26,14 @@ interface Props {
   className?: string;
 }
 
+const sortByStartTime = (recode1:ITimeRecode, recode2: ITimeRecode) => {
+  const startTimeDiff = recode1.startTime.hour - recode2.startTime.hour;
+  if (startTimeDiff === 0) {
+    return recode1.startTime.min - recode2.startTime.min;
+  }
+  return startTimeDiff;
+};
+
 function RecodeList({
   timeRecodes, loading, error, setUpdateRecodeId, toggleRecodeInput, className,
 }:Props) {
@@ -42,8 +50,9 @@ function RecodeList({
   if (error) {
     return <div>error</div>;
   }
+
   if (timeRecodes === null) return (<></>);
-  const res = timeRecodes.map((recode: ITimeRecode) => (
+  const res = timeRecodes.slice().sort(sortByStartTime).map((recode: ITimeRecode) => (
     <Recode
       key={recode.title
         + recode.startTime.hour
