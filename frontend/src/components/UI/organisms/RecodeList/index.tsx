@@ -26,10 +26,18 @@ interface Props {
   className?: string;
 }
 
+const getBiasHour = (recode: ITimeRecode, bias: number = 4) => {
+  const biasHour = recode.startTime.hour - bias;
+  if (biasHour < 0) {
+    return biasHour + 24;
+  }
+  return biasHour;
+};
+
 const sortByStartTime = (recode1:ITimeRecode, recode2: ITimeRecode) => {
-  const startTimeDiff = recode1.startTime.hour - recode2.startTime.hour;
+  const startTimeDiff = getBiasHour(recode1) - getBiasHour(recode2);
   if (startTimeDiff === 0) {
-    return recode1.startTime.min - recode2.startTime.min;
+    return (recode1.startTime.min - recode2.startTime.min);
   }
   return startTimeDiff;
 };
@@ -61,7 +69,7 @@ function RecodeList({
         + recode.endTime.min}
       title={recode.title}
       startTime={recode.startTime}
-      endTime={recode.endTime}
+      endTime={recode.endTime.hour ? recode.endTime : undefined}
       category={recode.category}
       onClick={recodeOnClick(recode.id)}
       isActive={recode.isActive} />
