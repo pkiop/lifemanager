@@ -58,6 +58,7 @@ export const getUser = /* GraphQL */ `
     getUser {
       items {
         username
+        goalTime
         categoryList{
           labelName
           color

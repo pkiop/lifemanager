@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
 import RecodeList from 'components/UI/organisms/RecodeList';
+import Board from 'components/UI/organisms/Board';
 import {
   gql, useMutation, useQuery, useReactiveVar,
 } from '@apollo/client';
@@ -31,11 +32,14 @@ function Main() {
   } = useQuery(gql`${getUser}`);
 
   // #TODO let 없이 로직 수정하기..
+  let tempGoalTime = 13;
   let tempLabelList = [];
   if (!userLoading && !userError) {
     if (userData) {
       if (userData.getUser.items.length !== 0) {
+        console.log(userData.getUser.items[0]);
         tempLabelList = userData.getUser.items[0]?.categoryList;
+        tempGoalTime = userData.getUser.items[0]?.goalTime;
       } else {
         tempLabelList = [{ color: '#123455', labelName: 'develop' }, { color: '#938193', labelName: 'sleep' }, { color: '#000111', labelName: 'reading' }, { color: '#eeeeee', labelName: 'else' }];
       }
@@ -54,6 +58,7 @@ function Main() {
 
   const contents = (
     <>
+      <Board goalTime={tempGoalTime} recodeList={data?.listTimeRecodes?.items}/>
       <RecodeList
         setUpdateRecodeId={setClickedRecodeId}
         timeRecodes={data?.listTimeRecodes?.items}
