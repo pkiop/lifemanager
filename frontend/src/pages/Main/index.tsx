@@ -10,6 +10,7 @@ import {
 import { userVar } from 'graphql/localState';
 import { listTimeRecodes, getUser } from 'graphql/queries';
 import { createUser } from 'graphql/mutations';
+import PieChart from 'components/UI/atoms/PieChart';
 import * as S from './style';
 
 function Main() {
@@ -58,7 +59,10 @@ function Main() {
 
   const contents = (
     <>
-      <Board goalTime={tempGoalTime} recodeList={data?.listTimeRecodes?.items}/>
+      <S.UpperWrap>
+        <Board goalTime={tempGoalTime} recodeList={data?.listTimeRecodes?.items}/>
+        <PieChart recodeList={data?.listTimeRecodes?.items} />
+      </S.UpperWrap>
       <RecodeList
         setUpdateRecodeId={setClickedRecodeId}
         timeRecodes={data?.listTimeRecodes?.items}
