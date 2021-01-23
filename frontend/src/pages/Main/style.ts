@@ -31,3 +31,8 @@ export const RecodeInputCover = styled.div`
     display: flex;
   }
 `;
+
+export const UpperWrap = styled.div`
+  display:flex;
+  justify-content: space-between;
+`;

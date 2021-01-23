@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Board = styled.div`
-  padding: 1rem;
+  padding: 1.2rem;
   width: 45%;
+  height: 10rem;
   background-color: ${({ theme }) => theme.color.beige};
   border-radius: ${({ theme }) => theme.size.mainInputRadius};
   display: flex;
@@ -14,6 +15,6 @@ export const Board = styled.div`
 export const Content = styled.div`
   font-size: 1.2rem;
   :not(:last-child) {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
   } 
 `;
