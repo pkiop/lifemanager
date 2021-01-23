@@ -31,4 +31,6 @@ export const calNowTime = (startTime: IHmTime, endTime: IHmTime) => {
   return { hour: endHour - startHour, min: EMmSM };
 };
 
+export const convertMinute = (time: IHmTime) => time.hour * 60 + time.min;
+
 export default {};
