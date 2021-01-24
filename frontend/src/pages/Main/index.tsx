@@ -29,8 +29,11 @@ function Main() {
   });
 
   const {
-    loading: userLoading, error: userError, data: userData,
+    loading: userLoading, error: userError, data: userData, refetch: userRefetch,
   } = useQuery(gql`${getUser}`);
+
+  // #TODO Login 시 user정보가 하나도 없는 user라면 카테고리 설정 페이지로 이동
+  const [addUserData] = useMutation(gql`${createUser}`);
 
   // #TODO let 없이 로직 수정하기..
   let tempGoalTime = 13;
@@ -41,13 +44,20 @@ function Main() {
         tempLabelList = userData.getUser.items[0]?.categoryList;
         tempGoalTime = userData.getUser.items[0]?.goalTime;
       } else {
-        tempLabelList = [{ color: '#123455', labelName: 'develop' }, { color: '#938193', labelName: 'sleep' }, { color: '#000111', labelName: 'reading' }, { color: '#eeeeee', labelName: 'else' }];
+        const defaultLabelList = [{ color: 'red', labelName: '개발' }, { color: 'blue', labelName: '잠' }, { color: 'green', labelName: '책' }, { color: 'yellow', labelName: '운동' }, { color: 'skyblue', labelName: '산책' }, { color: 'black', labelName: '기타' }];
+        addUserData({
+          variables: {
+            input: {
+              categoryList: defaultLabelList,
+              goalTime: 12,
+            },
+          },
+        }).then(() => {
+          userRefetch();
+        });
       }
     }
   }
-
-  // #TODO Login 시 user정보가 하나도 없는 user라면 카테고리 설정 페이지로 이동
-  const [addUserData] = useMutation(gql`${createUser}`);
 
   if (userError) {
     console.error('userError', userError);
@@ -56,11 +66,15 @@ function Main() {
     console.error('error : ', error);
   }
 
+  if (userLoading || tempLabelList.length === 0) {
+    return <></>;
+  }
+
   const contents = (
     <>
       <S.UpperWrap>
         <Board goalTime={tempGoalTime} recodeList={data?.listTimeRecodes?.items}/>
-        <PieChart recodeList={data?.listTimeRecodes?.items} />
+        <PieChart recodeList={data?.listTimeRecodes?.items} categoryList={tempLabelList} />
       </S.UpperWrap>
       <RecodeList
         setUpdateRecodeId={setClickedRecodeId}

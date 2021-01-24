@@ -88,7 +88,11 @@ export const createUser = /* GraphQL */ `
     createUser(input: $input, condition: $condition) {
       id
       username
-      categoryList
+      categoryList {
+        color
+        labelName
+      }
+      goalTime
       createdAt
       updatedAt
       owner
