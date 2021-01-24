@@ -12,6 +12,9 @@ export const nowHourMin = () => {
   return { hour: nowTime.getHours(), min: nowTime.getMinutes() };
 };
 
+export const isHour = (hour: number) => hour >= 0 && hour <= 23;
+export const isMin = (min: number) => min >= 0 && min <= 59;
+
 export const calNowTime = (startTime: IHmTime, endTime: IHmTime) => {
   const { hour: startHour, min: startMin } = startTime;
   const { hour: endHour, min: endMin } = endTime;
