@@ -11,6 +11,7 @@ export interface Props {
 
 function Board({ goalTime, recodeList, className }: Props) {
   const nowTime = recodeList?.reduce((acc: number, recode: IRecode) => {
+    if (recode.isActive === false) return acc;
     const endTime = recode.endTime?.hour ? recode.endTime : nowHourMin();
     const calValue = calNowTime(recode.startTime, endTime);
     return acc + calValue.hour + calValue.min / 60;
