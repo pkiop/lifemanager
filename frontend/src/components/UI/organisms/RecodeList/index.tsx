@@ -42,6 +42,16 @@ const sortByStartTime = (recode1:ITimeRecode, recode2: ITimeRecode) => {
   return startTimeDiff;
 };
 
+const sortSleepLocateTail = (recode1: ITimeRecode, recode2: ITimeRecode) => {
+  if (recode1.category === '잠' && recode2.category !== '잠') {
+    return 1;
+  }
+  if (recode2.category === '잠' && recode1.category !== '잠') {
+    return -1;
+  }
+  return 0;
+};
+
 function RecodeList({
   timeRecodes, loading, error, setUpdateRecodeId, toggleRecodeInput, className,
 }:Props) {
@@ -60,20 +70,24 @@ function RecodeList({
   }
 
   if (timeRecodes === null) return (<></>);
-  const res = timeRecodes.slice().sort(sortByStartTime).map((recode: ITimeRecode) => (
-    <Recode
-      key={recode.title
+  const res = timeRecodes
+    .slice()
+    .sort(sortByStartTime)
+    .sort(sortSleepLocateTail)
+    .map((recode: ITimeRecode) => (
+      <Recode
+        key={recode.title
         + recode.startTime.hour
         + recode.startTime.min
         + recode.endTime.hour
         + recode.endTime.min}
-      title={recode.title}
-      startTime={recode.startTime}
-      endTime={recode.endTime.hour ? recode.endTime : undefined}
-      category={recode.category}
-      onClick={recodeOnClick(recode.id)}
-      isActive={recode.isActive} />
-  ));
+        title={recode.title}
+        startTime={recode.startTime}
+        endTime={recode.endTime.hour ? recode.endTime : undefined}
+        category={recode.category}
+        onClick={recodeOnClick(recode.id)}
+        isActive={recode.isActive} />
+    ));
   return (
     <S.RecodeList className={className}>
       {res}

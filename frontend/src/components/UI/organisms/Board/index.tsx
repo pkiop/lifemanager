@@ -16,12 +16,13 @@ function Board({ goalTime, recodeList, className }: Props) {
     const calValue = calNowTime(recode.startTime, endTime);
     return acc + calValue.hour + calValue.min / 60;
   }, 0).toFixed(1);
+  const leftTime = goalTime - Number(nowTime);
   return (
     <S.Board className={className}>
       <S.Content>게시판</S.Content>
       <S.Content>목표 : {goalTime}시간</S.Content>
       <S.Content>{nowTime} / {goalTime}시간</S.Content>
-      <S.Content>{(goalTime - Number(nowTime)).toFixed(1)}시간 남음</S.Content>
+      <S.Content>{(leftTime > 0 ? `${leftTime.toFixed(1)}시간 남음` : '목표 달성!')}</S.Content>
     </S.Board>
   );
 }
