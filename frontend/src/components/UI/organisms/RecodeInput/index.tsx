@@ -15,6 +15,22 @@ export interface Props {
   className?: string;
 }
 
+function isInputError(title: string, startHour:string, startMin: string, selectedCategory: string) {
+  if (title === '') {
+    return 'title을 입력하세요';
+  }
+  if (startHour === '') {
+    return 'startHour을 입력하세요';
+  }
+  if (startMin === '') {
+    return 'startMin을 입력하세요';
+  }
+  if (selectedCategory === '') {
+    return '카테고리를 입력하세요';
+  }
+  return null;
+}
+
 function RecodeInput({
   labelList, refetch, recodeId, toggleRecodeInput, className, selectedDate,
 }: Props) {
@@ -25,6 +41,7 @@ function RecodeInput({
   const endMinRef = useRef<HTMLInputElement>(null);
   const switchButtonRef = useRef<HTMLDivElement>(null);
   const [fullFetched, setFullFetched] = useState<boolean>(false);
+  const [errorMsg, setErrorMsg] = useState<string>('');
 
   const [selectedCategory, setSelectedCategory] = useState<string>('');
   const {
@@ -60,6 +77,13 @@ function RecodeInput({
       min: endHour ? Number(endMin) : null,
     };
     const bActive = switchButtonRef?.current?.classList.contains('active');
+
+    const inputErrorMsg = isInputError(title!, startHour!, startMin!, selectedCategory);
+    if (inputErrorMsg) {
+      setErrorMsg(inputErrorMsg);
+      return;
+    }
+    setErrorMsg('');
 
     if (recodeId) {
       await updateTimeRecodeMutation({
@@ -176,7 +200,7 @@ function RecodeInput({
   }
   return (
     <S.RecodeInput className={className}>
-      <S.TitleInput titleRef={titleRef} text={'Title'} />
+      <S.TitleInput titleRef={titleRef} errorMsg={errorMsg} text={'Title'} />
       <S.TimeInput
         startHourRef={startHourRef}
         startMinRef={startMinRef}

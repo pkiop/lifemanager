@@ -7,10 +7,22 @@ export const TitleInput = styled.div`
   border-radius: ${({ theme }) => theme.size.mainInputRadius};
 `;
 
+export const Title = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const Text = styled(TextComponent)`
   padding: 0.5rem 0 0 0.4rem ;
   margin: 0 1rem;
   font-size: 1.2rem;
+`;
+
+export const ErrorMessage = styled(TextComponent)`
+  padding: 0.5rem 0 0 0.4rem ;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color: red;
 `;
 
 export const Input = styled(InputComponent)`
