@@ -4,6 +4,7 @@ import { gql, useMutation, useQuery } from '@apollo/client';
 import { createTimeRecode, updateTimeRecode, deleteTimeRecode } from 'graphql/mutations';
 import { getTimeRecode } from 'graphql/queries';
 import { IRecode } from 'components/UI/molecules/Recode';
+import { isHour, isMin } from 'libs/time';
 import * as S from './style';
 
 export interface Props {
@@ -15,15 +16,32 @@ export interface Props {
   className?: string;
 }
 
-function isInputError(title: string, startHour:string, startMin: string, selectedCategory: string) {
+function isInputError(
+  title: string,
+  startHour:string, startMin: string,
+  endHour: string | null, endMin: string | null,
+  selectedCategory: string,
+) {
   if (title === '') {
     return 'title을 입력하세요';
   }
-  if (startHour === '') {
-    return 'startHour을 입력하세요';
+  if (startHour === '' || !isHour(Number(startHour))) {
+    return 'startHour을 제대로 입력하세요';
   }
-  if (startMin === '') {
-    return 'startMin을 입력하세요';
+  if (startMin === '' || !isMin(Number(startMin))) {
+    return 'startMin을 제대로 입력하세요';
+  }
+  if (endHour !== null && endHour !== '' && (endMin === null || endMin === '')) {
+    return 'endMin을 입력하세요';
+  }
+  if (endMin !== null && endMin !== '' && (endHour === null || endHour === '')) {
+    return 'endHour을 입력하세요';
+  }
+  if (!isHour(Number(endHour))) {
+    return 'endHour을 제대로 입력하세요';
+  }
+  if (!isMin(Number(endMin))) {
+    return 'endMin을 제대로 입력하세요';
   }
   if (selectedCategory === '') {
     return '카테고리를 입력하세요';
@@ -74,11 +92,13 @@ function RecodeInput({
     const endMin = endMinRef?.current?.value;
     const endTime = {
       hour: endHour ? Number(endHour) : null,
-      min: endHour ? Number(endMin) : null,
+      min: endMin ? Number(endMin) : null,
     };
     const bActive = switchButtonRef?.current?.classList.contains('active');
 
-    const inputErrorMsg = isInputError(title!, startHour!, startMin!, selectedCategory);
+    const inputErrorMsg = isInputError(
+      title!, startHour!, startMin!, endHour!, endMin!, selectedCategory,
+    );
     if (inputErrorMsg) {
       setErrorMsg(inputErrorMsg);
       return;
