@@ -182,7 +182,7 @@ function RecodeInput({
     }
 
     setSelectedCategory(category);
-
+    setErrorMsg('');
     categorySelectBar = (
       <S.CategorySelectBar
         labelList={labelList}
@@ -214,6 +214,7 @@ function RecodeInput({
       endMinRef.current.value = '';
     }
     setSelectedCategory('');
+    setErrorMsg('');
     if (switchButtonRef?.current?.classList.contains('active') === false) {
       switchButtonRef?.current?.classList.add('active');
     }
