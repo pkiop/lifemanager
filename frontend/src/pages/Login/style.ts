@@ -3,12 +3,14 @@ import ImgComponent from 'components/UI/atoms/Img';
 import OAuthLoginComponent from 'components/UI/molecules/OAuthLogin';
 
 export const LoginPage = styled.div`
-  background-color: ${({ theme }) => theme.color.beige};
+  background-color: ${({ theme }) => theme.color.mainColor};
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
 `;
 
 export const Img = styled(ImgComponent)`
@@ -21,4 +23,7 @@ export const Img = styled(ImgComponent)`
 
 export const GoogleLogin = styled(OAuthLoginComponent)`
   border: 2px solid ${({ theme }) => theme.color.black};
+  :hover {
+    cursor: pointer;
+  }
 `;

@@ -5,7 +5,7 @@ export const BottomBtns = styled.div`
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
-  background-color: ${({ theme }) => theme.color.beige};
+  background-color: ${({ theme }) => theme.color.mainColor};
   border-radius: ${({ theme }) => theme.size.mainInputRadius};
 `;
 
@@ -17,25 +17,25 @@ const Btn = css`
 
 export const LgBtn = styled(Button)`
   ${Btn};
-  background-color: ${({ theme }) => theme.color.submitGreen};
+  background-color: ${({ theme }) => theme.color.submit};
   transition: 0.3s;
 
   margin-right: 1em;
   width: 70%;
   :hover {
-    background-color: ${({ theme }) => theme.color.submitGreenHover};
+    background-color: ${({ theme }) => theme.color.submitHover};
     transition: 0.3s;
     cursor: pointer;
   }
 `;
 export const SmBtn = styled(Button)`
   ${Btn};
-  background-color: ${({ theme }) => theme.color.deleteRed};
+  background-color: ${({ theme }) => theme.color.delete};
   transition: 0.3s;
   width: 25%;
 
   :hover {
-    background-color: ${({ theme }) => theme.color.deleteRedHover};
+    background-color: ${({ theme }) => theme.color.deleteHover};
     transition: 0.3s;
     cursor: pointer;
   }

@@ -3,12 +3,11 @@ import Text from 'components/UI/atoms/Text';
 import TimeRangeTextComponent from 'components/UI/molecules/TimeRangeText';
 
 export const Recode = styled.div`
-  background-color: ${({ theme }) => theme.color.beige};
+  background-color: ${({ theme }) => theme.color.mainColor};
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 4rem;
   box-sizing: border-box; 
   height: 6rem;
   border-radius: ${({ theme }) => theme.size.mainInputRadius};
@@ -18,6 +17,9 @@ export const Recode = styled.div`
     box-shadow: 0.1rem 0.1rem gray;
     transition: 0.3s box-shadow;
     cursor: pointer;
+  }
+  &.progress {
+    background-color: ${({ theme }) => theme.color.darkMainColor};
   }
 `;
 
