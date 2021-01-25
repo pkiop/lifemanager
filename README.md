@@ -7,7 +7,10 @@
 
 ⏱ 하루동안 한 일을 기록하면 유용한 정보들을 시각화해서 보여주는 웹 어플리케이션 ⏱
 
-배포 주소 [https://lifemanager.pkiop.me](https://lifemanager.pkiop.me)
+배포 : [https://lifemanager.pkiop.me](https://lifemanager.pkiop.me)
+
+### [개발 배경](https://github.com/pkiop/lifemanager/wiki/%EA%B0%9C%EB%B0%9C-%EB%B0%B0%EA%B2%BD)
+
 
 <p align='center'>
     <img src="https://img.shields.io/badge/Typescript-v4.0.3-blue?logo=typescript"/>
