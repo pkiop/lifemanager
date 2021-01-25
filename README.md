@@ -39,7 +39,7 @@
 2. 해당 인증 정보로 앱 AWS 리소스 접근
 
 <p align='center'>
-  <img src="https://i.imgur.com/2fauXLL.png"/>
+  <img width='400px' src="https://i.imgur.com/2fauXLL.png"/>
 </p>
 
 ### 👌 메인 페이지 
