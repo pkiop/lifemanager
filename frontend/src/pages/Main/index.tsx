@@ -1,5 +1,5 @@
 import React, {
-  useCallback, useState, useReducer,
+  useCallback, useState, useReducer, useRef,
 } from 'react';
 import MainTemplate from 'components/templates/MainTemplate';
 import RecodeList from 'components/UI/organisms/RecodeList';
@@ -19,6 +19,7 @@ function Main() {
   const toggleRecodeInput = useCallback(() => toggleBRecodeInput(), []);
   const plusOnClick = useCallback(() => { toggleBRecodeInput(); setClickedRecodeId(''); }, []);
   const userReactiveVar = useReactiveVar(userVar);
+  const bUserUpdating = useRef<boolean>(false);
 
   const {
     loading, error, data, refetch,
@@ -43,8 +44,9 @@ function Main() {
       if (userData.getUser.items.length !== 0) {
         tempLabelList = userData.getUser.items[0]?.categoryList;
         tempGoalTime = userData.getUser.items[0]?.goalTime;
-      } else {
-        const defaultLabelList = [{ color: 'red', labelName: '개발' }, { color: 'blue', labelName: '잠' }, { color: 'green', labelName: '책' }, { color: 'yellow', labelName: '운동' }, { color: 'skyblue', labelName: '산책' }, { color: 'black', labelName: '기타' }];
+      } else if (bUserUpdating.current === false) {
+        bUserUpdating.current = true;
+        const defaultLabelList = [{ color: '#c70039', labelName: '개발' }, { color: '#111d5e', labelName: '잠' }, { color: '#007965', labelName: '책' }, { color: '#f37121', labelName: '운동' }, { color: '#51c2d5', labelName: '산책' }, { color: '#663f3f', labelName: '기타' }];
         addUserData({
           variables: {
             input: {
@@ -53,6 +55,7 @@ function Main() {
             },
           },
         }).then(() => {
+          bUserUpdating.current = false;
           userRefetch();
         });
       }
