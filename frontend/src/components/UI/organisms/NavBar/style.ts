@@ -9,7 +9,7 @@ export const NavBar = styled.div`
 `;
 
 export const AddBtn = styled.div`
-  background-color: ${({ theme }) => theme.color.beige};
+  background-color: ${({ theme }) => theme.color.mainColor};
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 1.3rem;

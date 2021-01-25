@@ -19,6 +19,9 @@ export const Dropdown = styled(DropdownComponent)`
   &.active{
     flex-direction: column;
     z-index: 101;
+    :hover {
+      cursor: pointer;
+    }
   }
 `;
 

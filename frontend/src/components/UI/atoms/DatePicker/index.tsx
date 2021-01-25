@@ -11,7 +11,7 @@ interface Props {
 function DatePicker({ userVar, setUserVar, className }: Props) {
   return (
     <ReactDatePicker
-      dateFormat={'yyyy/MM/dd'}
+      dateFormat={'yyyy년 M월 d일'}
       className={className}
       selected={new Date(userVar.selectedDate)}
       onChange={(date:Date) => setUserVar({ ...userVar, selectedDate: date.toISOString().split('T')[0] })}

@@ -3,7 +3,7 @@ import TextComponent from 'components/UI/atoms/Text';
 import InputComponent from 'components/UI/atoms/Input';
 
 export const TimeInput = styled.div`
-  background-color: ${({ theme }) => theme.color.beige};
+  background-color: ${({ theme }) => theme.color.mainColor};
   display: flex;
   justify-content: center;
   border-radius: ${({ theme }) => theme.size.mainInputRadius};

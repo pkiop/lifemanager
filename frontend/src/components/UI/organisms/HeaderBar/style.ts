@@ -5,7 +5,7 @@ import DatePickerComponent from 'components/UI/atoms/DatePicker';
 import UserModalComponent from 'components/UI/organisms/Modal';
 
 export const HeaderBar = styled.div`
-  background-color: ${({ theme }) => theme.color.black};
+  background-color: ${({ theme }) => theme.color.headerBar};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,13 +25,16 @@ export const DigitalClockWrap = styled.div`
 `;
 
 export const DatePicker = styled(DatePickerComponent)`
-  background-color: black ;
+  background-color: ${({ theme }) => theme.color.headerBar} ;
   color: white ;
   text-align: center;
   color: transparent;
   text-shadow: 0 0 0 white;
   :focus {
     outline: none;
+  }
+  :hover {
+    cursor: pointer;
   }
 `;
 
@@ -48,6 +51,9 @@ export const UserProfile = styled.div`
   margin-right: ${UserRight};
   display: flex;
   align-items: center;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const UserImg = styled(Img)`

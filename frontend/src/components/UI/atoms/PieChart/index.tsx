@@ -49,12 +49,11 @@ function PieChart({
     const categoryData = recodeList?.reduce(reducer, {});
     const colorData = recodeList?.reduce(colorReducer(categoryList), {});
     const dataArray = Object.entries(categoryData || {}).map((el: any) => el);
-
     bb.generate({
       data: {
-        columns: dataArray.length === 0 ? [['empty', 1]] : dataArray,
+        columns: dataArray.length === 0 ? [['데이터 없음', 1]] : dataArray,
         type: pie(),
-        colors: colorData,
+        colors: JSON.stringify(colorData) === '{}' ? { '데이터 없음': '#dddddd' } : colorData,
       },
       bindto: '#pieChart',
     });

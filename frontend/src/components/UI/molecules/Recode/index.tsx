@@ -40,9 +40,10 @@ function Recode({
   className,
 }: Props) {
   const nowTime = getNowTime(startTime, endTime);
+  const isProgressing = endTime.hour === nowHourMin().hour && endTime.min === nowHourMin().min;
 
   return (
-    <S.Recode onClick={onClick} className={className} >
+    <S.Recode onClick={onClick} className={`${className} ${isProgressing ? 'progress' : ''}`} >
       <S.UpperWrap>
         <S.Title text={title} />
       </S.UpperWrap>
