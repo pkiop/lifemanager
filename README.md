@@ -2,8 +2,7 @@
 
 ## 🌟 서비스 소개
 <p align='center'>
-<img width='50%' src='https://i.imgur.com/hpneYdE.png)
-'>
+<img width='200px' src='https://i.imgur.com/hpneYdE.png)'>
 </p>
 
 ⏱ 하루동안 한 일을 기록하면 유용한 정보들을 시각화해서 보여주는 웹 어플리케이션 ⏱
@@ -25,48 +24,67 @@
 
 ### 👌 로그인
 
-![](https://i.imgur.com/6Op9ffA.png)
+<p align='center'>
+  <img src="https://i.imgur.com/6Op9ffA.png"/>
+</p>
 
 * 구글 계정으로 OAuth인증을 통해 로그인 할 수 있습니다.
 * AWS의 cognito를 이용해서 인증하고 앱에 할당된 AWS 리소스 접근권한을 얻습니다. 
 1. cognito의 소셜로그인 활용 인증 및 로그인
 
-![](https://i.imgur.com/cayJ1tS.png)
+<p align='center'>
+  <img src="https://i.imgur.com/cayJ1tS.png"/>
+</p>
 
 2. 해당 인증 정보로 앱 AWS 리소스 접근
-![](https://i.imgur.com/2fauXLL.png)
+
+<p align='center'>
+  <img src="https://i.imgur.com/2fauXLL.png"/>
+</p>
 
 ### 👌 메인 페이지 
 
-![](https://i.imgur.com/OfcRKIR.png)
-
+<p align='center'>
+  <img src="https://i.imgur.com/OfcRKIR.png"/>
+</p>
 
 #### 🧐 날짜 선택
 
-![](https://i.imgur.com/ZwZ7NaV.png)
+<p align='center'>
+  <img src="https://i.imgur.com/ZwZ7NaV.png"/>
+</p>
 
 * 확인하고 싶은 날짜를 선택합니다.
 
 #### 🧐 로그아웃
 
-![](https://i.imgur.com/0XwLErm.png)
+<p align='center'>
+  <img src="https://i.imgur.com/0XwLErm.png"/>
+</p>
 
 * 로그아웃 버튼을 눌러 로그아웃 할 수 있습니다.
 
 #### 🧐 목표와 진행상황 확인
 
-![](https://i.imgur.com/ft58UEm.png)
+<p align='center'>
+  <img src="https://i.imgur.com/ft58UEm.png"/>
+</p>
 
 * 사용자별로 설정한 목표에 따라 진행상황 / 목표까지 남은 시간을 계산한 결과를 보여줍니다.
 
 #### 🧐 카테고리별 진행상황 시각화
-![](https://i.imgur.com/JM5UECe.png)
+
+<p align='center'>
+  <img src="https://i.imgur.com/JM5UECe.png"/>
+</p>
 
 * billboard.js 라이브러리 활용해서 카테고리별로 지정한 색에 따라 한눈에 진행상황 확인할 수 있도록 파이 그래프를 보여줍니다.
 
 #### 🧐 기록 확인
 
-![](https://i.imgur.com/gH3vhi2.png)
+<p align='center'>
+  <img src="https://i.imgur.com/gH3vhi2.png"/>
+</p>
 
 * 로그인한 유저 & 선택한 날짜에 해당하는 기록들을 보여줍니다.
 
@@ -83,7 +101,9 @@
 
 #### 🧐 기록 수정 및 삭제
 
-![](https://i.imgur.com/UmHAlBL.gif)
+<p align='center'>
+  <img src="https://i.imgur.com/UmHAlBL.gif"/>
+</p>
 
 * 수정을 원하는 기록을 클릭하면 해당 기록을 수정할 수 있습니다.
 * Delete 버튼을 눌러 기록을 삭제할 수 있습니다.
