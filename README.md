@@ -83,7 +83,7 @@
 #### 🧐 기록 확인
 
 <p align='center'>
-  <img src="https://i.imgur.com/gH3vhi2.png"/>
+  <img width='300px' src="https://i.imgur.com/gH3vhi2.png"/>
 </p>
 
 * 로그인한 유저 & 선택한 날짜에 해당하는 기록들을 보여줍니다.
