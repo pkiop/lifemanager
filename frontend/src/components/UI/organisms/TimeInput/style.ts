@@ -13,6 +13,7 @@ export const TimeInput = styled.div`
 
 export const Text = styled(TextComponent)`
   text-align: center;
+  font-size: 1.1rem;
 `;
 
 export const TimeWrap = styled.div`
@@ -34,11 +35,16 @@ export const Wrap = styled.div`
   :not(:last-child) {
     margin-bottom: 0.4rem;
   }
+  .doubledot{
+    text-align: center;
+    margin-left: 0.4rem;
+  }
 `;
 
 export const Input = styled(InputComponent)`
-  width: 2.5rem;
+  width: 1.6rem;
   font-size: 1rem;
   margin-left: 0.4em;
   text-align: center;
+  border-radius: ${({ theme }) => theme.size.mainInputRadius};
 `;
