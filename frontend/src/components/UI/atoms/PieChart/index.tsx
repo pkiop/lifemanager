@@ -1,5 +1,3 @@
-/* eslint-disable eqeqeq */
-/* eslint-disable no-restricted-syntax */
 import React, { useEffect } from 'react';
 import { IRecode } from 'components/UI/molecules/Recode';
 import { calNowTime, nowHourMin, convertMinute } from 'libs/time';
