@@ -18,7 +18,7 @@ export interface Props {
 const reducer = (acc: any, recode: IRecode) => {
   const nowCategoryName = recode.category;
   const convertMinTime = convertMinute(calNowTime(recode.startTime,
-    recode.endTime ? recode.endTime : nowHourMin()));
+    recode.endTime!.hour ? recode.endTime! : nowHourMin()));
   if (nowCategoryName in acc) {
     return {
       ...acc,
