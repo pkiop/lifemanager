@@ -9,6 +9,10 @@ export const LabelList = styled.div`
 
 export const Label = styled(LabelComponent)`
   margin-right: 0.5rem;
+  :hover {
+    cursor: pointer;
+    border: 1px solid yellow;
+  }
   &.active {
     color: yellow;
     border: 2px solid yellow;
@@ -31,6 +35,10 @@ export const More = styled(LabelComponent)`
   width: 2rem;
   background-color: white;
   color: black;
+  :hover {
+    cursor: pointer;
+    border: 1px solid yellow;
+  }
 `;
 
 export default {};
