@@ -202,10 +202,10 @@ function RecodeInput({
       titleRef.current.value = '';
     }
     if (startHourRef?.current) {
-      startHourRef.current.value = '';
+      startHourRef.current.value = `${new Date().getHours()}`;
     }
     if (startMinRef?.current) {
-      startMinRef.current.value = '';
+      startMinRef.current.value = `${new Date().getMinutes()}`;
     }
     if (endHourRef?.current) {
       endHourRef.current.value = '';
