@@ -1,5 +1,3 @@
-/* eslint-disable eqeqeq */
-/* eslint-disable no-restricted-syntax */
 import React, { useEffect } from 'react';
 import { IRecode } from 'components/UI/molecules/Recode';
 import { calNowTime, nowHourMin, convertMinute } from 'libs/time';
@@ -18,7 +16,7 @@ export interface Props {
 const reducer = (acc: any, recode: IRecode) => {
   const nowCategoryName = recode.category;
   const convertMinTime = convertMinute(calNowTime(recode.startTime,
-    recode.endTime ? recode.endTime : nowHourMin()));
+    recode.endTime!.hour ? recode.endTime! : nowHourMin()));
   if (nowCategoryName in acc) {
     return {
       ...acc,

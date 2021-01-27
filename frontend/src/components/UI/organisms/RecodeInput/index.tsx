@@ -202,10 +202,10 @@ function RecodeInput({
       titleRef.current.value = '';
     }
     if (startHourRef?.current) {
-      startHourRef.current.value = '';
+      startHourRef.current.value = `${new Date().getHours()}`;
     }
     if (startMinRef?.current) {
-      startMinRef.current.value = '';
+      startMinRef.current.value = `${new Date().getMinutes()}`;
     }
     if (endHourRef?.current) {
       endHourRef.current.value = '';
@@ -221,7 +221,7 @@ function RecodeInput({
   }
   return (
     <S.RecodeInput className={className}>
-      <S.TitleInput titleRef={titleRef} errorMsg={errorMsg} text={'Title'} />
+      <S.TitleInput titleRef={titleRef} errorMsg={errorMsg} text={'제목'} />
       <S.TimeInput
         startHourRef={startHourRef}
         startMinRef={startMinRef}
@@ -232,9 +232,9 @@ function RecodeInput({
 
       <S.BottomBtns
         lgOnClick={onclickHandler}
-        lgText={recodeId === '' ? 'Add Recode' : 'Update Recode'}
+        lgText={recodeId === '' ? '기록 추가' : '기록 수정'}
         smOnClick={deleteClickHandler}
-        smText={recodeId === '' ? 'Close' : 'Delete'}
+        smText={recodeId === '' ? '닫기' : '삭제'}
       />
     </S.RecodeInput>
   );

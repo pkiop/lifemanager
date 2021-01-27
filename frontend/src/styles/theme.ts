@@ -9,6 +9,7 @@ const color = {
   timeInput: '#bbbbbb',
   submit: '#bbbbbb',
   submitHover: '#218838',
+  green: '#28a745',
   delete: '#DC3545',
   deleteHover: '#C82333',
 };

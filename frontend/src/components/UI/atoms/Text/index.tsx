@@ -6,10 +6,10 @@ export interface Props {
   className?: string;
 }
 
-function App({ text, className }: Props) {
+function Text({ text, className }: Props) {
   return (
     <S.Text className={className}>{text}</S.Text>
   );
 }
 
-export default App;
+export default Text;

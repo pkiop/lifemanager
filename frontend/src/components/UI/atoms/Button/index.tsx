@@ -9,11 +9,9 @@ export interface Props {
 
 function Button({ onClick, children, className }: Props) {
   return (
-    <>
-      <S.Button onClick={onClick} className={className}>
-        {children}
-      </S.Button>
-    </>
+    <S.Button onClick={onClick} className={className}>
+      {children}
+    </S.Button>
   );
 }
 
