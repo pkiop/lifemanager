@@ -31,11 +31,11 @@ const timeCheck = (setNowTime: React.Dispatch<React.SetStateAction<string>>) => 
   setNowTime(nowTime);
 }, 1000);
 
-const App = ({ className }: Props) => {
+const DigitalClock = ({ className }: Props) => {
   const [nowTime, setNowTime] = useState(getNowTimeString());
   timeCheck(setNowTime);
 
   return <S.DigitalClock className={className}>{nowTime}</S.DigitalClock>;
 };
 
-export default App;
+export default DigitalClock;

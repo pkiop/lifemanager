@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react';
-import { Input } from './style';
+import React from 'react';
+import * as S from './style';
 
 export interface Props {
   value?: string;
@@ -8,11 +8,11 @@ export interface Props {
   inputRef?: any;
 }
 
-function App({
+function Input({
   value, placeholder, className, inputRef,
 }: Props) {
   return (
-    <Input
+    <S.Input
       className={className}
       placeholder={placeholder}
       ref={inputRef}
@@ -20,4 +20,4 @@ function App({
   );
 }
 
-export default App;
+export default Input;

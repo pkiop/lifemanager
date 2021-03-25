@@ -20,7 +20,7 @@ function CategorySelectBar({
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
-      <S.ToggleSwitch switchDivRef={switchDivRef}/>
+      <S.ToggleSwitch switchDivRef={switchDivRef} />
     </S.CategorySelectBar>
   );
 }
