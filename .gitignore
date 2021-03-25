@@ -5,6 +5,7 @@ config/google.json
 lowdb.json
 sessions
 .env
+.env_dev
 dist
 .DS_Store
 frontend/.graphqlconfig.yml
