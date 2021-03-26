@@ -29,3 +29,4 @@ amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
 .vscode/settings.json
+frontend/.vscode/settings.json
