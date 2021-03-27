@@ -53,12 +53,7 @@ function TimeInput({
           </S.Wrap>
         </S.Wrap>
       </S.TimeWrap>
-      <S.TimeWrap>
-        <S.Wrap>
-        </S.Wrap>
-        <S.Wrap>
-        </S.Wrap>
-      </S.TimeWrap>
+
     </S.TimeInput>
   );
 }
