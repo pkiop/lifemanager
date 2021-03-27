@@ -44,7 +44,6 @@ function TimeInput({
         </S.Wrap>
         <S.Wrap>
           <S.Text text={'종료시간'} />
-
           <S.Wrap>
             <S.Input inputRef={endHourRef} />
             <div className="doubledot">:</div>
