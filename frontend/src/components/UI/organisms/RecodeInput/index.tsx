@@ -18,7 +18,7 @@ export interface Props {
 
 function isInputError(
   title: string,
-  startHour:string, startMin: string,
+  startHour: string, startMin: string,
   endHour: string | null, endMin: string | null,
   selectedCategory: string,
 ) {
@@ -175,10 +175,10 @@ function RecodeInput({
       startMinRef.current.value = String(startTime.min);
     }
     if (endHourRef?.current) {
-      endHourRef.current.value = String(endTime?.hour);
+      endHourRef.current.value = String(endTime?.hour || 'x');
     }
     if (endMinRef?.current) {
-      endMinRef.current.value = String(endTime?.min);
+      endMinRef.current.value = String(endTime?.min || 'x');
     }
 
     setSelectedCategory(category);
