@@ -74,7 +74,7 @@
       "version": "0.0.1"
     },
     "request": "^2.88.2",
-    "sanitize-html": "^1.23.0",
+    "sanitize-html": "^2.3.2",
     "session-file-store": "^1.4.0",
     "shortid": "^2.2.15",
     "uid2": {
