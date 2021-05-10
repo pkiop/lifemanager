@@ -175,10 +175,10 @@ function RecodeInput({
       startMinRef.current.value = String(startTime.min);
     }
     if (endHourRef?.current) {
-      endHourRef.current.value = String(endTime?.hour || 'x');
+      endHourRef.current.value = String(endTime?.hour || '');
     }
     if (endMinRef?.current) {
-      endMinRef.current.value = String(endTime?.min || 'x');
+      endMinRef.current.value = String(endTime?.min || '');
     }
 
     setSelectedCategory(category);
