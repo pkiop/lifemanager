@@ -1,4 +1,5 @@
 import React from 'react';
+import GlobalThemeProvider from 'styles/GlobalThemeProvider';
 import Recode from '.';
 
 export default {
@@ -14,4 +15,8 @@ const temp = {
   isActive: true,
 };
 
-export const Default = () => <Recode {...temp} />;
+export const Default = () => (
+  <GlobalThemeProvider>
+    <Recode {...temp} />
+  </GlobalThemeProvider>
+);
