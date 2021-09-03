@@ -25,7 +25,7 @@
     "billboard.js": "^2.1.4",
     "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
-    "immer": "^8.0.1",
+    "immer": "^9.0.6",
     "query-string": "^6.13.7",
     "react": "^17.0.1",
     "react-apollo": "^3.1.5",
