@@ -21,7 +21,7 @@
     "aws-amplify-react": "^4.2.18",
     "aws-appsync": "^4.0.1",
     "aws-appsync-auth-link": "^3.0.2",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "billboard.js": "^2.1.4",
     "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
