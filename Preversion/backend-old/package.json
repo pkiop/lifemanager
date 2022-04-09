@@ -15,7 +15,7 @@
     "express-session": "^1.17.1",
     "helmet": "^3.22.0",
     "lowdb": "^1.0.0",
-    "moment": "^2.25.3",
+    "moment": "^2.29.2",
     "mysql": "^2.18.1",
     "oauth": {
       "integrity": "sha1-vR/vr2hslrdUda7VGWQS/2DPucE=",
